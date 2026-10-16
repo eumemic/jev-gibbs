@@ -1,0 +1,5405 @@
+{
+ "args": {
+  "mode": "compare",
+  "k": [
+   4,
+   6
+  ],
+  "stories": 100,
+  "seed": 0,
+  "burn_in": 5,
+  "keep": 20,
+  "labels": null,
+  "relevant_only": false,
+  "temperature": 1.0,
+  "temperatures": [
+   1.0,
+   0.3,
+   0.1
+  ],
+  "tag": "",
+  "workers": 60,
+  "concurrency": 60
+ },
+ "results": {
+  "4": {
+   "stories": [
+    {
+     "k": 4,
+     "path": [
+      "Diana",
+      "Henry",
+      "Penny",
+      "Victor",
+      "Leo"
+     ],
+     "story": "Victor went hiking with his daughter Penny. Henry visited his wife Penny. Diana took her father Henry to the park. Leo's father is Victor.",
+     "gold": {
+      "0|2": "daughter",
+      "0|3": "granddaughter",
+      "0|4": "niece",
+      "1|3": "son-in-law",
+      "1|4": "brother-in-law",
+      "2|4": "sister"
+     }
+    },
+    {
+     "k": 4,
+     "path": [
+      "Leo",
+      "Will",
+      "Maya",
+      "Adam",
+      "Hannah"
+     ],
+     "story": "Maya wrote a letter to her husband Adam. Will's brother is Leo. Maya is Will's mother. Adam had lunch with his sister Hannah.",
+     "gold": {
+      "0|2": "son",
+      "0|3": "son",
+      "0|4": "nephew",
+      "1|3": "son",
+      "1|4": "nephew",
+      "2|4": "sister-in-law"
+     }
+    },
+    {
+     "k": 4,
+     "path": [
+      "Sam",
+      "Tom",
+      "Hannah",
+      "Peter",
+      "Oscar"
+     ],
+     "story": "Oscar is Peter's son. Hannah's brother is Peter. Tom called his son Sam. Hannah took her husband Tom to the cinema.",
+     "gold": {
+      "0|2": "son",
+      "0|3": "nephew",
+      "0|4": "cousin",
+      "1|3": "brother-in-law",
+      "1|4": "uncle",
+      "2|4": "aunt"
+     }
+    },
+    {
+     "k": 4,
+     "path": [
+      "Oscar",
+      "Olivia",
+      "Mark",
+      "Kevin",
+      "Wendy"
+     ],
+     "story": "Olivia took her son Oscar to the cinema. Mark took his father Kevin to the market. Wendy is Kevin's wife. Olivia's brother is Mark.",
+     "gold": {
+      "0|2": "nephew",
+      "0|3": "grandson",
+      "0|4": "grandson",
+      "1|3": "daughter",
+      "1|4": "daughter",
+      "2|4": "son"
+     }
+    },
+    {
+     "k": 4,
+     "path": [
+      "Zoe",
+      "Oscar",
+      "Ethan",
+      "Frank",
+      "Kevin"
+     ],
+     "story": "Oscar is Ethan's brother. Zoe took her husband Oscar to the beach. Ethan visited his son Frank. Kevin is Frank's brother.",
+     "gold": {
+      "0|2": "sister-in-law",
+      "0|3": "aunt",
+      "0|4": "aunt",
+      "1|3": "uncle",
+      "1|4": "uncle",
+      "2|4": "father"
+     }
+    },
+    {
+     "k": 4,
+     "path": [
+      "Adam",
+      "Grace",
+      "Paula",
+      "Leo",
+      "Nora"
+     ],
+     "story": "Leo wrote a letter to his wife Paula. Grace's sister is Paula. Adam had lunch with his daughter Grace. Nora's father is Leo.",
+     "gold": {
+      "0|2": "father",
+      "0|3": "father-in-law",
+      "0|4": "grandfather",
+      "1|3": "sister-in-law",
+      "1|4": "aunt",
+      "2|4": "mother"
+     }
+    },
+    {
+     "k": 4,
+     "path": [
+      "Alice",
+      "Hannah",
+      "Laura",
+      "Sam",
+      "Vera"
+     ],
+     "story": "Laura took her husband Sam to the market. Vera called her father Sam. Laura is Hannah's sister. Alice is Hannah's daughter.",
+     "gold": {
+      "0|2": "niece",
+      "0|3": "niece",
+      "0|4": "cousin",
+      "1|3": "sister-in-law",
+      "1|4": "aunt",
+      "2|4": "mother"
+     }
+    },
+    {
+     "k": 4,
+     "path": [
+      "Leo",
+      "Laura",
+      "Will",
+      "Frank",
+      "George"
+     ],
+     "story": "Will is Frank's son. George's father is Frank. Laura is Leo's mother. Laura's husband is Will.",
+     "gold": {
+      "0|2": "son",
+      "0|3": "grandson",
+      "0|4": "nephew",
+      "1|3": "daughter-in-law",
+      "1|4": "sister-in-law",
+      "2|4": "brother"
+     }
+    },
+    {
+     "k": 4,
+     "path": [
+      "Emma",
+      "Clara",
+      "Alice",
+      "Zoe",
+      "Laura"
+     ],
+     "story": "Emma's daughter is Clara. Laura wrote a letter to her mother Zoe. Zoe wrote a letter to her sister Alice. Alice's sister is Clara.",
+     "gold": {
+      "0|2": "mother",
+      "0|3": "mother",
+      "0|4": "grandmother",
+      "1|3": "sister",
+      "1|4": "aunt",
+      "2|4": "aunt"
+     }
+    },
+    {
+     "k": 4,
+     "path": [
+      "Julia",
+      "Maya",
+      "Fiona",
+      "Yusuf",
+      "Peter"
+     ],
+     "story": "Fiona took her daughter Maya to the market. Julia is Maya's sister. Peter visited his brother Yusuf. Yusuf is Fiona's husband.",
+     "gold": {
+      "0|2": "daughter",
+      "0|3": "daughter",
+      "0|4": "niece",
+      "1|3": "daughter",
+      "1|4": "niece",
+      "2|4": "sister-in-law"
+     }
+    },
+    {
+     "k": 4,
+     "path": [
+      "Clara",
+      "Julia",
+      "Noah",
+      "Laura",
+      "Kevin"
+     ],
+     "story": "Noah had lunch with his wife Laura. Kevin called his daughter Laura. Julia took her sister Clara to the park. Noah went hiking with his daughter Julia.",
+     "gold": {
+      "0|2": "daughter",
+      "0|3": "daughter",
+      "0|4": "granddaughter",
+      "1|3": "daughter",
+      "1|4": "granddaughter",
+      "2|4": "son-in-law"
+     }
+    },
+    {
+     "k": 4,
+     "path": [
+      "Carl",
+      "Uma",
+      "Victor",
+      "Alice",
+      "Rosa"
+     ],
+     "story": "Alice took her mother Rosa to the zoo. Alice wrote a letter to her son Victor. Uma's brother is Victor. Uma took her father Carl to the beach.",
+     "gold": {
+      "0|2": "father",
+      "0|3": "husband",
+      "0|4": "son-in-law",
+      "1|3": "daughter",
+      "1|4": "granddaughter",
+      "2|4": "grandson"
+     }
+    },
+    {
+     "k": 4,
+     "path": [
+      "Penny",
+      "Kevin",
+      "Tom",
+      "Mark",
+      "Diana"
+     ],
+     "story": "Tom is Kevin's father. Penny's father is Kevin. Tom took his son Mark to the market. Mark took his wife Diana to the cinema.",
+     "gold": {
+      "0|2": "granddaughter",
+      "0|3": "niece",
+      "0|4": "niece",
+      "1|3": "brother",
+      "1|4": "brother-in-law",
+      "2|4": "father-in-law"
+     }
+    },
+    {
+     "k": 4,
+     "path": [
+      "George",
+      "Noah",
+      "Henry",
+      "Will",
+      "Tina"
+     ],
+     "story": "Tina is Will's sister. Will called his father Henry. George visited his father Noah. Henry wrote a letter to his father Noah.",
+     "gold": {
+      "0|2": "brother",
+      "0|3": "uncle",
+      "0|4": "uncle",
+      "1|3": "grandfather",
+      "1|4": "grandfather",
+      "2|4": "father"
+     }
+    },
+    {
+     "k": 4,
+     "path": [
+      "Alice",
+      "Adam",
+      "Kate",
+      "Yusuf",
+      "Diana"
+     ],
+     "story": "Yusuf had lunch with his wife Kate. Kate wrote a letter to her son Adam. Adam's sister is Alice. Yusuf's daughter is Diana.",
+     "gold": {
+      "0|2": "daughter",
+      "0|3": "daughter",
+      "0|4": "sister",
+      "1|3": "son",
+      "1|4": "brother",
+      "2|4": "mother"
+     }
+    },
+    {
+     "k": 4,
+     "path": [
+      "Wendy",
+      "Hannah",
+      "Rosa",
+      "Kevin",
+      "Yusuf"
+     ],
+     "story": "Rosa took her mother Hannah to the park. Kevin's father is Yusuf. Rosa is Kevin's sister. Wendy visited her daughter Hannah.",
+     "gold": {
+      "0|2": "grandmother",
+      "0|3": "grandmother",
+      "0|4": "mother-in-law",
+      "1|3": "mother",
+      "1|4": "wife",
+      "2|4": "daughter"
+     }
+    },
+    {
+     "k": 4,
+     "path": [
+      "Ethan",
+      "Diana",
+      "Julia",
+      "Fiona",
+      "Xavier"
+     ],
+     "story": "Julia's sister is Fiona. Diana is Julia's daughter. Diana's father is Ethan. Xavier is Fiona's father.",
+     "gold": {
+      "0|2": "husband",
+      "0|3": "brother-in-law",
+      "0|4": "son-in-law",
+      "1|3": "niece",
+      "1|4": "granddaughter",
+      "2|4": "daughter"
+     }
+    },
+    {
+     "k": 4,
+     "path": [
+      "Beth",
+      "Oscar",
+      "Ivan",
+      "Maya",
+      "Vera"
+     ],
+     "story": "Oscar's father is Ivan. Oscar wrote a letter to his sister Beth. Vera took her daughter Maya to the zoo. Ivan took his wife Maya to the museum.",
+     "gold": {
+      "0|2": "daughter",
+      "0|3": "daughter",
+      "0|4": "granddaughter",
+      "1|3": "son",
+      "1|4": "grandson",
+      "2|4": "son-in-law"
+     }
+    },
+    {
+     "k": 4,
+     "path": [
+      "Wendy",
+      "Diana",
+      "Xavier",
+      "Rosa",
+      "Laura"
+     ],
+     "story": "Diana is Xavier's wife. Rosa took her daughter Laura to the cinema. Diana visited her daughter Wendy. Rosa is Xavier's mother.",
+     "gold": {
+      "0|2": "daughter",
+      "0|3": "granddaughter",
+      "0|4": "niece",
+      "1|3": "daughter-in-law",
+      "1|4": "sister-in-law",
+      "2|4": "brother"
+     }
+    },
+    {
+     "k": 4,
+     "path": [
+      "Grace",
+      "Leo",
+      "Kate",
+      "Will",
+      "Emma"
+     ],
+     "story": "Leo's mother is Grace. Kate is Will's daughter. Will took his daughter Emma to the park. Leo's sister is Kate.",
+     "gold": {
+      "0|2": "mother",
+      "0|3": "wife",
+      "0|4": "mother",
+      "1|3": "son",
+      "1|4": "brother",
+      "2|4": "sister"
+     }
+    },
+    {
+     "k": 4,
+     "path": [
+      "Tom",
+      "Jack",
+      "Leo",
+      "Oscar",
+      "Nora"
+     ],
+     "story": "Oscar called his mother Nora. Jack had lunch with his father Tom. Oscar took his brother Leo to the zoo. Jack's son is Leo.",
+     "gold": {
+      "0|2": "grandfather",
+      "0|3": "grandfather",
+      "0|4": "father-in-law",
+      "1|3": "father",
+      "1|4": "husband",
+      "2|4": "son"
+     }
+    },
+    {
+     "k": 4,
+     "path": [
+      "Olivia",
+      "Grace",
+      "Alice",
+      "Sam",
+      "Fiona"
+     ],
+     "story": "Grace is Olivia's mother. Alice went hiking with her husband Sam. Grace is Alice's daughter. Sam is Fiona's father.",
+     "gold": {
+      "0|2": "granddaughter",
+      "0|3": "granddaughter",
+      "0|4": "niece",
+      "1|3": "daughter",
+      "1|4": "sister",
+      "2|4": "mother"
+     }
+    },
+    {
+     "k": 4,
+     "path": [
+      "Jack",
+      "Uma",
+      "Rosa",
+      "Yusuf",
+      "Henry"
+     ],
+     "story": "Uma took her brother Jack to the beach. Rosa is Uma's sister. Henry wrote a letter to his father Yusuf. Yusuf took his wife Rosa to the beach.",
+     "gold": {
+      "0|2": "brother",
+      "0|3": "brother-in-law",
+      "0|4": "uncle",
+      "1|3": "sister-in-law",
+      "1|4": "aunt",
+      "2|4": "mother"
+     }
+    },
+    {
+     "k": 4,
+     "path": [
+      "Kevin",
+      "Adam",
+      "Mark",
+      "Kate",
+      "Jack"
+     ],
+     "story": "Kate took her son Mark to the cinema. Adam called his brother Kevin. Kate's husband is Jack. Mark had lunch with his son Adam.",
+     "gold": {
+      "0|2": "son",
+      "0|3": "grandson",
+      "0|4": "grandson",
+      "1|3": "grandson",
+      "1|4": "grandson",
+      "2|4": "son"
+     }
+    },
+    {
+     "k": 4,
+     "path": [
+      "Nora",
+      "Maya",
+      "Sara",
+      "Uma",
+      "Zach"
+     ],
+     "story": "Zach took his wife Uma to the market. Uma went hiking with her sister Sara. Sara is Maya's sister. Nora's mother is Maya.",
+     "gold": {
+      "0|2": "niece",
+      "0|3": "niece",
+      "0|4": "niece",
+      "1|3": "sister",
+      "1|4": "sister-in-law",
+      "2|4": "sister-in-law"
+     }
+    },
+    {
+     "k": 4,
+     "path": [
+      "Ethan",
+      "Tom",
+      "Diana",
+      "Vera",
+      "Ray"
+     ],
+     "story": "Diana's husband is Tom. Ethan is Tom's son. Vera took her brother Ray to the cinema. Diana is Vera's sister.",
+     "gold": {
+      "0|2": "son",
+      "0|3": "nephew",
+      "0|4": "nephew",
+      "1|3": "brother-in-law",
+      "1|4": "brother-in-law",
+      "2|4": "sister"
+     }
+    },
+    {
+     "k": 4,
+     "path": [
+      "Will",
+      "Oscar",
+      "Paula",
+      "Olivia",
+      "Jack"
+     ],
+     "story": "Will's father is Oscar. Jack called his mother Olivia. Oscar visited his wife Paula. Paula's sister is Olivia.",
+     "gold": {
+      "0|2": "son",
+      "0|3": "nephew",
+      "0|4": "cousin",
+      "1|3": "brother-in-law",
+      "1|4": "uncle",
+      "2|4": "aunt"
+     }
+    },
+    {
+     "k": 4,
+     "path": [
+      "Yusuf",
+      "Vera",
+      "Kate",
+      "Noah",
+      "Grace"
+     ],
+     "story": "Vera's daughter is Kate. Yusuf is Vera's son. Noah took his daughter Kate to the cinema. Noah called his mother Grace.",
+     "gold": {
+      "0|2": "brother",
+      "0|3": "son",
+      "0|4": "grandson",
+      "1|3": "wife",
+      "1|4": "daughter-in-law",
+      "2|4": "granddaughter"
+     }
+    },
+    {
+     "k": 4,
+     "path": [
+      "Noah",
+      "Laura",
+      "Diana",
+      "Ray",
+      "Ben"
+     ],
+     "story": "Noah's mother is Laura. Diana's mother is Laura. Ben is Ray's father. Ray is Diana's brother.",
+     "gold": {
+      "0|2": "brother",
+      "0|3": "brother",
+      "0|4": "son",
+      "1|3": "mother",
+      "1|4": "wife",
+      "2|4": "daughter"
+     }
+    },
+    {
+     "k": 4,
+     "path": [
+      "Vera",
+      "Penny",
+      "Sam",
+      "Kate",
+      "George"
+     ],
+     "story": "Sam took his daughter Kate to the beach. George's wife is Kate. Penny is Vera's daughter. Penny took her father Sam to the park.",
+     "gold": {
+      "0|2": "wife",
+      "0|3": "mother",
+      "0|4": "mother-in-law",
+      "1|3": "sister",
+      "1|4": "sister-in-law",
+      "2|4": "father-in-law"
+     }
+    },
+    {
+     "k": 4,
+     "path": [
+      "Beth",
+      "Will",
+      "Mark",
+      "Leo",
+      "Victor"
+     ],
+     "story": "Mark's father is Will. Leo is Mark's brother. Victor's father is Leo. Beth's father is Will.",
+     "gold": {
+      "0|2": "sister",
+      "0|3": "sister",
+      "0|4": "aunt",
+      "1|3": "father",
+      "1|4": "grandfather",
+      "2|4": "uncle"
+     }
+    },
+    {
+     "k": 4,
+     "path": [
+      "Ben",
+      "Frank",
+      "Penny",
+      "Emma",
+      "Ray"
+     ],
+     "story": "Emma is Ray's mother. Penny took her husband Frank to the market. Ben had lunch with his father Frank. Emma took her daughter Penny to the cinema.",
+     "gold": {
+      "0|2": "son",
+      "0|3": "grandson",
+      "0|4": "nephew",
+      "1|3": "son-in-law",
+      "1|4": "brother-in-law",
+      "2|4": "sister"
+     }
+    },
+    {
+     "k": 4,
+     "path": [
+      "Leo",
+      "Tom",
+      "Zach",
+      "Jack",
+      "Clara"
+     ],
+     "story": "Jack visited his brother Zach. Jack called his daughter Clara. Leo's son is Tom. Tom is Zach's brother.",
+     "gold": {
+      "0|2": "father",
+      "0|3": "father",
+      "0|4": "grandfather",
+      "1|3": "brother",
+      "1|4": "uncle",
+      "2|4": "uncle"
+     }
+    },
+    {
+     "k": 4,
+     "path": [
+      "Jack",
+      "Mark",
+      "Kate",
+      "Rosa",
+      "Uma"
+     ],
+     "story": "Jack's son is Mark. Mark's mother is Kate. Uma is Rosa's daughter. Rosa's sister is Kate.",
+     "gold": {
+      "0|2": "husband",
+      "0|3": "brother-in-law",
+      "0|4": "uncle",
+      "1|3": "nephew",
+      "1|4": "cousin",
+      "2|4": "aunt"
+     }
+    },
+    {
+     "k": 4,
+     "path": [
+      "Ethan",
+      "Rosa",
+      "Xavier",
+      "Julia",
+      "Henry"
+     ],
+     "story": "Rosa is Xavier's sister. Julia's son is Xavier. Julia is Henry's sister. Rosa visited her father Ethan.",
+     "gold": {
+      "0|2": "father",
+      "0|3": "husband",
+      "0|4": "brother-in-law",
+      "1|3": "daughter",
+      "1|4": "niece",
+      "2|4": "nephew"
+     }
+    },
+    {
+     "k": 4,
+     "path": [
+      "Will",
+      "Noah",
+      "Ben",
+      "Sara",
+      "Ray"
+     ],
+     "story": "Ben is Noah's son. Sara took her son Ben to the park. Sara took her brother Ray to the zoo. Noah took his son Will to the park.",
+     "gold": {
+      "0|2": "brother",
+      "0|3": "son",
+      "0|4": "nephew",
+      "1|3": "husband",
+      "1|4": "brother-in-law",
+      "2|4": "nephew"
+     }
+    },
+    {
+     "k": 4,
+     "path": [
+      "Hannah",
+      "Beth",
+      "Noah",
+      "Uma",
+      "Rosa"
+     ],
+     "story": "Uma is Rosa's mother. Hannah is Beth's daughter. Noah took his wife Beth to the beach. Uma went hiking with her brother Noah.",
+     "gold": {
+      "0|2": "daughter",
+      "0|3": "niece",
+      "0|4": "cousin",
+      "1|3": "sister-in-law",
+      "1|4": "aunt",
+      "2|4": "uncle"
+     }
+    },
+    {
+     "k": 4,
+     "path": [
+      "Peter",
+      "Beth",
+      "Ethan",
+      "Adam",
+      "Emma"
+     ],
+     "story": "Ethan's father is Adam. Beth is Peter's mother. Emma went hiking with her brother Adam. Beth is Ethan's mother.",
+     "gold": {
+      "0|2": "brother",
+      "0|3": "son",
+      "0|4": "nephew",
+      "1|3": "wife",
+      "1|4": "sister-in-law",
+      "2|4": "nephew"
+     }
+    },
+    {
+     "k": 4,
+     "path": [
+      "Beth",
+      "Grace",
+      "Noah",
+      "Adam",
+      "Frank"
+     ],
+     "story": "Adam is Noah's father. Noah's mother is Grace. Adam is Frank's brother. Beth's mother is Grace.",
+     "gold": {
+      "0|2": "sister",
+      "0|3": "daughter",
+      "0|4": "niece",
+      "1|3": "wife",
+      "1|4": "sister-in-law",
+      "2|4": "nephew"
+     }
+    },
+    {
+     "k": 4,
+     "path": [
+      "Peter",
+      "Noah",
+      "Maya",
+      "Beth",
+      "Sara"
+     ],
+     "story": "Noah's son is Peter. Sara took her sister Beth to the park. Beth's mother is Maya. Maya is Noah's mother.",
+     "gold": {
+      "0|2": "grandson",
+      "0|3": "nephew",
+      "0|4": "nephew",
+      "1|3": "brother",
+      "1|4": "brother",
+      "2|4": "mother"
+     }
+    },
+    {
+     "k": 4,
+     "path": [
+      "Adam",
+      "Kevin",
+      "Nora",
+      "Carl",
+      "Tina"
+     ],
+     "story": "Kevin called his brother Adam. Carl is Nora's son. Carl took his daughter Tina to the museum. Kevin went hiking with his mother Nora.",
+     "gold": {
+      "0|2": "son",
+      "0|3": "brother",
+      "0|4": "uncle",
+      "1|3": "brother",
+      "1|4": "uncle",
+      "2|4": "grandmother"
+     }
+    },
+    {
+     "k": 4,
+     "path": [
+      "Sara",
+      "Kate",
+      "David",
+      "Julia",
+      "Vera"
+     ],
+     "story": "Kate took her daughter Sara to the cinema. Vera's daughter is Julia. Julia visited her father David. Kate had lunch with her brother David.",
+     "gold": {
+      "0|2": "niece",
+      "0|3": "cousin",
+      "0|4": "niece",
+      "1|3": "aunt",
+      "1|4": "sister-in-law",
+      "2|4": "husband"
+     }
+    },
+    {
+     "k": 4,
+     "path": [
+      "David",
+      "Zach",
+      "Noah",
+      "Kate",
+      "Ben"
+     ],
+     "story": "Zach took his brother Noah to the park. Kate is Noah's sister. David went hiking with his son Zach. Kate took her son Ben to the market.",
+     "gold": {
+      "0|2": "father",
+      "0|3": "father",
+      "0|4": "grandfather",
+      "1|3": "brother",
+      "1|4": "uncle",
+      "2|4": "uncle"
+     }
+    },
+    {
+     "k": 4,
+     "path": [
+      "Noah",
+      "Olivia",
+      "Jack",
+      "Will",
+      "Oscar"
+     ],
+     "story": "Oscar called his son Will. Jack called his sister Olivia. Will is Jack's brother. Noah had lunch with his wife Olivia.",
+     "gold": {
+      "0|2": "brother-in-law",
+      "0|3": "brother-in-law",
+      "0|4": "son-in-law",
+      "1|3": "sister",
+      "1|4": "daughter",
+      "2|4": "son"
+     }
+    },
+    {
+     "k": 4,
+     "path": [
+      "Zoe",
+      "Peter",
+      "Paula",
+      "Wendy",
+      "Tina"
+     ],
+     "story": "Peter had lunch with his daughter Paula. Wendy went hiking with her daughter Tina. Zoe is Peter's wife. Wendy called her sister Paula.",
+     "gold": {
+      "0|2": "mother",
+      "0|3": "mother",
+      "0|4": "grandmother",
+      "1|3": "father",
+      "1|4": "grandfather",
+      "2|4": "aunt"
+     }
+    },
+    {
+     "k": 4,
+     "path": [
+      "Julia",
+      "Peter",
+      "Maya",
+      "Fiona",
+      "Mark"
+     ],
+     "story": "Peter is Maya's father. Julia's husband is Peter. Fiona is Maya's daughter. Fiona is Mark's sister.",
+     "gold": {
+      "0|2": "mother",
+      "0|3": "grandmother",
+      "0|4": "grandmother",
+      "1|3": "grandfather",
+      "1|4": "grandfather",
+      "2|4": "mother"
+     }
+    },
+    {
+     "k": 4,
+     "path": [
+      "Laura",
+      "Zach",
+      "Mark",
+      "Zoe",
+      "Nora"
+     ],
+     "story": "Laura called her father Zach. Zoe called her daughter Nora. Zoe took her son Mark to the park. Mark's father is Zach.",
+     "gold": {
+      "0|2": "sister",
+      "0|3": "daughter",
+      "0|4": "sister",
+      "1|3": "husband",
+      "1|4": "father",
+      "2|4": "brother"
+     }
+    },
+    {
+     "k": 4,
+     "path": [
+      "Sara",
+      "Alice",
+      "Yusuf",
+      "Diana",
+      "Wendy"
+     ],
+     "story": "Sara had lunch with her daughter Alice. Wendy is Diana's sister. Alice's husband is Yusuf. Diana is Yusuf's daughter.",
+     "gold": {
+      "0|2": "mother-in-law",
+      "0|3": "grandmother",
+      "0|4": "grandmother",
+      "1|3": "mother",
+      "1|4": "mother",
+      "2|4": "father"
+     }
+    },
+    {
+     "k": 4,
+     "path": [
+      "Jack",
+      "Ethan",
+      "Vera",
+      "Carl",
+      "Leo"
+     ],
+     "story": "Ethan had lunch with his son Jack. Carl's mother is Vera. Ethan's mother is Vera. Carl took his son Leo to the zoo.",
+     "gold": {
+      "0|2": "grandson",
+      "0|3": "nephew",
+      "0|4": "cousin",
+      "1|3": "brother",
+      "1|4": "uncle",
+      "2|4": "grandmother"
+     }
+    },
+    {
+     "k": 4,
+     "path": [
+      "Olivia",
+      "Jack",
+      "Clara",
+      "Noah",
+      "Zach"
+     ],
+     "story": "Noah's son is Zach. Olivia took her husband Jack to the market. Clara's brother is Noah. Clara had lunch with her brother Jack.",
+     "gold": {
+      "0|2": "sister-in-law",
+      "0|3": "sister-in-law",
+      "0|4": "aunt",
+      "1|3": "brother",
+      "1|4": "uncle",
+      "2|4": "aunt"
+     }
+    },
+    {
+     "k": 4,
+     "path": [
+      "Ben",
+      "Iris",
+      "Olivia",
+      "Diana",
+      "David"
+     ],
+     "story": "Olivia is Diana's mother. Diana took her father David to the museum. Olivia is Iris's daughter. Ben is Iris's son.",
+     "gold": {
+      "0|2": "brother",
+      "0|3": "uncle",
+      "0|4": "brother-in-law",
+      "1|3": "grandmother",
+      "1|4": "mother-in-law",
+      "2|4": "wife"
+     }
+    },
+    {
+     "k": 4,
+     "path": [
+      "Ray",
+      "Hannah",
+      "Julia",
+      "George",
+      "Tina"
+     ],
+     "story": "George's mother is Julia. Hannah's sister is Julia. Ray's daughter is Hannah. George's sister is Tina.",
+     "gold": {
+      "0|2": "father",
+      "0|3": "grandfather",
+      "0|4": "grandfather",
+      "1|3": "aunt",
+      "1|4": "aunt",
+      "2|4": "mother"
+     }
+    },
+    {
+     "k": 4,
+     "path": [
+      "Laura",
+      "Sara",
+      "Hannah",
+      "George",
+      "Rosa"
+     ],
+     "story": "George visited his daughter Hannah. Sara took her mother Laura to the cinema. Hannah's sister is Sara. Rosa's brother is George.",
+     "gold": {
+      "0|2": "mother",
+      "0|3": "wife",
+      "0|4": "sister-in-law",
+      "1|3": "daughter",
+      "1|4": "niece",
+      "2|4": "niece"
+     }
+    },
+    {
+     "k": 4,
+     "path": [
+      "Ray",
+      "Wendy",
+      "Nora",
+      "Sara",
+      "Noah"
+     ],
+     "story": "Wendy took her son Ray to the museum. Noah's sister is Sara. Nora's daughter is Wendy. Sara is Nora's daughter.",
+     "gold": {
+      "0|2": "grandson",
+      "0|3": "nephew",
+      "0|4": "nephew",
+      "1|3": "sister",
+      "1|4": "sister",
+      "2|4": "mother"
+     }
+    },
+    {
+     "k": 4,
+     "path": [
+      "Laura",
+      "Adam",
+      "David",
+      "Julia",
+      "Jack"
+     ],
+     "story": "Adam took his son David to the beach. Julia took her father David to the cinema. Jack is Julia's brother. Adam's wife is Laura.",
+     "gold": {
+      "0|2": "mother",
+      "0|3": "grandmother",
+      "0|4": "grandmother",
+      "1|3": "grandfather",
+      "1|4": "grandfather",
+      "2|4": "father"
+     }
+    },
+    {
+     "k": 4,
+     "path": [
+      "Noah",
+      "Paula",
+      "Vera",
+      "Ray",
+      "Ethan"
+     ],
+     "story": "Vera's mother is Paula. Noah went hiking with his mother Paula. Ethan's father is Ray. Ray took his daughter Vera to the zoo.",
+     "gold": {
+      "0|2": "brother",
+      "0|3": "son",
+      "0|4": "brother",
+      "1|3": "wife",
+      "1|4": "mother",
+      "2|4": "sister"
+     }
+    },
+    {
+     "k": 4,
+     "path": [
+      "Peter",
+      "Adam",
+      "Paula",
+      "Beth",
+      "Laura"
+     ],
+     "story": "Laura took her daughter Beth to the market. Paula is Adam's mother. Paula took her sister Beth to the zoo. Peter is Adam's father.",
+     "gold": {
+      "0|2": "husband",
+      "0|3": "brother-in-law",
+      "0|4": "son-in-law",
+      "1|3": "nephew",
+      "1|4": "grandson",
+      "2|4": "daughter"
+     }
+    },
+    {
+     "k": 4,
+     "path": [
+      "Zoe",
+      "Noah",
+      "Laura",
+      "Rosa",
+      "Paula"
+     ],
+     "story": "Rosa took her mother Paula to the market. Laura is Noah's daughter. Laura is Rosa's sister. Noah took his sister Zoe to the cinema.",
+     "gold": {
+      "0|2": "aunt",
+      "0|3": "aunt",
+      "0|4": "sister-in-law",
+      "1|3": "father",
+      "1|4": "husband",
+      "2|4": "daughter"
+     }
+    },
+    {
+     "k": 4,
+     "path": [
+      "Henry",
+      "Mark",
+      "Paula",
+      "David",
+      "Olivia"
+     ],
+     "story": "Mark wrote a letter to his brother Henry. Paula is Mark's wife. Olivia's brother is David. Paula is David's mother.",
+     "gold": {
+      "0|2": "brother-in-law",
+      "0|3": "uncle",
+      "0|4": "uncle",
+      "1|3": "father",
+      "1|4": "father",
+      "2|4": "mother"
+     }
+    },
+    {
+     "k": 4,
+     "path": [
+      "Laura",
+      "Henry",
+      "Kevin",
+      "Kate",
+      "Iris"
+     ],
+     "story": "Henry is Laura's son. Kate's son is Kevin. Kevin called his son Henry. Kate's daughter is Iris.",
+     "gold": {
+      "0|2": "wife",
+      "0|3": "daughter-in-law",
+      "0|4": "sister-in-law",
+      "1|3": "grandson",
+      "1|4": "nephew",
+      "2|4": "brother"
+     }
+    },
+    {
+     "k": 4,
+     "path": [
+      "Penny",
+      "Rosa",
+      "Emma",
+      "Alice",
+      "Kevin"
+     ],
+     "story": "Alice took her father Kevin to the cinema. Rosa called her daughter Penny. Emma took her daughter Alice to the park. Emma is Rosa's daughter.",
+     "gold": {
+      "0|2": "sister",
+      "0|3": "aunt",
+      "0|4": "sister-in-law",
+      "1|3": "grandmother",
+      "1|4": "mother-in-law",
+      "2|4": "wife"
+     }
+    },
+    {
+     "k": 4,
+     "path": [
+      "Grace",
+      "Xavier",
+      "Nora",
+      "Tom",
+      "Sam"
+     ],
+     "story": "Tom wrote a letter to his mother Nora. Sam's brother is Tom. Nora is Xavier's wife. Grace's son is Xavier.",
+     "gold": {
+      "0|2": "mother-in-law",
+      "0|3": "grandmother",
+      "0|4": "grandmother",
+      "1|3": "father",
+      "1|4": "father",
+      "2|4": "mother"
+     }
+    },
+    {
+     "k": 4,
+     "path": [
+      "Yusuf",
+      "Frank",
+      "Maya",
+      "David",
+      "Ben"
+     ],
+     "story": "Maya had lunch with her husband David. Yusuf's brother is Frank. David is Ben's son. Frank went hiking with his mother Maya.",
+     "gold": {
+      "0|2": "son",
+      "0|3": "son",
+      "0|4": "grandson",
+      "1|3": "son",
+      "1|4": "grandson",
+      "2|4": "daughter-in-law"
+     }
+    },
+    {
+     "k": 4,
+     "path": [
+      "Fiona",
+      "Sam",
+      "Nora",
+      "George",
+      "Jack"
+     ],
+     "story": "Fiona is Sam's mother. George's daughter is Nora. Jack went hiking with his brother George. Nora is Sam's sister.",
+     "gold": {
+      "0|2": "mother",
+      "0|3": "wife",
+      "0|4": "sister-in-law",
+      "1|3": "son",
+      "1|4": "nephew",
+      "2|4": "niece"
+     }
+    },
+    {
+     "k": 4,
+     "path": [
+      "Victor",
+      "Sam",
+      "Wendy",
+      "Ethan",
+      "Fiona"
+     ],
+     "story": "Sam is Wendy's husband. Sam called his son Victor. Ethan took his mother Wendy to the beach. Fiona went hiking with her brother Ethan.",
+     "gold": {
+      "0|2": "son",
+      "0|3": "brother",
+      "0|4": "brother",
+      "1|3": "father",
+      "1|4": "father",
+      "2|4": "mother"
+     }
+    },
+    {
+     "k": 4,
+     "path": [
+      "Emma",
+      "Tina",
+      "Victor",
+      "Nora",
+      "Leo"
+     ],
+     "story": "Victor went hiking with his daughter Nora. Nora took her brother Leo to the market. Tina is Emma's daughter. Tina is Victor's daughter.",
+     "gold": {
+      "0|2": "wife",
+      "0|3": "mother",
+      "0|4": "mother",
+      "1|3": "sister",
+      "1|4": "sister",
+      "2|4": "father"
+     }
+    },
+    {
+     "k": 4,
+     "path": [
+      "Beth",
+      "Penny",
+      "Xavier",
+      "Alice",
+      "Hannah"
+     ],
+     "story": "Penny's brother is Xavier. Alice wrote a letter to her mother Hannah. Xavier is Alice's father. Beth took her daughter Penny to the park.",
+     "gold": {
+      "0|2": "mother",
+      "0|3": "grandmother",
+      "0|4": "mother-in-law",
+      "1|3": "aunt",
+      "1|4": "sister-in-law",
+      "2|4": "husband"
+     }
+    },
+    {
+     "k": 4,
+     "path": [
+      "Grace",
+      "Kate",
+      "Ben",
+      "Beth",
+      "Victor"
+     ],
+     "story": "Grace is Kate's daughter. Ben took his mother Kate to the museum. Beth's father is Ben. Victor is Beth's brother.",
+     "gold": {
+      "0|2": "sister",
+      "0|3": "aunt",
+      "0|4": "aunt",
+      "1|3": "grandmother",
+      "1|4": "grandmother",
+      "2|4": "father"
+     }
+    },
+    {
+     "k": 4,
+     "path": [
+      "Uma",
+      "Wendy",
+      "Ethan",
+      "Frank",
+      "Alice"
+     ],
+     "story": "Uma wrote a letter to her mother Wendy. Frank took his wife Alice to the museum. Ethan took his father Frank to the market. Ethan took his sister Wendy to the cinema.",
+     "gold": {
+      "0|2": "niece",
+      "0|3": "granddaughter",
+      "0|4": "granddaughter",
+      "1|3": "daughter",
+      "1|4": "daughter",
+      "2|4": "son"
+     }
+    },
+    {
+     "k": 4,
+     "path": [
+      "Julia",
+      "Noah",
+      "Iris",
+      "Jack",
+      "Tom"
+     ],
+     "story": "Noah's mother is Iris. Jack is Iris's husband. Jack wrote a letter to his father Tom. Julia is Noah's sister.",
+     "gold": {
+      "0|2": "daughter",
+      "0|3": "daughter",
+      "0|4": "granddaughter",
+      "1|3": "son",
+      "1|4": "grandson",
+      "2|4": "daughter-in-law"
+     }
+    },
+    {
+     "k": 4,
+     "path": [
+      "Noah",
+      "Ray",
+      "Henry",
+      "Sam",
+      "Kevin"
+     ],
+     "story": "Ray visited his brother Noah. Ray's father is Henry. Kevin took his father Sam to the beach. Henry's father is Sam.",
+     "gold": {
+      "0|2": "son",
+      "0|3": "grandson",
+      "0|4": "nephew",
+      "1|3": "grandson",
+      "1|4": "nephew",
+      "2|4": "brother"
+     }
+    },
+    {
+     "k": 4,
+     "path": [
+      "Zach",
+      "Rosa",
+      "Fiona",
+      "Grace",
+      "Ivan"
+     ],
+     "story": "Zach's daughter is Rosa. Ivan took his wife Grace to the museum. Grace is Fiona's mother. Fiona is Rosa's mother.",
+     "gold": {
+      "0|2": "husband",
+      "0|3": "son-in-law",
+      "0|4": "son-in-law",
+      "1|3": "granddaughter",
+      "1|4": "granddaughter",
+      "2|4": "daughter"
+     }
+    },
+    {
+     "k": 4,
+     "path": [
+      "Wendy",
+      "Hannah",
+      "George",
+      "Beth",
+      "Ivan"
+     ],
+     "story": "Beth's husband is George. Wendy took her sister Hannah to the park. Ivan is Beth's father. George's daughter is Hannah.",
+     "gold": {
+      "0|2": "daughter",
+      "0|3": "daughter",
+      "0|4": "granddaughter",
+      "1|3": "daughter",
+      "1|4": "granddaughter",
+      "2|4": "son-in-law"
+     }
+    },
+    {
+     "k": 4,
+     "path": [
+      "Carl",
+      "Iris",
+      "Wendy",
+      "Ivan",
+      "Leo"
+     ],
+     "story": "Carl visited his mother Iris. Ivan wrote a letter to his father Leo. Wendy took her daughter Iris to the museum. Wendy took her son Ivan to the beach.",
+     "gold": {
+      "0|2": "grandson",
+      "0|3": "nephew",
+      "0|4": "grandson",
+      "1|3": "sister",
+      "1|4": "daughter",
+      "2|4": "wife"
+     }
+    },
+    {
+     "k": 4,
+     "path": [
+      "Fiona",
+      "David",
+      "Ben",
+      "Ray",
+      "Clara"
+     ],
+     "story": "Ben is Ray's brother. Clara is Ray's daughter. Ben had lunch with his son David. David took his mother Fiona to the museum.",
+     "gold": {
+      "0|2": "wife",
+      "0|3": "sister-in-law",
+      "0|4": "aunt",
+      "1|3": "nephew",
+      "1|4": "cousin",
+      "2|4": "uncle"
+     }
+    },
+    {
+     "k": 4,
+     "path": [
+      "Clara",
+      "Penny",
+      "Julia",
+      "Will",
+      "George"
+     ],
+     "story": "Clara took her daughter Penny to the museum. Will's brother is George. Penny's sister is Julia. Will took his daughter Julia to the park.",
+     "gold": {
+      "0|2": "mother",
+      "0|3": "wife",
+      "0|4": "sister-in-law",
+      "1|3": "daughter",
+      "1|4": "niece",
+      "2|4": "niece"
+     }
+    },
+    {
+     "k": 4,
+     "path": [
+      "Sara",
+      "Rosa",
+      "Olivia",
+      "Hannah",
+      "Ben"
+     ],
+     "story": "Hannah is Olivia's sister. Rosa took her sister Olivia to the museum. Sara's daughter is Rosa. Ben's mother is Hannah.",
+     "gold": {
+      "0|2": "mother",
+      "0|3": "mother",
+      "0|4": "grandmother",
+      "1|3": "sister",
+      "1|4": "aunt",
+      "2|4": "aunt"
+     }
+    },
+    {
+     "k": 4,
+     "path": [
+      "Peter",
+      "Rosa",
+      "Wendy",
+      "Zach",
+      "Hannah"
+     ],
+     "story": "Peter's sister is Rosa. Zach is Hannah's father. Rosa took her mother Wendy to the museum. Zach visited his wife Wendy.",
+     "gold": {
+      "0|2": "son",
+      "0|3": "son",
+      "0|4": "brother",
+      "1|3": "daughter",
+      "1|4": "sister",
+      "2|4": "mother"
+     }
+    },
+    {
+     "k": 4,
+     "path": [
+      "Ben",
+      "Iris",
+      "Kate",
+      "Laura",
+      "Noah"
+     ],
+     "story": "Kate's mother is Laura. Iris's son is Ben. Iris is Kate's sister. Laura took her husband Noah to the zoo.",
+     "gold": {
+      "0|2": "nephew",
+      "0|3": "grandson",
+      "0|4": "grandson",
+      "1|3": "daughter",
+      "1|4": "daughter",
+      "2|4": "daughter"
+     }
+    },
+    {
+     "k": 4,
+     "path": [
+      "Maya",
+      "Wendy",
+      "Noah",
+      "Xavier",
+      "Victor"
+     ],
+     "story": "Maya wrote a letter to her daughter Wendy. Xavier's son is Noah. Xavier visited his father Victor. Wendy took her brother Noah to the museum.",
+     "gold": {
+      "0|2": "mother",
+      "0|3": "wife",
+      "0|4": "daughter-in-law",
+      "1|3": "daughter",
+      "1|4": "granddaughter",
+      "2|4": "grandson"
+     }
+    },
+    {
+     "k": 4,
+     "path": [
+      "Zoe",
+      "Nora",
+      "Will",
+      "Ray",
+      "Kate"
+     ],
+     "story": "Nora took her mother Zoe to the museum. Nora is Will's sister. Will went hiking with his father Ray. Kate's father is Ray.",
+     "gold": {
+      "0|2": "mother",
+      "0|3": "wife",
+      "0|4": "mother",
+      "1|3": "daughter",
+      "1|4": "sister",
+      "2|4": "brother"
+     }
+    },
+    {
+     "k": 4,
+     "path": [
+      "Oscar",
+      "Nora",
+      "Henry",
+      "David",
+      "Uma"
+     ],
+     "story": "Nora had lunch with her brother Henry. Oscar's mother is Nora. Henry is David's son. David is Uma's husband.",
+     "gold": {
+      "0|2": "nephew",
+      "0|3": "grandson",
+      "0|4": "grandson",
+      "1|3": "daughter",
+      "1|4": "daughter",
+      "2|4": "son"
+     }
+    },
+    {
+     "k": 4,
+     "path": [
+      "Tom",
+      "Frank",
+      "Laura",
+      "Maya",
+      "Uma"
+     ],
+     "story": "Tom's father is Frank. Frank took his wife Laura to the museum. Laura's mother is Maya. Maya's daughter is Uma.",
+     "gold": {
+      "0|2": "son",
+      "0|3": "grandson",
+      "0|4": "nephew",
+      "1|3": "son-in-law",
+      "1|4": "brother-in-law",
+      "2|4": "sister"
+     }
+    },
+    {
+     "k": 4,
+     "path": [
+      "Jack",
+      "Kate",
+      "Rosa",
+      "Hannah",
+      "Zoe"
+     ],
+     "story": "Hannah went hiking with her daughter Rosa. Jack took his daughter Kate to the market. Zoe's daughter is Hannah. Kate went hiking with her sister Rosa.",
+     "gold": {
+      "0|2": "father",
+      "0|3": "husband",
+      "0|4": "son-in-law",
+      "1|3": "daughter",
+      "1|4": "granddaughter",
+      "2|4": "granddaughter"
+     }
+    },
+    {
+     "k": 4,
+     "path": [
+      "Ethan",
+      "Uma",
+      "George",
+      "Leo",
+      "Wendy"
+     ],
+     "story": "Uma is Ethan's wife. Wendy's husband is Leo. Leo wrote a letter to his son George. Uma is George's sister.",
+     "gold": {
+      "0|2": "brother-in-law",
+      "0|3": "son-in-law",
+      "0|4": "son-in-law",
+      "1|3": "daughter",
+      "1|4": "daughter",
+      "2|4": "son"
+     }
+    },
+    {
+     "k": 4,
+     "path": [
+      "Adam",
+      "Penny",
+      "Zach",
+      "Ray",
+      "Noah"
+     ],
+     "story": "Ray is Noah's father. Adam's wife is Penny. Zach took his brother Ray to the museum. Penny's brother is Zach.",
+     "gold": {
+      "0|2": "brother-in-law",
+      "0|3": "brother-in-law",
+      "0|4": "uncle",
+      "1|3": "sister",
+      "1|4": "aunt",
+      "2|4": "uncle"
+     }
+    },
+    {
+     "k": 4,
+     "path": [
+      "Adam",
+      "Zoe",
+      "Sara",
+      "Sam",
+      "Clara"
+     ],
+     "story": "Sam took his wife Clara to the park. Zoe had lunch with her husband Adam. Sara took her mother Zoe to the cinema. Sara is Sam's sister.",
+     "gold": {
+      "0|2": "father",
+      "0|3": "father",
+      "0|4": "father-in-law",
+      "1|3": "mother",
+      "1|4": "mother-in-law",
+      "2|4": "sister-in-law"
+     }
+    },
+    {
+     "k": 4,
+     "path": [
+      "Ivan",
+      "Vera",
+      "Paula",
+      "Kevin",
+      "Jack"
+     ],
+     "story": "Vera took her mother Paula to the museum. Paula is Kevin's sister. Kevin's father is Jack. Vera's father is Ivan.",
+     "gold": {
+      "0|2": "husband",
+      "0|3": "brother-in-law",
+      "0|4": "son-in-law",
+      "1|3": "niece",
+      "1|4": "granddaughter",
+      "2|4": "daughter"
+     }
+    },
+    {
+     "k": 4,
+     "path": [
+      "Uma",
+      "Yusuf",
+      "Kevin",
+      "Laura",
+      "Oscar"
+     ],
+     "story": "Laura is Oscar's mother. Yusuf's daughter is Uma. Laura is Kevin's wife. Kevin took his son Yusuf to the market.",
+     "gold": {
+      "0|2": "granddaughter",
+      "0|3": "granddaughter",
+      "0|4": "niece",
+      "1|3": "son",
+      "1|4": "brother",
+      "2|4": "father"
+     }
+    },
+    {
+     "k": 4,
+     "path": [
+      "Julia",
+      "Kevin",
+      "Maya",
+      "Wendy",
+      "Jack"
+     ],
+     "story": "Maya's sister is Wendy. Wendy took her son Jack to the cinema. Kevin's mother is Julia. Maya's brother is Kevin.",
+     "gold": {
+      "0|2": "mother",
+      "0|3": "mother",
+      "0|4": "grandmother",
+      "1|3": "brother",
+      "1|4": "uncle",
+      "2|4": "aunt"
+     }
+    },
+    {
+     "k": 4,
+     "path": [
+      "Oscar",
+      "Henry",
+      "Julia",
+      "Sara",
+      "Ben"
+     ],
+     "story": "Henry took his son Oscar to the museum. Sara is Julia's daughter. Henry is Julia's son. Ben took his daughter Sara to the museum.",
+     "gold": {
+      "0|2": "grandson",
+      "0|3": "nephew",
+      "0|4": "grandson",
+      "1|3": "brother",
+      "1|4": "son",
+      "2|4": "wife"
+     }
+    },
+    {
+     "k": 4,
+     "path": [
+      "Xavier",
+      "Mark",
+      "Iris",
+      "Ray",
+      "David"
+     ],
+     "story": "Ray took his daughter Iris to the beach. David is Ray's son. Mark is Xavier's father. Mark's wife is Iris.",
+     "gold": {
+      "0|2": "son",
+      "0|3": "grandson",
+      "0|4": "nephew",
+      "1|3": "son-in-law",
+      "1|4": "brother-in-law",
+      "2|4": "sister"
+     }
+    },
+    {
+     "k": 4,
+     "path": [
+      "Victor",
+      "Julia",
+      "Zach",
+      "Diana",
+      "Penny"
+     ],
+     "story": "Diana took her daughter Penny to the market. Julia's father is Zach. Julia took her son Victor to the cinema. Diana is Zach's wife.",
+     "gold": {
+      "0|2": "grandson",
+      "0|3": "grandson",
+      "0|4": "nephew",
+      "1|3": "daughter",
+      "1|4": "sister",
+      "2|4": "father"
+     }
+    },
+    {
+     "k": 4,
+     "path": [
+      "Fiona",
+      "Victor",
+      "Jack",
+      "Diana",
+      "Noah"
+     ],
+     "story": "Diana is Jack's wife. Noah is Diana's son. Victor is Fiona's husband. Victor is Jack's father.",
+     "gold": {
+      "0|2": "mother",
+      "0|3": "mother-in-law",
+      "0|4": "grandmother",
+      "1|3": "father-in-law",
+      "1|4": "grandfather",
+      "2|4": "father"
+     }
+    },
+    {
+     "k": 4,
+     "path": [
+      "Uma",
+      "Ivan",
+      "Penny",
+      "Julia",
+      "Adam"
+     ],
+     "story": "Julia's brother is Adam. Penny visited her brother Ivan. Penny is Julia's mother. Ivan took his wife Uma to the market.",
+     "gold": {
+      "0|2": "sister-in-law",
+      "0|3": "aunt",
+      "0|4": "aunt",
+      "1|3": "uncle",
+      "1|4": "uncle",
+      "2|4": "mother"
+     }
+    },
+    {
+     "k": 4,
+     "path": [
+      "Henry",
+      "Ethan",
+      "Sara",
+      "Laura",
+      "George"
+     ],
+     "story": "Henry is Ethan's son. George is Laura's son. Laura's daughter is Sara. Ethan took his wife Sara to the cinema.",
+     "gold": {
+      "0|2": "son",
+      "0|3": "grandson",
+      "0|4": "nephew",
+      "1|3": "son-in-law",
+      "1|4": "brother-in-law",
+      "2|4": "sister"
+     }
+    },
+    {
+     "k": 4,
+     "path": [
+      "Oscar",
+      "Penny",
+      "Victor",
+      "Fiona",
+      "Jack"
+     ],
+     "story": "Fiona wrote a letter to her husband Victor. Victor took his sister Penny to the market. Fiona took her son Jack to the cinema. Penny's husband is Oscar.",
+     "gold": {
+      "0|2": "brother-in-law",
+      "0|4": "uncle",
+      "1|3": "sister-in-law",
+      "1|4": "aunt",
+      "2|4": "father"
+     }
+    },
+    {
+     "k": 4,
+     "path": [
+      "Iris",
+      "Ivan",
+      "Tina",
+      "Frank",
+      "Diana"
+     ],
+     "story": "Tina wrote a letter to her father Frank. Ivan took his sister Tina to the beach. Frank visited his sister Diana. Iris took her son Ivan to the park.",
+     "gold": {
+      "0|2": "mother",
+      "0|3": "wife",
+      "0|4": "sister-in-law",
+      "1|3": "son",
+      "1|4": "nephew",
+      "2|4": "niece"
+     }
+    },
+    {
+     "k": 4,
+     "path": [
+      "Julia",
+      "Vera",
+      "Peter",
+      "Laura",
+      "Henry"
+     ],
+     "story": "Peter took his mother Vera to the market. Henry wrote a letter to his mother Laura. Julia is Vera's daughter. Peter's wife is Laura.",
+     "gold": {
+      "0|2": "sister",
+      "0|3": "sister-in-law",
+      "0|4": "aunt",
+      "1|3": "mother-in-law",
+      "1|4": "grandmother",
+      "2|4": "father"
+     }
+    },
+    {
+     "k": 4,
+     "path": [
+      "Ethan",
+      "Grace",
+      "Adam",
+      "Julia",
+      "Sam"
+     ],
+     "story": "Julia is Sam's sister. Julia took her husband Adam to the zoo. Ethan is Grace's brother. Grace had lunch with her father Adam.",
+     "gold": {
+      "0|2": "son",
+      "0|3": "son",
+      "0|4": "nephew",
+      "1|3": "daughter",
+      "1|4": "niece",
+      "2|4": "brother-in-law"
+     }
+    }
+   ],
+   "complete_stories": 100,
+   "errors": [],
+   "summary": {
+    "one_pass": {
+     "acc": 0.654424040066778,
+     "end_to_end": 0.48,
+     "stories_solved": 0.25,
+     "mean_p_gold": 0.5485475792988314,
+     "calls_per_story": 1,
+     "vs_refine1": {
+      "end_to_end": [
+       7,
+       15,
+       0.1338
+      ],
+      "per_variable": [
+       53,
+       54,
+       1.0
+      ]
+     }
+    },
+    "refine1": {
+     "acc": 0.656093489148581,
+     "end_to_end": 0.56,
+     "stories_solved": 0.33,
+     "mean_p_gold": 0.5872621035058431,
+     "calls_per_story": 5.99,
+     "vs_one_pass": {
+      "end_to_end": [
+       15,
+       7,
+       0.1338
+      ],
+      "per_variable": [
+       54,
+       53,
+       1.0
+      ]
+     }
+    },
+    "gibbs_T1[rb]": {
+     "acc": 0.6828046744574291,
+     "end_to_end": 0.64,
+     "stories_solved": 0.34,
+     "mean_p_gold": 0.5648363939899833,
+     "calls_per_story": 149.75,
+     "at_truth": 0.188,
+     "vs_one_pass": {
+      "end_to_end": [
+       20,
+       4,
+       0.0015
+      ],
+      "per_variable": [
+       67,
+       50,
+       0.1388
+      ]
+     },
+     "vs_refine1": {
+      "end_to_end": [
+       15,
+       7,
+       0.1338
+      ],
+      "per_variable": [
+       55,
+       39,
+       0.1214
+      ]
+     }
+    },
+    "gibbs_T1[vote]": {
+     "acc": 0.672787979966611,
+     "end_to_end": 0.61,
+     "stories_solved": 0.33,
+     "mean_p_gold": 0.5652754590984975,
+     "calls_per_story": 149.75,
+     "at_truth": 0.188,
+     "vs_one_pass": {
+      "end_to_end": [
+       19,
+       6,
+       0.0146
+      ],
+      "per_variable": [
+       67,
+       56,
+       0.3673
+      ]
+     },
+     "vs_refine1": {
+      "end_to_end": [
+       15,
+       10,
+       0.4244
+      ],
+      "per_variable": [
+       54,
+       44,
+       0.3634
+      ]
+     }
+    },
+    "gibbs_T0.3[rb]": {
+     "acc": 0.6944908180300501,
+     "end_to_end": 0.64,
+     "stories_solved": 0.44,
+     "mean_p_gold": 0.6133864774624374,
+     "calls_per_story": 149.75,
+     "at_truth": 0.387,
+     "vs_one_pass": {
+      "end_to_end": [
+       22,
+       6,
+       0.0037
+      ],
+      "per_variable": [
+       75,
+       51,
+       0.04
+      ]
+     },
+     "vs_refine1": {
+      "end_to_end": [
+       16,
+       8,
+       0.1516
+      ],
+      "per_variable": [
+       53,
+       30,
+       0.0152
+      ]
+     }
+    },
+    "gibbs_T0.3[vote]": {
+     "acc": 0.6978297161936561,
+     "end_to_end": 0.64,
+     "stories_solved": 0.43,
+     "mean_p_gold": 0.67779632721202,
+     "calls_per_story": 149.75,
+     "at_truth": 0.387,
+     "vs_one_pass": {
+      "end_to_end": [
+       22,
+       6,
+       0.0037
+      ],
+      "per_variable": [
+       76,
+       50,
+       0.0255
+      ]
+     },
+     "vs_refine1": {
+      "end_to_end": [
+       16,
+       8,
+       0.1516
+      ],
+      "per_variable": [
+       54,
+       29,
+       0.008
+      ]
+     }
+    },
+    "gibbs_T0.1[rb]": {
+     "acc": 0.6961602671118531,
+     "end_to_end": 0.64,
+     "stories_solved": 0.44,
+     "mean_p_gold": 0.6201377295492487,
+     "calls_per_story": 149.75,
+     "at_truth": 0.43200000000000005,
+     "vs_one_pass": {
+      "end_to_end": [
+       23,
+       7,
+       0.0052
+      ],
+      "per_variable": [
+       73,
+       48,
+       0.0287
+      ]
+     },
+     "vs_refine1": {
+      "end_to_end": [
+       14,
+       6,
+       0.1153
+      ],
+      "per_variable": [
+       50,
+       26,
+       0.0079
+      ]
+     }
+    },
+    "gibbs_T0.1[vote]": {
+     "acc": 0.7011686143572621,
+     "end_to_end": 0.64,
+     "stories_solved": 0.46,
+     "mean_p_gold": 0.6915692821368948,
+     "calls_per_story": 149.75,
+     "at_truth": 0.43200000000000005,
+     "vs_one_pass": {
+      "end_to_end": [
+       23,
+       7,
+       0.0052
+      ],
+      "per_variable": [
+       76,
+       48,
+       0.015
+      ]
+     },
+     "vs_refine1": {
+      "end_to_end": [
+       14,
+       6,
+       0.1153
+      ],
+      "per_variable": [
+       51,
+       24,
+       0.0024
+      ]
+     }
+    }
+   }
+  },
+  "6": {
+   "stories": [
+    {
+     "k": 6,
+     "path": [
+      "Victor",
+      "Will",
+      "Uma",
+      "Yusuf",
+      "Mark",
+      "Grace",
+      "Kate"
+     ],
+     "story": "Mark is Grace's father. Uma called her son Yusuf. Kate had lunch with her daughter Grace. Victor is Will's father. Will is Uma's son. Mark called his brother Yusuf.",
+     "gold": {
+      "0|2": "husband",
+      "0|3": "father",
+      "0|4": "father",
+      "0|5": "grandfather",
+      "0|6": "father-in-law",
+      "1|3": "brother",
+      "1|4": "brother",
+      "1|5": "uncle",
+      "1|6": "brother-in-law",
+      "2|4": "mother",
+      "2|5": "grandmother",
+      "2|6": "mother-in-law",
+      "3|5": "uncle",
+      "3|6": "brother-in-law",
+      "4|6": "husband"
+     }
+    },
+    {
+     "k": 6,
+     "path": [
+      "Henry",
+      "Will",
+      "Laura",
+      "Iris",
+      "Diana",
+      "Sara",
+      "Ray"
+     ],
+     "story": "Diana wrote a letter to her daughter Sara. Ray went hiking with his daughter Sara. Laura's mother is Iris. Laura wrote a letter to her son Will. Diana's mother is Iris. Will's brother is Henry.",
+     "gold": {
+      "0|2": "son",
+      "0|3": "grandson",
+      "0|4": "nephew",
+      "0|5": "cousin",
+      "0|6": "nephew",
+      "1|3": "grandson",
+      "1|4": "nephew",
+      "1|5": "cousin",
+      "1|6": "nephew",
+      "2|4": "sister",
+      "2|5": "aunt",
+      "2|6": "sister-in-law",
+      "3|5": "grandmother",
+      "3|6": "mother-in-law",
+      "4|6": "wife"
+     }
+    },
+    {
+     "k": 6,
+     "path": [
+      "Ray",
+      "Kate",
+      "Diana",
+      "Zach",
+      "George",
+      "Wendy",
+      "Kevin"
+     ],
+     "story": "George took his father Zach to the cinema. Zach went hiking with his sister Diana. Kevin is Wendy's son. Diana's mother is Kate. Wendy's son is George. Ray took his wife Kate to the market.",
+     "gold": {
+      "0|2": "father",
+      "0|3": "father",
+      "0|4": "grandfather",
+      "0|5": "father-in-law",
+      "0|6": "grandfather",
+      "1|3": "mother",
+      "1|4": "grandmother",
+      "1|5": "mother-in-law",
+      "1|6": "grandmother",
+      "2|4": "aunt",
+      "2|5": "sister-in-law",
+      "2|6": "aunt",
+      "3|5": "husband",
+      "3|6": "father",
+      "4|6": "brother"
+     }
+    },
+    {
+     "k": 6,
+     "path": [
+      "Zoe",
+      "Tom",
+      "Adam",
+      "Kate",
+      "Diana",
+      "Olivia",
+      "Jack"
+     ],
+     "story": "Tom is Adam's father. Olivia took her mother Diana to the beach. Adam took his mother Kate to the cinema. Tom is Zoe's father. Diana called her daughter Kate. Jack had lunch with his daughter Olivia.",
+     "gold": {
+      "0|2": "sister",
+      "0|3": "daughter",
+      "0|4": "granddaughter",
+      "0|5": "niece",
+      "0|6": "granddaughter",
+      "1|3": "husband",
+      "1|4": "son-in-law",
+      "1|5": "brother-in-law",
+      "1|6": "son-in-law",
+      "2|4": "grandson",
+      "2|5": "nephew",
+      "2|6": "grandson",
+      "3|5": "sister",
+      "3|6": "daughter",
+      "4|6": "wife"
+     }
+    },
+    {
+     "k": 6,
+     "path": [
+      "Penny",
+      "Kevin",
+      "Tina",
+      "Fiona",
+      "Zach",
+      "Nora",
+      "Wendy"
+     ],
+     "story": "Fiona's father is Zach. Fiona is Tina's sister. Tina took her husband Kevin to the cinema. Nora took her father Zach to the park. Kevin took his daughter Penny to the market. Wendy is Nora's daughter.",
+     "gold": {
+      "0|2": "daughter",
+      "0|3": "niece",
+      "0|4": "granddaughter",
+      "0|5": "niece",
+      "0|6": "cousin",
+      "1|3": "brother-in-law",
+      "1|4": "son-in-law",
+      "1|5": "brother-in-law",
+      "1|6": "uncle",
+      "2|4": "daughter",
+      "2|5": "sister",
+      "2|6": "aunt",
+      "3|5": "sister",
+      "3|6": "aunt",
+      "4|6": "grandfather"
+     }
+    },
+    {
+     "k": 6,
+     "path": [
+      "Victor",
+      "Will",
+      "Tom",
+      "Sara",
+      "Penny",
+      "Zach",
+      "Frank"
+     ],
+     "story": "Tom is Will's father. Penny took her father Zach to the cinema. Victor visited his brother Will. Penny took her sister Sara to the zoo. Zach's son is Frank. Sara took her husband Tom to the beach.",
+     "gold": {
+      "0|2": "son",
+      "0|3": "son",
+      "0|4": "nephew",
+      "0|5": "grandson",
+      "0|6": "nephew",
+      "1|3": "son",
+      "1|4": "nephew",
+      "1|5": "grandson",
+      "1|6": "nephew",
+      "2|4": "brother-in-law",
+      "2|5": "son-in-law",
+      "2|6": "brother-in-law",
+      "3|5": "daughter",
+      "3|6": "sister",
+      "4|6": "sister"
+     }
+    },
+    {
+     "k": 6,
+     "path": [
+      "Vera",
+      "Beth",
+      "Ray",
+      "Paula",
+      "Henry",
+      "Maya",
+      "Penny"
+     ],
+     "story": "Ray's sister is Paula. Vera took her daughter Beth to the beach. Ray's daughter is Beth. Henry called his sister Paula. Maya is Penny's sister. Maya is Henry's daughter.",
+     "gold": {
+      "0|2": "wife",
+      "0|3": "sister-in-law",
+      "0|4": "sister-in-law",
+      "0|5": "aunt",
+      "0|6": "aunt",
+      "1|3": "niece",
+      "1|4": "niece",
+      "1|5": "cousin",
+      "1|6": "cousin",
+      "2|4": "brother",
+      "2|5": "uncle",
+      "2|6": "uncle",
+      "3|5": "aunt",
+      "3|6": "aunt",
+      "4|6": "father"
+     }
+    },
+    {
+     "k": 6,
+     "path": [
+      "Adam",
+      "Ivan",
+      "Maya",
+      "Peter",
+      "Clara",
+      "Oscar",
+      "Leo"
+     ],
+     "story": "Oscar took his son Leo to the park. Adam is Ivan's son. Oscar's wife is Clara. Clara is Peter's mother. Maya took her husband Ivan to the beach. Peter took his sister Maya to the park.",
+     "gold": {
+      "0|2": "son",
+      "0|3": "nephew",
+      "0|4": "grandson",
+      "0|5": "grandson",
+      "0|6": "nephew",
+      "1|3": "brother-in-law",
+      "1|4": "son-in-law",
+      "1|5": "son-in-law",
+      "1|6": "brother-in-law",
+      "2|4": "daughter",
+      "2|5": "daughter",
+      "2|6": "sister",
+      "3|5": "son",
+      "3|6": "brother",
+      "4|6": "mother"
+     }
+    },
+    {
+     "k": 6,
+     "path": [
+      "Diana",
+      "Carl",
+      "Iris",
+      "Laura",
+      "Paula",
+      "Wendy",
+      "Zach"
+     ],
+     "story": "Carl's daughter is Diana. Laura went hiking with her daughter Paula. Zach is Wendy's father. Carl went hiking with his mother Iris. Iris's daughter is Laura. Wendy took her sister Paula to the park.",
+     "gold": {
+      "0|2": "granddaughter",
+      "0|3": "niece",
+      "0|4": "cousin",
+      "0|5": "cousin",
+      "0|6": "niece",
+      "1|3": "brother",
+      "1|4": "uncle",
+      "1|5": "uncle",
+      "1|6": "brother-in-law",
+      "2|4": "grandmother",
+      "2|5": "grandmother",
+      "2|6": "mother-in-law",
+      "3|5": "mother",
+      "3|6": "wife",
+      "4|6": "daughter"
+     }
+    },
+    {
+     "k": 6,
+     "path": [
+      "David",
+      "Ivan",
+      "Sara",
+      "Diana",
+      "Frank",
+      "Tina",
+      "Laura"
+     ],
+     "story": "David is Ivan's son. Frank's wife is Diana. Tina took her daughter Laura to the beach. Diana is Sara's mother. Sara had lunch with her brother Ivan. Frank went hiking with his daughter Tina.",
+     "gold": {
+      "0|2": "nephew",
+      "0|3": "grandson",
+      "0|4": "grandson",
+      "0|5": "nephew",
+      "0|6": "cousin",
+      "1|3": "son",
+      "1|4": "son",
+      "1|5": "brother",
+      "1|6": "uncle",
+      "2|4": "daughter",
+      "2|5": "sister",
+      "2|6": "aunt",
+      "3|5": "mother",
+      "3|6": "grandmother",
+      "4|6": "grandfather"
+     }
+    },
+    {
+     "k": 6,
+     "path": [
+      "Sam",
+      "Will",
+      "Sara",
+      "Ethan",
+      "Jack",
+      "Uma",
+      "Carl"
+     ],
+     "story": "Ethan called his brother Jack. Jack went hiking with his mother Uma. Will is Sam's brother. Uma wrote a letter to her son Carl. Will went hiking with his mother Sara. Ethan's wife is Sara.",
+     "gold": {
+      "0|2": "son",
+      "0|3": "son",
+      "0|4": "nephew",
+      "0|5": "grandson",
+      "0|6": "nephew",
+      "1|3": "son",
+      "1|4": "nephew",
+      "1|5": "grandson",
+      "1|6": "nephew",
+      "2|4": "sister-in-law",
+      "2|5": "daughter-in-law",
+      "2|6": "sister-in-law",
+      "3|5": "son",
+      "3|6": "brother",
+      "4|6": "brother"
+     }
+    },
+    {
+     "k": 6,
+     "path": [
+      "Paula",
+      "Zach",
+      "Vera",
+      "Ray",
+      "Zoe",
+      "Victor",
+      "Tina"
+     ],
+     "story": "Zach's daughter is Paula. Zoe's father is Ray. Victor called his daughter Tina. Ray is Vera's husband. Zach had lunch with his mother Vera. Zoe took her brother Victor to the park.",
+     "gold": {
+      "0|2": "granddaughter",
+      "0|3": "granddaughter",
+      "0|4": "niece",
+      "0|5": "niece",
+      "0|6": "cousin",
+      "1|3": "son",
+      "1|4": "brother",
+      "1|5": "brother",
+      "1|6": "uncle",
+      "2|4": "mother",
+      "2|5": "mother",
+      "2|6": "grandmother",
+      "3|5": "father",
+      "3|6": "grandfather",
+      "4|6": "aunt"
+     }
+    },
+    {
+     "k": 6,
+     "path": [
+      "Peter",
+      "Diana",
+      "Uma",
+      "Noah",
+      "Beth",
+      "Rosa",
+      "Penny"
+     ],
+     "story": "Diana took her mother Uma to the beach. Rosa visited her daughter Beth. Uma wrote a letter to her father Noah. Penny's mother is Rosa. Beth's father is Noah. Diana's father is Peter.",
+     "gold": {
+      "0|2": "husband",
+      "0|3": "son-in-law",
+      "0|4": "brother-in-law",
+      "0|5": "son-in-law",
+      "0|6": "brother-in-law",
+      "1|3": "granddaughter",
+      "1|4": "niece",
+      "1|5": "granddaughter",
+      "1|6": "niece",
+      "2|4": "sister",
+      "2|5": "daughter",
+      "2|6": "sister",
+      "3|5": "husband",
+      "3|6": "father",
+      "4|6": "sister"
+     }
+    },
+    {
+     "k": 6,
+     "path": [
+      "Paula",
+      "George",
+      "Hannah",
+      "Julia",
+      "Nora",
+      "Peter",
+      "Maya"
+     ],
+     "story": "George went hiking with his wife Hannah. Nora's mother is Julia. Paula's father is George. Peter called his daughter Maya. Hannah went hiking with her mother Julia. Nora is Peter's sister.",
+     "gold": {
+      "0|2": "daughter",
+      "0|3": "granddaughter",
+      "0|4": "niece",
+      "0|5": "niece",
+      "0|6": "cousin",
+      "1|3": "son-in-law",
+      "1|4": "brother-in-law",
+      "1|5": "brother-in-law",
+      "1|6": "uncle",
+      "2|4": "sister",
+      "2|5": "sister",
+      "2|6": "aunt",
+      "3|5": "mother",
+      "3|6": "grandmother",
+      "4|6": "aunt"
+     }
+    },
+    {
+     "k": 6,
+     "path": [
+      "Olivia",
+      "Peter",
+      "Grace",
+      "Penny",
+      "Xavier",
+      "Uma",
+      "Will"
+     ],
+     "story": "Xavier is Penny's husband. Uma is Will's mother. Peter's wife is Grace. Uma's father is Xavier. Penny took her daughter Grace to the museum. Peter went hiking with his daughter Olivia.",
+     "gold": {
+      "0|2": "daughter",
+      "0|3": "granddaughter",
+      "0|4": "granddaughter",
+      "0|5": "niece",
+      "0|6": "cousin",
+      "1|3": "son-in-law",
+      "1|4": "son-in-law",
+      "1|5": "brother-in-law",
+      "1|6": "uncle",
+      "2|4": "daughter",
+      "2|5": "sister",
+      "2|6": "aunt",
+      "3|5": "mother",
+      "3|6": "grandmother",
+      "4|6": "grandfather"
+     }
+    },
+    {
+     "k": 6,
+     "path": [
+      "Zoe",
+      "Kate",
+      "Grace",
+      "Adam",
+      "Paula",
+      "Ethan",
+      "Iris"
+     ],
+     "story": "Kate took her mother Grace to the beach. Paula's husband is Ethan. Adam's sister is Grace. Zoe had lunch with her sister Kate. Ethan is Iris's father. Adam wrote a letter to his mother Paula.",
+     "gold": {
+      "0|2": "daughter",
+      "0|3": "niece",
+      "0|4": "granddaughter",
+      "0|5": "granddaughter",
+      "0|6": "niece",
+      "1|3": "niece",
+      "1|4": "granddaughter",
+      "1|5": "granddaughter",
+      "1|6": "niece",
+      "2|4": "daughter",
+      "2|5": "daughter",
+      "2|6": "sister",
+      "3|5": "son",
+      "3|6": "brother",
+      "4|6": "mother"
+     }
+    },
+    {
+     "k": 6,
+     "path": [
+      "Jack",
+      "Mark",
+      "Diana",
+      "Fiona",
+      "Iris",
+      "Ivan",
+      "Ray"
+     ],
+     "story": "Fiona's mother is Iris. Diana is Mark's mother. Ivan's son is Ray. Mark's father is Jack. Ivan is Iris's son. Fiona is Diana's sister.",
+     "gold": {
+      "0|2": "husband",
+      "0|3": "brother-in-law",
+      "0|4": "son-in-law",
+      "0|5": "brother-in-law",
+      "0|6": "uncle",
+      "1|3": "nephew",
+      "1|4": "grandson",
+      "1|5": "nephew",
+      "1|6": "cousin",
+      "2|4": "daughter",
+      "2|5": "sister",
+      "2|6": "aunt",
+      "3|5": "sister",
+      "3|6": "aunt",
+      "4|6": "grandmother"
+     }
+    },
+    {
+     "k": 6,
+     "path": [
+      "Ethan",
+      "Diana",
+      "George",
+      "Julia",
+      "Paula",
+      "Peter",
+      "Jack"
+     ],
+     "story": "George is Diana's father. George went hiking with his daughter Julia. Peter took his father Jack to the cinema. Paula's brother is Peter. Paula took her mother Julia to the market. Diana is Ethan's sister.",
+     "gold": {
+      "0|2": "son",
+      "0|3": "brother",
+      "0|4": "uncle",
+      "0|5": "uncle",
+      "0|6": "brother-in-law",
+      "1|3": "sister",
+      "1|4": "aunt",
+      "1|5": "aunt",
+      "1|6": "sister-in-law",
+      "2|4": "grandfather",
+      "2|5": "grandfather",
+      "2|6": "father-in-law",
+      "3|5": "mother",
+      "3|6": "wife",
+      "4|6": "daughter"
+     }
+    },
+    {
+     "k": 6,
+     "path": [
+      "Kate",
+      "Maya",
+      "Tom",
+      "Adam",
+      "Xavier",
+      "Ray",
+      "Wendy"
+     ],
+     "story": "Tom took his wife Maya to the zoo. Adam went hiking with his son Tom. Wendy is Ray's mother. Kate went hiking with her mother Maya. Adam took his son Xavier to the park. Ray is Xavier's son.",
+     "gold": {
+      "0|2": "daughter",
+      "0|3": "granddaughter",
+      "0|4": "niece",
+      "0|5": "cousin",
+      "0|6": "niece",
+      "1|3": "daughter-in-law",
+      "1|4": "sister-in-law",
+      "1|5": "aunt",
+      "2|4": "brother",
+      "2|5": "uncle",
+      "2|6": "brother-in-law",
+      "3|5": "grandfather",
+      "3|6": "father-in-law",
+      "4|6": "husband"
+     }
+    },
+    {
+     "k": 6,
+     "path": [
+      "Ray",
+      "Alice",
+      "Laura",
+      "Iris",
+      "Leo",
+      "Xavier",
+      "Oscar"
+     ],
+     "story": "Iris wrote a letter to her sister Laura. Xavier is Oscar's brother. Alice took her sister Laura to the park. Leo had lunch with his son Xavier. Iris is Leo's wife. Alice is Ray's wife.",
+     "gold": {
+      "0|2": "brother-in-law",
+      "0|3": "brother-in-law",
+      "0|5": "uncle",
+      "0|6": "uncle",
+      "1|3": "sister",
+      "1|4": "sister-in-law",
+      "1|5": "aunt",
+      "1|6": "aunt",
+      "2|4": "sister-in-law",
+      "2|5": "aunt",
+      "2|6": "aunt",
+      "3|5": "mother",
+      "3|6": "mother",
+      "4|6": "father"
+     }
+    },
+    {
+     "k": 6,
+     "path": [
+      "Beth",
+      "Penny",
+      "Carl",
+      "Victor",
+      "Wendy",
+      "Alice",
+      "Oscar"
+     ],
+     "story": "Alice's daughter is Wendy. Victor is Carl's son. Oscar's mother is Alice. Penny wrote a letter to her mother Beth. Victor is Wendy's father. Carl took his daughter Penny to the beach.",
+     "gold": {
+      "0|2": "wife",
+      "0|3": "mother",
+      "0|4": "grandmother",
+      "0|5": "mother-in-law",
+      "0|6": "grandmother",
+      "1|3": "sister",
+      "1|4": "aunt",
+      "1|5": "sister-in-law",
+      "1|6": "aunt",
+      "2|4": "grandfather",
+      "2|5": "father-in-law",
+      "2|6": "grandfather",
+      "3|5": "husband",
+      "3|6": "father",
+      "4|6": "sister"
+     }
+    },
+    {
+     "k": 6,
+     "path": [
+      "Xavier",
+      "Uma",
+      "Maya",
+      "Grace",
+      "Tina",
+      "Ivan",
+      "Iris"
+     ],
+     "story": "Maya wrote a letter to her mother Grace. Uma is Xavier's daughter. Grace is Tina's sister. Uma wrote a letter to her sister Maya. Ivan took his daughter Tina to the zoo. Iris took her father Ivan to the park.",
+     "gold": {
+      "0|2": "father",
+      "0|3": "husband",
+      "0|4": "brother-in-law",
+      "0|5": "son-in-law",
+      "0|6": "brother-in-law",
+      "1|3": "daughter",
+      "1|4": "niece",
+      "1|5": "granddaughter",
+      "1|6": "niece",
+      "2|4": "niece",
+      "2|5": "granddaughter",
+      "2|6": "niece",
+      "3|5": "daughter",
+      "3|6": "sister",
+      "4|6": "sister"
+     }
+    },
+    {
+     "k": 6,
+     "path": [
+      "Penny",
+      "Carl",
+      "Iris",
+      "Alice",
+      "Mark",
+      "Laura",
+      "Zoe"
+     ],
+     "story": "Mark's daughter is Alice. Alice had lunch with her sister Iris. Carl took his daughter Penny to the market. Laura's husband is Mark. Laura is Zoe's mother. Carl wrote a letter to his wife Iris.",
+     "gold": {
+      "0|2": "daughter",
+      "0|3": "niece",
+      "0|4": "granddaughter",
+      "0|5": "granddaughter",
+      "0|6": "niece",
+      "1|3": "brother-in-law",
+      "1|4": "son-in-law",
+      "1|5": "son-in-law",
+      "1|6": "brother-in-law",
+      "2|4": "daughter",
+      "2|5": "daughter",
+      "2|6": "sister",
+      "3|5": "daughter",
+      "3|6": "sister",
+      "4|6": "father"
+     }
+    },
+    {
+     "k": 6,
+     "path": [
+      "Will",
+      "Yusuf",
+      "Maya",
+      "Grace",
+      "Ray",
+      "Ivan",
+      "George"
+     ],
+     "story": "Grace's mother is Maya. Ivan's father is George. Ray took his mother Grace to the beach. Yusuf's mother is Maya. Ivan is Ray's brother. Will is Yusuf's son.",
+     "gold": {
+      "0|2": "grandson",
+      "0|3": "nephew",
+      "0|4": "cousin",
+      "0|5": "cousin",
+      "0|6": "nephew",
+      "1|3": "brother",
+      "1|4": "uncle",
+      "1|5": "uncle",
+      "1|6": "brother-in-law",
+      "2|4": "grandmother",
+      "2|5": "grandmother",
+      "2|6": "mother-in-law",
+      "3|5": "mother",
+      "3|6": "wife",
+      "4|6": "son"
+     }
+    },
+    {
+     "k": 6,
+     "path": [
+      "Oscar",
+      "Noah",
+      "Ivan",
+      "Victor",
+      "Laura",
+      "Kevin",
+      "Grace"
+     ],
+     "story": "Victor is Laura's father. Kevin's daughter is Grace. Noah took his brother Ivan to the park. Kevin took his wife Laura to the market. Ivan's father is Victor. Oscar is Noah's son.",
+     "gold": {
+      "0|2": "nephew",
+      "0|3": "grandson",
+      "0|4": "nephew",
+      "0|5": "nephew",
+      "0|6": "cousin",
+      "1|3": "son",
+      "1|4": "brother",
+      "1|5": "brother-in-law",
+      "1|6": "uncle",
+      "2|4": "brother",
+      "2|5": "brother-in-law",
+      "2|6": "uncle",
+      "3|5": "father-in-law",
+      "3|6": "grandfather",
+      "4|6": "mother"
+     }
+    },
+    {
+     "k": 6,
+     "path": [
+      "Clara",
+      "Jack",
+      "George",
+      "Emma",
+      "Noah",
+      "Zoe",
+      "Hannah"
+     ],
+     "story": "Noah called his daughter Zoe. Hannah took her sister Zoe to the park. George's son is Jack. Noah took his wife Emma to the beach. George is Emma's father. Clara's son is Jack.",
+     "gold": {
+      "0|2": "wife",
+      "0|3": "mother",
+      "0|4": "mother-in-law",
+      "0|5": "grandmother",
+      "0|6": "grandmother",
+      "1|3": "brother",
+      "1|4": "brother-in-law",
+      "1|5": "uncle",
+      "1|6": "uncle",
+      "2|4": "father-in-law",
+      "2|5": "grandfather",
+      "2|6": "grandfather",
+      "3|5": "mother",
+      "3|6": "mother",
+      "4|6": "father"
+     }
+    },
+    {
+     "k": 6,
+     "path": [
+      "Tina",
+      "Kate",
+      "Ivan",
+      "Zoe",
+      "Fiona",
+      "Yusuf",
+      "Carl"
+     ],
+     "story": "Kate took her husband Ivan to the beach. Zoe took her sister Fiona to the market. Fiona's husband is Yusuf. Tina is Kate's daughter. Ivan is Zoe's father. Carl is Yusuf's son.",
+     "gold": {
+      "0|2": "daughter",
+      "0|3": "sister",
+      "0|4": "sister",
+      "0|5": "sister-in-law",
+      "0|6": "aunt",
+      "1|3": "mother",
+      "1|4": "mother",
+      "1|5": "mother-in-law",
+      "1|6": "grandmother",
+      "2|4": "father",
+      "2|5": "father-in-law",
+      "2|6": "grandfather",
+      "3|5": "sister-in-law",
+      "3|6": "aunt",
+      "4|6": "mother"
+     }
+    },
+    {
+     "k": 6,
+     "path": [
+      "Hannah",
+      "Kevin",
+      "Beth",
+      "Victor",
+      "Yusuf",
+      "Henry",
+      "Carl"
+     ],
+     "story": "Beth called her husband Victor. Kevin took his mother Beth to the cinema. Henry took his son Carl to the beach. Hannah had lunch with her brother Kevin. Victor's brother is Yusuf. Henry wrote a letter to his son Yusuf.",
+     "gold": {
+      "0|2": "daughter",
+      "0|3": "daughter",
+      "0|4": "niece",
+      "0|5": "granddaughter",
+      "0|6": "niece",
+      "1|3": "son",
+      "1|4": "nephew",
+      "1|5": "grandson",
+      "1|6": "nephew",
+      "2|4": "sister-in-law",
+      "2|5": "daughter-in-law",
+      "2|6": "sister-in-law",
+      "3|5": "son",
+      "3|6": "brother",
+      "4|6": "brother"
+     }
+    },
+    {
+     "k": 6,
+     "path": [
+      "Tina",
+      "David",
+      "Peter",
+      "Jack",
+      "Frank",
+      "Uma",
+      "Julia"
+     ],
+     "story": "Frank's son is Jack. David wrote a letter to his mother Tina. Peter took his son David to the market. Uma's husband is Frank. Uma took her daughter Julia to the museum. Peter went hiking with his brother Jack.",
+     "gold": {
+      "0|2": "wife",
+      "0|3": "sister-in-law",
+      "0|4": "daughter-in-law",
+      "0|5": "daughter-in-law",
+      "0|6": "sister-in-law",
+      "1|3": "nephew",
+      "1|4": "grandson",
+      "1|5": "grandson",
+      "1|6": "nephew",
+      "2|4": "son",
+      "2|5": "son",
+      "2|6": "brother",
+      "3|5": "son",
+      "3|6": "brother",
+      "4|6": "father"
+     }
+    },
+    {
+     "k": 6,
+     "path": [
+      "Uma",
+      "Emma",
+      "Kevin",
+      "Vera",
+      "Olivia",
+      "Nora",
+      "Leo"
+     ],
+     "story": "Nora is Olivia's daughter. Kevin took his wife Vera to the park. Vera is Olivia's mother. Emma is Kevin's daughter. Emma took her daughter Uma to the cinema. Leo called his sister Nora.",
+     "gold": {
+      "0|2": "granddaughter",
+      "0|3": "granddaughter",
+      "0|4": "niece",
+      "0|5": "cousin",
+      "0|6": "cousin",
+      "1|3": "daughter",
+      "1|4": "sister",
+      "1|5": "aunt",
+      "1|6": "aunt",
+      "2|4": "father",
+      "2|5": "grandfather",
+      "2|6": "grandfather",
+      "3|5": "grandmother",
+      "3|6": "grandmother",
+      "4|6": "mother"
+     }
+    },
+    {
+     "k": 6,
+     "path": [
+      "Rosa",
+      "Jack",
+      "Kevin",
+      "Nora",
+      "Olivia",
+      "Peter",
+      "Sara"
+     ],
+     "story": "Olivia is Peter's mother. Kevin called his son Jack. Rosa called her son Jack. Nora is Olivia's daughter. Sara took her father Peter to the cinema. Nora took her brother Kevin to the market.",
+     "gold": {
+      "0|2": "wife",
+      "0|3": "sister-in-law",
+      "0|4": "daughter-in-law",
+      "0|5": "sister-in-law",
+      "0|6": "aunt",
+      "1|3": "nephew",
+      "1|4": "grandson",
+      "1|5": "nephew",
+      "1|6": "cousin",
+      "2|4": "son",
+      "2|5": "brother",
+      "2|6": "uncle",
+      "3|5": "sister",
+      "3|6": "aunt",
+      "4|6": "grandmother"
+     }
+    },
+    {
+     "k": 6,
+     "path": [
+      "Ethan",
+      "Diana",
+      "Xavier",
+      "Mark",
+      "Laura",
+      "Carl",
+      "Ivan"
+     ],
+     "story": "Ivan is Carl's son. Diana is Ethan's mother. Xavier's father is Mark. Carl took his mother Laura to the beach. Diana's brother is Xavier. Laura is Mark's wife.",
+     "gold": {
+      "0|2": "nephew",
+      "0|3": "grandson",
+      "0|4": "grandson",
+      "0|5": "nephew",
+      "0|6": "cousin",
+      "1|3": "daughter",
+      "1|4": "daughter",
+      "1|5": "sister",
+      "1|6": "aunt",
+      "2|4": "son",
+      "2|5": "brother",
+      "2|6": "uncle",
+      "3|5": "father",
+      "3|6": "grandfather",
+      "4|6": "grandmother"
+     }
+    },
+    {
+     "k": 6,
+     "path": [
+      "Clara",
+      "Olivia",
+      "Victor",
+      "Kevin",
+      "Emma",
+      "Zoe",
+      "Hannah"
+     ],
+     "story": "Olivia's father is Victor. Kevin had lunch with his father Victor. Zoe's mother is Emma. Olivia is Clara's sister. Zoe is Hannah's sister. Emma is Kevin's wife.",
+     "gold": {
+      "0|2": "daughter",
+      "0|3": "sister",
+      "0|4": "sister-in-law",
+      "0|5": "aunt",
+      "0|6": "aunt",
+      "1|3": "sister",
+      "1|4": "sister-in-law",
+      "1|5": "aunt",
+      "1|6": "aunt",
+      "2|4": "father-in-law",
+      "2|5": "grandfather",
+      "2|6": "grandfather",
+      "3|5": "father",
+      "3|6": "father",
+      "4|6": "mother"
+     }
+    },
+    {
+     "k": 6,
+     "path": [
+      "Diana",
+      "Tom",
+      "Uma",
+      "Sara",
+      "Kate",
+      "Mark",
+      "Adam"
+     ],
+     "story": "Mark took his son Adam to the market. Tom wrote a letter to his daughter Uma. Kate took her husband Mark to the zoo. Kate took her mother Sara to the cinema. Tom took his daughter Diana to the park. Uma visited her mother Sara.",
+     "gold": {
+      "0|2": "sister",
+      "0|3": "daughter",
+      "0|4": "sister",
+      "0|5": "sister-in-law",
+      "0|6": "aunt",
+      "1|3": "husband",
+      "1|4": "father",
+      "1|5": "father-in-law",
+      "1|6": "grandfather",
+      "2|4": "sister",
+      "2|5": "sister-in-law",
+      "2|6": "aunt",
+      "3|5": "mother-in-law",
+      "3|6": "grandmother",
+      "4|6": "mother"
+     }
+    },
+    {
+     "k": 6,
+     "path": [
+      "Rosa",
+      "Ray",
+      "Jack",
+      "Grace",
+      "Ben",
+      "Olivia",
+      "Paula"
+     ],
+     "story": "Ray visited his sister Rosa. Grace's son is Ben. Olivia is Paula's daughter. Grace is Jack's mother. Olivia is Ben's daughter. Jack's son is Ray.",
+     "gold": {
+      "0|2": "daughter",
+      "0|3": "granddaughter",
+      "0|4": "niece",
+      "0|5": "cousin",
+      "0|6": "niece",
+      "1|3": "grandson",
+      "1|4": "nephew",
+      "1|5": "cousin",
+      "1|6": "nephew",
+      "2|4": "brother",
+      "2|5": "uncle",
+      "2|6": "brother-in-law",
+      "3|5": "grandmother",
+      "3|6": "mother-in-law",
+      "4|6": "husband"
+     }
+    },
+    {
+     "k": 6,
+     "path": [
+      "Olivia",
+      "Sara",
+      "Ben",
+      "Carl",
+      "Jack",
+      "Frank",
+      "Julia"
+     ],
+     "story": "Jack called his brother Carl. Frank took his son Jack to the beach. Frank took his wife Julia to the market. Ben is Sara's son. Sara is Olivia's mother. Carl is Ben's father.",
+     "gold": {
+      "0|2": "sister",
+      "0|3": "daughter",
+      "0|4": "niece",
+      "0|5": "granddaughter",
+      "0|6": "granddaughter",
+      "1|3": "wife",
+      "1|4": "sister-in-law",
+      "1|5": "daughter-in-law",
+      "1|6": "daughter-in-law",
+      "2|4": "nephew",
+      "2|5": "grandson",
+      "2|6": "grandson",
+      "3|5": "son",
+      "3|6": "son",
+      "4|6": "son"
+     }
+    },
+    {
+     "k": 6,
+     "path": [
+      "Iris",
+      "Emma",
+      "Ethan",
+      "Will",
+      "Alice",
+      "David",
+      "Laura"
+     ],
+     "story": "Will's mother is Alice. Ethan visited his mother Emma. Ethan visited his father Will. Emma had lunch with her daughter Iris. David is Laura's brother. Alice took her son David to the park.",
+     "gold": {
+      "0|2": "sister",
+      "0|3": "daughter",
+      "0|4": "granddaughter",
+      "0|5": "niece",
+      "0|6": "niece",
+      "1|3": "wife",
+      "1|4": "daughter-in-law",
+      "1|5": "sister-in-law",
+      "1|6": "sister-in-law",
+      "2|4": "grandson",
+      "2|5": "nephew",
+      "2|6": "nephew",
+      "3|5": "brother",
+      "3|6": "brother",
+      "4|6": "mother"
+     }
+    },
+    {
+     "k": 6,
+     "path": [
+      "Henry",
+      "David",
+      "Emma",
+      "Beth",
+      "Clara",
+      "Kevin",
+      "Noah"
+     ],
+     "story": "David went hiking with his son Henry. David had lunch with his wife Emma. Beth took her daughter Clara to the museum. Emma is Beth's daughter. Kevin visited his son Noah. Clara wrote a letter to her father Kevin.",
+     "gold": {
+      "0|2": "son",
+      "0|3": "grandson",
+      "0|4": "nephew",
+      "0|5": "grandson",
+      "0|6": "nephew",
+      "1|3": "son-in-law",
+      "1|4": "brother-in-law",
+      "1|5": "son-in-law",
+      "1|6": "brother-in-law",
+      "2|4": "sister",
+      "2|5": "daughter",
+      "2|6": "sister",
+      "3|5": "wife",
+      "3|6": "mother",
+      "4|6": "sister"
+     }
+    },
+    {
+     "k": 6,
+     "path": [
+      "Ethan",
+      "David",
+      "Laura",
+      "Ivan",
+      "Vera",
+      "Frank",
+      "Xavier"
+     ],
+     "story": "David visited his mother Laura. Frank visited his father Xavier. Vera took her son Ivan to the zoo. David went hiking with his father Ethan. Vera's son is Frank. Laura visited her brother Ivan.",
+     "gold": {
+      "0|2": "husband",
+      "0|3": "brother-in-law",
+      "0|4": "son-in-law",
+      "0|5": "brother-in-law",
+      "0|6": "son-in-law",
+      "1|3": "nephew",
+      "1|4": "grandson",
+      "1|5": "nephew",
+      "1|6": "grandson",
+      "2|4": "daughter",
+      "2|5": "sister",
+      "2|6": "daughter",
+      "3|5": "brother",
+      "3|6": "son",
+      "4|6": "wife"
+     }
+    },
+    {
+     "k": 6,
+     "path": [
+      "Julia",
+      "Clara",
+      "Beth",
+      "Iris",
+      "Tina",
+      "Kevin",
+      "Sam"
+     ],
+     "story": "Iris took her sister Beth to the cinema. Clara is Julia's sister. Kevin's son is Sam. Tina's mother is Iris. Kevin took his daughter Tina to the museum. Clara took her mother Beth to the beach.",
+     "gold": {
+      "0|2": "daughter",
+      "0|3": "niece",
+      "0|4": "cousin",
+      "0|5": "niece",
+      "0|6": "cousin",
+      "1|3": "niece",
+      "1|4": "cousin",
+      "1|5": "niece",
+      "1|6": "cousin",
+      "2|4": "aunt",
+      "2|5": "sister-in-law",
+      "2|6": "aunt",
+      "3|5": "wife",
+      "3|6": "mother",
+      "4|6": "sister"
+     }
+    },
+    {
+     "k": 6,
+     "path": [
+      "Wendy",
+      "Grace",
+      "Frank",
+      "Carl",
+      "Noah",
+      "Oscar",
+      "Penny"
+     ],
+     "story": "Frank's father is Carl. Carl took his son Noah to the market. Penny is Oscar's sister. Grace called her daughter Wendy. Frank is Grace's son. Oscar is Noah's son.",
+     "gold": {
+      "0|2": "sister",
+      "0|3": "daughter",
+      "0|4": "sister",
+      "0|5": "aunt",
+      "0|6": "aunt",
+      "1|3": "wife",
+      "1|4": "mother",
+      "1|5": "grandmother",
+      "1|6": "grandmother",
+      "2|4": "brother",
+      "2|5": "uncle",
+      "2|6": "uncle",
+      "3|5": "grandfather",
+      "3|6": "grandfather",
+      "4|6": "father"
+     }
+    },
+    {
+     "k": 6,
+     "path": [
+      "Leo",
+      "Alice",
+      "Sara",
+      "Maya",
+      "Wendy",
+      "Oscar",
+      "Frank"
+     ],
+     "story": "Wendy wrote a letter to her son Oscar. Maya's sister is Sara. Alice had lunch with her husband Leo. Alice took her daughter Sara to the cinema. Oscar took his father Frank to the park. Maya's sister is Wendy.",
+     "gold": {
+      "0|2": "father",
+      "0|3": "father",
+      "0|4": "father",
+      "0|5": "grandfather",
+      "0|6": "father-in-law",
+      "1|3": "mother",
+      "1|4": "mother",
+      "1|5": "grandmother",
+      "1|6": "mother-in-law",
+      "2|4": "sister",
+      "2|5": "aunt",
+      "2|6": "sister-in-law",
+      "3|5": "aunt",
+      "3|6": "sister-in-law",
+      "4|6": "wife"
+     }
+    },
+    {
+     "k": 6,
+     "path": [
+      "Leo",
+      "Vera",
+      "Kate",
+      "Alice",
+      "Jack",
+      "Tom",
+      "Beth"
+     ],
+     "story": "Tom took his father Jack to the zoo. Jack's daughter is Alice. Tom took his mother Beth to the beach. Vera had lunch with her father Leo. Kate took her sister Vera to the cinema. Alice took her daughter Kate to the market.",
+     "gold": {
+      "0|2": "father",
+      "0|3": "husband",
+      "0|4": "son-in-law",
+      "0|5": "brother-in-law",
+      "0|6": "son-in-law",
+      "1|3": "daughter",
+      "1|4": "granddaughter",
+      "1|5": "niece",
+      "1|6": "granddaughter",
+      "2|4": "granddaughter",
+      "2|5": "niece",
+      "2|6": "granddaughter",
+      "3|5": "sister",
+      "3|6": "daughter",
+      "4|6": "husband"
+     }
+    },
+    {
+     "k": 6,
+     "path": [
+      "Grace",
+      "Zach",
+      "Clara",
+      "Noah",
+      "Maya",
+      "Ray",
+      "Ivan"
+     ],
+     "story": "Clara is Noah's daughter. Ray took his wife Maya to the beach. Maya's son is Noah. Ivan is Ray's son. Clara's brother is Zach. Zach took his mother Grace to the zoo.",
+     "gold": {
+      "0|2": "mother",
+      "0|3": "wife",
+      "0|4": "daughter-in-law",
+      "0|5": "daughter-in-law",
+      "0|6": "sister-in-law",
+      "1|3": "son",
+      "1|4": "grandson",
+      "1|5": "grandson",
+      "1|6": "nephew",
+      "2|4": "granddaughter",
+      "2|5": "granddaughter",
+      "2|6": "niece",
+      "3|5": "son",
+      "3|6": "brother",
+      "4|6": "mother"
+     }
+    },
+    {
+     "k": 6,
+     "path": [
+      "Frank",
+      "Ben",
+      "Iris",
+      "Leo",
+      "Zach",
+      "George",
+      "Wendy"
+     ],
+     "story": "Leo's wife is Iris. George took his daughter Wendy to the museum. Frank took his brother Ben to the market. Zach's brother is Leo. Ben is Iris's son. Zach called his brother George.",
+     "gold": {
+      "0|2": "son",
+      "0|3": "son",
+      "0|4": "nephew",
+      "0|5": "nephew",
+      "0|6": "cousin",
+      "1|3": "son",
+      "1|4": "nephew",
+      "1|5": "nephew",
+      "1|6": "cousin",
+      "2|4": "sister-in-law",
+      "2|5": "sister-in-law",
+      "2|6": "aunt",
+      "3|5": "brother",
+      "3|6": "uncle",
+      "4|6": "uncle"
+     }
+    },
+    {
+     "k": 6,
+     "path": [
+      "Yusuf",
+      "Zach",
+      "Ray",
+      "Ben",
+      "Tina",
+      "Sam",
+      "Will"
+     ],
+     "story": "Sam went hiking with his mother Tina. Ray is Zach's father. Sam called his brother Will. Yusuf called his brother Zach. Ben is Tina's husband. Ray took his father Ben to the market.",
+     "gold": {
+      "0|2": "son",
+      "0|3": "grandson",
+      "0|4": "grandson",
+      "0|5": "nephew",
+      "0|6": "nephew",
+      "1|3": "grandson",
+      "1|4": "grandson",
+      "1|5": "nephew",
+      "1|6": "nephew",
+      "2|4": "son",
+      "2|5": "brother",
+      "2|6": "brother",
+      "3|5": "father",
+      "3|6": "father",
+      "4|6": "mother"
+     }
+    },
+    {
+     "k": 6,
+     "path": [
+      "Ethan",
+      "Henry",
+      "Grace",
+      "Olivia",
+      "Emma",
+      "Zoe",
+      "Adam"
+     ],
+     "story": "Olivia's sister is Grace. Emma's mother is Zoe. Emma took her sister Olivia to the cinema. Grace took her husband Henry to the market. Zoe took her husband Adam to the market. Henry is Ethan's father.",
+     "gold": {
+      "0|2": "son",
+      "0|3": "nephew",
+      "0|4": "nephew",
+      "0|5": "grandson",
+      "0|6": "grandson",
+      "1|3": "brother-in-law",
+      "1|4": "brother-in-law",
+      "1|5": "son-in-law",
+      "1|6": "son-in-law",
+      "2|4": "sister",
+      "2|5": "daughter",
+      "2|6": "daughter",
+      "3|5": "daughter",
+      "3|6": "daughter",
+      "4|6": "daughter"
+     }
+    },
+    {
+     "k": 6,
+     "path": [
+      "Julia",
+      "Olivia",
+      "Zach",
+      "Leo",
+      "Nora",
+      "Ben",
+      "Kate"
+     ],
+     "story": "Kate's father is Ben. Julia's daughter is Olivia. Leo took his son Zach to the museum. Nora took her brother Leo to the museum. Olivia visited her brother Zach. Nora's father is Ben.",
+     "gold": {
+      "0|2": "mother",
+      "0|3": "wife",
+      "0|4": "sister-in-law",
+      "0|5": "daughter-in-law",
+      "0|6": "sister-in-law",
+      "1|3": "daughter",
+      "1|4": "niece",
+      "1|5": "granddaughter",
+      "1|6": "niece",
+      "2|4": "nephew",
+      "2|5": "grandson",
+      "2|6": "nephew",
+      "3|5": "son",
+      "3|6": "brother",
+      "4|6": "sister"
+     }
+    },
+    {
+     "k": 6,
+     "path": [
+      "Will",
+      "Fiona",
+      "Zach",
+      "Carl",
+      "Frank",
+      "Jack",
+      "Tina"
+     ],
+     "story": "Tina took her son Jack to the zoo. Carl's son is Frank. Jack is Frank's brother. Carl took his brother Zach to the market. Fiona took her son Zach to the market. Will's wife is Fiona.",
+     "gold": {
+      "0|2": "father",
+      "0|3": "father",
+      "0|4": "grandfather",
+      "0|5": "grandfather",
+      "0|6": "father-in-law",
+      "1|3": "mother",
+      "1|4": "grandmother",
+      "1|5": "grandmother",
+      "1|6": "mother-in-law",
+      "2|4": "uncle",
+      "2|5": "uncle",
+      "2|6": "brother-in-law",
+      "3|5": "father",
+      "3|6": "husband",
+      "4|6": "son"
+     }
+    },
+    {
+     "k": 6,
+     "path": [
+      "Noah",
+      "Kevin",
+      "Ethan",
+      "Hannah",
+      "Penny",
+      "Ben",
+      "Alice"
+     ],
+     "story": "Ben went hiking with his wife Penny. Ethan's son is Kevin. Kevin is Noah's brother. Alice is Ben's daughter. Penny called her mother Hannah. Ethan took his wife Hannah to the cinema.",
+     "gold": {
+      "0|2": "son",
+      "0|3": "son",
+      "0|4": "brother",
+      "0|5": "brother-in-law",
+      "0|6": "uncle",
+      "1|3": "son",
+      "1|4": "brother",
+      "1|5": "brother-in-law",
+      "1|6": "uncle",
+      "2|4": "father",
+      "2|5": "father-in-law",
+      "2|6": "grandfather",
+      "3|5": "mother-in-law",
+      "3|6": "grandmother",
+      "4|6": "mother"
+     }
+    },
+    {
+     "k": 6,
+     "path": [
+      "Beth",
+      "Tom",
+      "Wendy",
+      "Oscar",
+      "Henry",
+      "Ben",
+      "Penny"
+     ],
+     "story": "Penny took her son Ben to the museum. Henry is Ben's father. Beth took her brother Tom to the zoo. Wendy went hiking with her son Tom. Oscar is Henry's son. Oscar is Wendy's husband.",
+     "gold": {
+      "0|2": "daughter",
+      "0|3": "daughter",
+      "0|4": "granddaughter",
+      "0|5": "niece",
+      "0|6": "granddaughter",
+      "1|3": "son",
+      "1|4": "grandson",
+      "1|5": "nephew",
+      "1|6": "grandson",
+      "2|4": "daughter-in-law",
+      "2|5": "sister-in-law",
+      "2|6": "daughter-in-law",
+      "3|5": "brother",
+      "3|6": "son",
+      "4|6": "husband"
+     }
+    },
+    {
+     "k": 6,
+     "path": [
+      "Wendy",
+      "Ray",
+      "Zoe",
+      "Iris",
+      "Hannah",
+      "Mark",
+      "Emma"
+     ],
+     "story": "Mark's wife is Hannah. Zoe is Iris's sister. Ray is Wendy's father. Zoe took her husband Ray to the zoo. Hannah's daughter is Iris. Mark is Emma's father.",
+     "gold": {
+      "0|2": "daughter",
+      "0|3": "niece",
+      "0|4": "granddaughter",
+      "0|5": "granddaughter",
+      "0|6": "niece",
+      "1|3": "brother-in-law",
+      "1|4": "son-in-law",
+      "1|5": "son-in-law",
+      "1|6": "brother-in-law",
+      "2|4": "daughter",
+      "2|5": "daughter",
+      "2|6": "sister",
+      "3|5": "daughter",
+      "3|6": "sister",
+      "4|6": "mother"
+     }
+    },
+    {
+     "k": 6,
+     "path": [
+      "David",
+      "Yusuf",
+      "Clara",
+      "Wendy",
+      "Will",
+      "Adam",
+      "Ethan"
+     ],
+     "story": "Adam is Ethan's father. Clara is Wendy's daughter. Will's father is Adam. Wendy had lunch with her son Will. Clara took her son Yusuf to the cinema. David took his son Yusuf to the zoo.",
+     "gold": {
+      "0|2": "husband",
+      "0|3": "son-in-law",
+      "0|4": "brother-in-law",
+      "0|5": "son-in-law",
+      "0|6": "brother-in-law",
+      "1|3": "grandson",
+      "1|4": "nephew",
+      "1|5": "grandson",
+      "1|6": "nephew",
+      "2|4": "sister",
+      "2|5": "daughter",
+      "2|6": "sister",
+      "3|5": "wife",
+      "3|6": "mother",
+      "4|6": "brother"
+     }
+    },
+    {
+     "k": 6,
+     "path": [
+      "Sam",
+      "David",
+      "Leo",
+      "Nora",
+      "Ray",
+      "Kate",
+      "Carl"
+     ],
+     "story": "Ray's mother is Kate. David wrote a letter to his brother Sam. Carl is Kate's son. David is Leo's son. Leo wrote a letter to his wife Nora. Nora is Ray's sister.",
+     "gold": {
+      "0|2": "son",
+      "0|3": "son",
+      "0|4": "nephew",
+      "0|5": "grandson",
+      "0|6": "nephew",
+      "1|3": "son",
+      "1|4": "nephew",
+      "1|5": "grandson",
+      "1|6": "nephew",
+      "2|4": "brother-in-law",
+      "2|5": "son-in-law",
+      "2|6": "brother-in-law",
+      "3|5": "daughter",
+      "3|6": "sister",
+      "4|6": "brother"
+     }
+    },
+    {
+     "k": 6,
+     "path": [
+      "Ben",
+      "Frank",
+      "Rosa",
+      "Hannah",
+      "Grace",
+      "Penny",
+      "Carl"
+     ],
+     "story": "Rosa took her mother Hannah to the market. Penny took her husband Carl to the beach. Rosa's father is Frank. Ben had lunch with his father Frank. Grace took her sister Hannah to the museum. Grace took her mother Penny to the zoo.",
+     "gold": {
+      "0|2": "brother",
+      "0|3": "son",
+      "0|4": "nephew",
+      "0|5": "grandson",
+      "0|6": "grandson",
+      "1|3": "husband",
+      "1|4": "brother-in-law",
+      "1|5": "son-in-law",
+      "1|6": "son-in-law",
+      "2|4": "niece",
+      "2|5": "granddaughter",
+      "2|6": "granddaughter",
+      "3|5": "daughter",
+      "3|6": "daughter",
+      "4|6": "daughter"
+     }
+    },
+    {
+     "k": 6,
+     "path": [
+      "George",
+      "Kevin",
+      "Diana",
+      "Alice",
+      "Mark",
+      "Ethan",
+      "Hannah"
+     ],
+     "story": "Mark took his father Ethan to the beach. Ethan's wife is Hannah. Alice is Mark's sister. Kevin took his father George to the market. Diana is Alice's sister. Diana visited her son Kevin.",
+     "gold": {
+      "0|2": "husband",
+      "0|3": "brother-in-law",
+      "0|4": "brother-in-law",
+      "0|5": "son-in-law",
+      "0|6": "son-in-law",
+      "1|3": "nephew",
+      "1|4": "nephew",
+      "1|5": "grandson",
+      "1|6": "grandson",
+      "2|4": "sister",
+      "2|5": "daughter",
+      "2|6": "daughter",
+      "3|5": "daughter",
+      "3|6": "daughter",
+      "4|6": "son"
+     }
+    },
+    {
+     "k": 6,
+     "path": [
+      "Tom",
+      "Oscar",
+      "Mark",
+      "Paula",
+      "Zach",
+      "Maya",
+      "Uma"
+     ],
+     "story": "Maya's daughter is Uma. Mark had lunch with his brother Oscar. Paula is Zach's daughter. Oscar is Tom's son. Paula's son is Mark. Maya's husband is Zach.",
+     "gold": {
+      "0|2": "father",
+      "0|3": "husband",
+      "0|4": "son-in-law",
+      "0|5": "son-in-law",
+      "0|6": "brother-in-law",
+      "1|3": "son",
+      "1|4": "grandson",
+      "1|5": "grandson",
+      "1|6": "nephew",
+      "2|4": "grandson",
+      "2|5": "grandson",
+      "2|6": "nephew",
+      "3|5": "daughter",
+      "3|6": "sister",
+      "4|6": "father"
+     }
+    },
+    {
+     "k": 6,
+     "path": [
+      "Uma",
+      "Maya",
+      "Jack",
+      "Kevin",
+      "Zach",
+      "Noah",
+      "Laura"
+     ],
+     "story": "Uma is Maya's sister. Jack is Maya's father. Jack wrote a letter to his brother Kevin. Noah took his son Zach to the park. Laura's husband is Noah. Zach is Kevin's brother.",
+     "gold": {
+      "0|2": "daughter",
+      "0|3": "niece",
+      "0|4": "niece",
+      "0|5": "granddaughter",
+      "0|6": "granddaughter",
+      "1|3": "niece",
+      "1|4": "niece",
+      "1|5": "granddaughter",
+      "1|6": "granddaughter",
+      "2|4": "brother",
+      "2|5": "son",
+      "2|6": "son",
+      "3|5": "son",
+      "3|6": "son",
+      "4|6": "son"
+     }
+    },
+    {
+     "k": 6,
+     "path": [
+      "Yusuf",
+      "Penny",
+      "Ethan",
+      "Zach",
+      "Leo",
+      "Olivia",
+      "Jack"
+     ],
+     "story": "Ethan visited his brother Zach. Olivia visited her son Jack. Leo called his wife Olivia. Yusuf took his sister Penny to the zoo. Zach took his father Leo to the cinema. Ethan's daughter is Penny.",
+     "gold": {
+      "0|2": "son",
+      "0|3": "nephew",
+      "0|4": "grandson",
+      "0|5": "grandson",
+      "0|6": "nephew",
+      "1|3": "niece",
+      "1|4": "granddaughter",
+      "1|5": "granddaughter",
+      "1|6": "niece",
+      "2|4": "son",
+      "2|5": "son",
+      "2|6": "brother",
+      "3|5": "son",
+      "3|6": "brother",
+      "4|6": "father"
+     }
+    },
+    {
+     "k": 6,
+     "path": [
+      "Paula",
+      "Noah",
+      "Tom",
+      "Rosa",
+      "Ethan",
+      "Leo",
+      "Frank"
+     ],
+     "story": "Leo's son is Frank. Ethan's son is Leo. Noah went hiking with his wife Paula. Tom's brother is Noah. Rosa is Ethan's wife. Rosa's son is Tom.",
+     "gold": {
+      "0|2": "sister-in-law",
+      "0|3": "daughter-in-law",
+      "0|4": "daughter-in-law",
+      "0|5": "sister-in-law",
+      "0|6": "aunt",
+      "1|3": "son",
+      "1|4": "son",
+      "1|5": "brother",
+      "1|6": "uncle",
+      "2|4": "son",
+      "2|5": "brother",
+      "2|6": "uncle",
+      "3|5": "mother",
+      "3|6": "grandmother",
+      "4|6": "grandfather"
+     }
+    },
+    {
+     "k": 6,
+     "path": [
+      "Victor",
+      "Leo",
+      "Zoe",
+      "Iris",
+      "Vera",
+      "Oscar",
+      "Maya"
+     ],
+     "story": "Leo's son is Victor. Oscar called his wife Vera. Zoe visited her husband Leo. Iris is Vera's daughter. Oscar is Maya's father. Zoe is Iris's sister.",
+     "gold": {
+      "0|2": "son",
+      "0|3": "nephew",
+      "0|4": "grandson",
+      "0|5": "grandson",
+      "0|6": "nephew",
+      "1|3": "brother-in-law",
+      "1|4": "son-in-law",
+      "1|5": "son-in-law",
+      "1|6": "brother-in-law",
+      "2|4": "daughter",
+      "2|5": "daughter",
+      "2|6": "sister",
+      "3|5": "daughter",
+      "3|6": "sister",
+      "4|6": "mother"
+     }
+    },
+    {
+     "k": 6,
+     "path": [
+      "George",
+      "Laura",
+      "Ivan",
+      "Fiona",
+      "Uma",
+      "Sara",
+      "Penny"
+     ],
+     "story": "Penny is Sara's sister. Sara took her mother Uma to the zoo. Fiona is Ivan's wife. Fiona is Uma's mother. Laura is George's mother. Laura took her father Ivan to the cinema.",
+     "gold": {
+      "0|2": "grandson",
+      "0|3": "grandson",
+      "0|4": "nephew",
+      "0|5": "cousin",
+      "0|6": "cousin",
+      "1|3": "daughter",
+      "1|4": "sister",
+      "1|5": "aunt",
+      "1|6": "aunt",
+      "2|4": "father",
+      "2|5": "grandfather",
+      "2|6": "grandfather",
+      "3|5": "grandmother",
+      "3|6": "grandmother",
+      "4|6": "mother"
+     }
+    },
+    {
+     "k": 6,
+     "path": [
+      "David",
+      "Rosa",
+      "Ethan",
+      "Diana",
+      "Ben",
+      "Will",
+      "Julia"
+     ],
+     "story": "David's wife is Rosa. Ethan took his sister Rosa to the cinema. Diana is Ethan's sister. Ben took his mother Diana to the cinema. Will is Julia's father. Ben had lunch with his father Will.",
+     "gold": {
+      "0|2": "brother-in-law",
+      "0|3": "brother-in-law",
+      "0|4": "uncle",
+      "0|6": "uncle",
+      "1|3": "sister",
+      "1|4": "aunt",
+      "1|5": "sister-in-law",
+      "1|6": "aunt",
+      "2|4": "uncle",
+      "2|5": "brother-in-law",
+      "2|6": "uncle",
+      "3|5": "wife",
+      "3|6": "mother",
+      "4|6": "brother"
+     }
+    },
+    {
+     "k": 6,
+     "path": [
+      "Beth",
+      "Zach",
+      "Carl",
+      "Adam",
+      "Kevin",
+      "Oscar",
+      "Grace"
+     ],
+     "story": "Grace is Oscar's sister. Kevin is Oscar's father. Carl took his son Zach to the park. Adam's son is Carl. Beth is Zach's mother. Adam took his son Kevin to the cinema.",
+     "gold": {
+      "0|2": "wife",
+      "0|3": "daughter-in-law",
+      "0|4": "sister-in-law",
+      "0|5": "aunt",
+      "0|6": "aunt",
+      "1|3": "grandson",
+      "1|4": "nephew",
+      "1|5": "cousin",
+      "1|6": "cousin",
+      "2|4": "brother",
+      "2|5": "uncle",
+      "2|6": "uncle",
+      "3|5": "grandfather",
+      "3|6": "grandfather",
+      "4|6": "father"
+     }
+    },
+    {
+     "k": 6,
+     "path": [
+      "Sam",
+      "Laura",
+      "Will",
+      "Uma",
+      "Olivia",
+      "Tom",
+      "David"
+     ],
+     "story": "Will took his mother Uma to the park. Olivia took her son Tom to the park. Will went hiking with his sister Laura. Uma had lunch with her daughter Olivia. Sam had lunch with his mother Laura. Tom's father is David.",
+     "gold": {
+      "0|2": "nephew",
+      "0|3": "grandson",
+      "0|4": "nephew",
+      "0|5": "cousin",
+      "0|6": "nephew",
+      "1|3": "daughter",
+      "1|4": "sister",
+      "1|5": "aunt",
+      "1|6": "sister-in-law",
+      "2|4": "brother",
+      "2|5": "uncle",
+      "2|6": "brother-in-law",
+      "3|5": "grandmother",
+      "3|6": "mother-in-law",
+      "4|6": "wife"
+     }
+    },
+    {
+     "k": 6,
+     "path": [
+      "Zoe",
+      "Wendy",
+      "Mark",
+      "Beth",
+      "Will",
+      "Tina",
+      "Grace"
+     ],
+     "story": "Will went hiking with his wife Tina. Zoe is Wendy's daughter. Beth's father is Will. Grace's mother is Tina. Wendy took her husband Mark to the park. Beth's brother is Mark.",
+     "gold": {
+      "0|2": "daughter",
+      "0|3": "niece",
+      "0|4": "granddaughter",
+      "0|5": "granddaughter",
+      "0|6": "niece",
+      "1|3": "sister-in-law",
+      "1|4": "daughter-in-law",
+      "1|5": "daughter-in-law",
+      "1|6": "sister-in-law",
+      "2|4": "son",
+      "2|5": "son",
+      "2|6": "brother",
+      "3|5": "daughter",
+      "3|6": "sister",
+      "4|6": "father"
+     }
+    },
+    {
+     "k": 6,
+     "path": [
+      "Uma",
+      "Jack",
+      "Fiona",
+      "Kevin",
+      "Ethan",
+      "David",
+      "Ivan"
+     ],
+     "story": "Ivan took his father David to the beach. Fiona's son is Kevin. Ethan took his son Kevin to the beach. David is Ethan's son. Jack's mother is Fiona. Jack wrote a letter to his wife Uma.",
+     "gold": {
+      "0|2": "daughter-in-law",
+      "0|3": "sister-in-law",
+      "0|4": "daughter-in-law",
+      "0|5": "sister-in-law",
+      "0|6": "aunt",
+      "1|3": "brother",
+      "1|4": "son",
+      "1|5": "brother",
+      "1|6": "uncle",
+      "2|4": "wife",
+      "2|5": "mother",
+      "2|6": "grandmother",
+      "3|5": "brother",
+      "3|6": "uncle",
+      "4|6": "grandfather"
+     }
+    },
+    {
+     "k": 6,
+     "path": [
+      "Sam",
+      "Beth",
+      "Fiona",
+      "Ivan",
+      "Peter",
+      "Olivia",
+      "Zoe"
+     ],
+     "story": "Beth's brother is Sam. Beth took her mother Fiona to the zoo. Fiona wrote a letter to her husband Ivan. Ivan went hiking with his father Peter. Zoe is Olivia's mother. Peter called his daughter Olivia.",
+     "gold": {
+      "0|2": "son",
+      "0|3": "son",
+      "0|4": "grandson",
+      "0|5": "nephew",
+      "0|6": "grandson",
+      "1|3": "daughter",
+      "1|4": "granddaughter",
+      "1|5": "niece",
+      "1|6": "granddaughter",
+      "2|4": "daughter-in-law",
+      "2|5": "sister-in-law",
+      "2|6": "daughter-in-law",
+      "3|5": "brother",
+      "3|6": "son",
+      "4|6": "husband"
+     }
+    },
+    {
+     "k": 6,
+     "path": [
+      "David",
+      "Maya",
+      "Oscar",
+      "Tom",
+      "Beth",
+      "Uma",
+      "Sam"
+     ],
+     "story": "Uma's son is Sam. Oscar took his daughter Maya to the park. Beth took her daughter Uma to the beach. Beth took her son Tom to the beach. Oscar's brother is Tom. David's sister is Maya.",
+     "gold": {
+      "0|2": "son",
+      "0|3": "nephew",
+      "0|4": "grandson",
+      "0|5": "nephew",
+      "0|6": "cousin",
+      "1|3": "niece",
+      "1|4": "granddaughter",
+      "1|5": "niece",
+      "1|6": "cousin",
+      "2|4": "son",
+      "2|5": "brother",
+      "2|6": "uncle",
+      "3|5": "brother",
+      "3|6": "uncle",
+      "4|6": "grandmother"
+     }
+    },
+    {
+     "k": 6,
+     "path": [
+      "Vera",
+      "Zoe",
+      "Frank",
+      "Grace",
+      "Jack",
+      "Victor",
+      "Beth"
+     ],
+     "story": "Zoe's husband is Frank. Jack took his daughter Grace to the cinema. Zoe is Vera's mother. Victor's mother is Beth. Frank called his sister Grace. Victor is Jack's son.",
+     "gold": {
+      "0|2": "daughter",
+      "0|3": "niece",
+      "0|4": "granddaughter",
+      "0|5": "niece",
+      "0|6": "granddaughter",
+      "1|3": "sister-in-law",
+      "1|4": "daughter-in-law",
+      "1|5": "sister-in-law",
+      "1|6": "daughter-in-law",
+      "2|4": "son",
+      "2|5": "brother",
+      "2|6": "son",
+      "3|5": "sister",
+      "3|6": "daughter",
+      "4|6": "husband"
+     }
+    },
+    {
+     "k": 6,
+     "path": [
+      "Laura",
+      "Paula",
+      "Uma",
+      "David",
+      "Frank",
+      "Diana",
+      "Peter"
+     ],
+     "story": "Frank took his son David to the museum. Diana went hiking with her brother Peter. Uma took her father David to the park. Diana is Frank's daughter. Paula's daughter is Laura. Uma called her mother Paula.",
+     "gold": {
+      "0|2": "sister",
+      "0|3": "daughter",
+      "0|4": "granddaughter",
+      "0|5": "niece",
+      "0|6": "niece",
+      "1|3": "wife",
+      "1|4": "daughter-in-law",
+      "1|5": "sister-in-law",
+      "1|6": "sister-in-law",
+      "2|4": "granddaughter",
+      "2|5": "niece",
+      "2|6": "niece",
+      "3|5": "brother",
+      "3|6": "brother",
+      "4|6": "father"
+     }
+    },
+    {
+     "k": 6,
+     "path": [
+      "Vera",
+      "Ben",
+      "Emma",
+      "Adam",
+      "Laura",
+      "Alice",
+      "Rosa"
+     ],
+     "story": "Laura is Alice's mother. Emma is Ben's wife. Emma took her brother Adam to the park. Laura's husband is Adam. Vera is Ben's daughter. Alice's sister is Rosa.",
+     "gold": {
+      "0|2": "daughter",
+      "0|3": "niece",
+      "0|4": "niece",
+      "0|5": "cousin",
+      "0|6": "cousin",
+      "1|3": "brother-in-law",
+      "1|5": "uncle",
+      "1|6": "uncle",
+      "2|4": "sister-in-law",
+      "2|5": "aunt",
+      "2|6": "aunt",
+      "3|5": "father",
+      "3|6": "father",
+      "4|6": "mother"
+     }
+    },
+    {
+     "k": 6,
+     "path": [
+      "Xavier",
+      "Kate",
+      "Maya",
+      "Laura",
+      "Henry",
+      "Diana",
+      "Leo"
+     ],
+     "story": "Diana's father is Henry. Maya visited her mother Laura. Laura's husband is Henry. Diana's husband is Leo. Maya took her daughter Kate to the cinema. Kate is Xavier's sister.",
+     "gold": {
+      "0|2": "son",
+      "0|3": "grandson",
+      "0|4": "grandson",
+      "0|5": "nephew",
+      "0|6": "nephew",
+      "1|3": "granddaughter",
+      "1|4": "granddaughter",
+      "1|5": "niece",
+      "1|6": "niece",
+      "2|4": "daughter",
+      "2|5": "sister",
+      "2|6": "sister-in-law",
+      "3|5": "mother",
+      "3|6": "mother-in-law",
+      "4|6": "father-in-law"
+     }
+    },
+    {
+     "k": 6,
+     "path": [
+      "Uma",
+      "Xavier",
+      "Victor",
+      "Sara",
+      "Carl",
+      "Iris",
+      "Nora"
+     ],
+     "story": "Carl is Sara's father. Iris is Nora's mother. Xavier is Uma's father. Carl is Iris's husband. Victor's father is Xavier. Victor's mother is Sara.",
+     "gold": {
+      "0|2": "sister",
+      "0|3": "daughter",
+      "0|4": "granddaughter",
+      "0|5": "granddaughter",
+      "0|6": "niece",
+      "1|3": "husband",
+      "1|4": "son-in-law",
+      "1|5": "son-in-law",
+      "1|6": "brother-in-law",
+      "2|4": "grandson",
+      "2|5": "grandson",
+      "2|6": "nephew",
+      "3|5": "daughter",
+      "3|6": "sister",
+      "4|6": "father"
+     }
+    },
+    {
+     "k": 6,
+     "path": [
+      "Nora",
+      "Grace",
+      "Clara",
+      "Jack",
+      "Rosa",
+      "Emma",
+      "Henry"
+     ],
+     "story": "Jack is Rosa's brother. Grace took her daughter Nora to the park. Jack took his daughter Clara to the park. Grace's daughter is Clara. Emma is Rosa's mother. Henry is Emma's son.",
+     "gold": {
+      "0|2": "sister",
+      "0|3": "daughter",
+      "0|4": "niece",
+      "0|5": "granddaughter",
+      "0|6": "niece",
+      "1|3": "wife",
+      "1|4": "sister-in-law",
+      "1|5": "daughter-in-law",
+      "1|6": "sister-in-law",
+      "2|4": "niece",
+      "2|5": "granddaughter",
+      "2|6": "niece",
+      "3|5": "son",
+      "3|6": "brother",
+      "4|6": "sister"
+     }
+    },
+    {
+     "k": 6,
+     "path": [
+      "Will",
+      "Peter",
+      "Kevin",
+      "Emma",
+      "Fiona",
+      "Ray",
+      "Vera"
+     ],
+     "story": "Peter's son is Kevin. Peter is Will's father. Fiona went hiking with her son Ray. Emma took her sister Fiona to the park. Emma is Kevin's mother. Vera's brother is Ray.",
+     "gold": {
+      "0|2": "brother",
+      "0|3": "son",
+      "0|4": "nephew",
+      "0|5": "cousin",
+      "0|6": "cousin",
+      "1|3": "husband",
+      "1|4": "brother-in-law",
+      "1|5": "uncle",
+      "1|6": "uncle",
+      "2|4": "nephew",
+      "2|5": "cousin",
+      "2|6": "cousin",
+      "3|5": "aunt",
+      "3|6": "aunt",
+      "4|6": "mother"
+     }
+    },
+    {
+     "k": 6,
+     "path": [
+      "Ray",
+      "Yusuf",
+      "Mark",
+      "Clara",
+      "Noah",
+      "Oscar",
+      "Fiona"
+     ],
+     "story": "Mark wrote a letter to his wife Clara. Fiona had lunch with her brother Oscar. Noah took his mother Clara to the museum. Mark took his son Yusuf to the cinema. Oscar's father is Noah. Yusuf is Ray's father.",
+     "gold": {
+      "0|2": "grandson",
+      "0|3": "grandson",
+      "0|4": "nephew",
+      "0|5": "cousin",
+      "0|6": "cousin",
+      "1|3": "son",
+      "1|4": "brother",
+      "1|5": "uncle",
+      "1|6": "uncle",
+      "2|4": "father",
+      "2|5": "grandfather",
+      "2|6": "grandfather",
+      "3|5": "grandmother",
+      "3|6": "grandmother",
+      "4|6": "father"
+     }
+    },
+    {
+     "k": 6,
+     "path": [
+      "Beth",
+      "Maya",
+      "Ethan",
+      "Vera",
+      "Clara",
+      "Henry",
+      "Tina"
+     ],
+     "story": "Clara had lunch with her husband Henry. Clara went hiking with her daughter Vera. Maya took her father Ethan to the park. Tina took her father Henry to the park. Maya visited her mother Beth. Ethan took his sister Vera to the zoo.",
+     "gold": {
+      "0|2": "wife",
+      "0|3": "sister-in-law",
+      "0|4": "daughter-in-law",
+      "0|5": "daughter-in-law",
+      "0|6": "sister-in-law",
+      "1|3": "niece",
+      "1|4": "granddaughter",
+      "1|5": "granddaughter",
+      "1|6": "niece",
+      "2|4": "son",
+      "2|5": "son",
+      "2|6": "brother",
+      "3|5": "daughter",
+      "3|6": "sister",
+      "4|6": "mother"
+     }
+    },
+    {
+     "k": 6,
+     "path": [
+      "Jack",
+      "Sara",
+      "Rosa",
+      "Emma",
+      "Adam",
+      "Uma",
+      "Sam"
+     ],
+     "story": "Uma's brother is Sam. Rosa went hiking with her daughter Sara. Emma went hiking with her husband Adam. Jack is Sara's father. Adam's daughter is Uma. Rosa took her sister Emma to the park.",
+     "gold": {
+      "0|2": "husband",
+      "0|3": "brother-in-law",
+      "0|5": "uncle",
+      "0|6": "uncle",
+      "1|3": "niece",
+      "1|4": "niece",
+      "1|5": "cousin",
+      "1|6": "cousin",
+      "2|4": "sister-in-law",
+      "2|5": "aunt",
+      "2|6": "aunt",
+      "3|5": "mother",
+      "3|6": "mother",
+      "4|6": "father"
+     }
+    },
+    {
+     "k": 6,
+     "path": [
+      "Frank",
+      "Wendy",
+      "Sam",
+      "Will",
+      "Ethan",
+      "Fiona",
+      "Zoe"
+     ],
+     "story": "Ethan took his daughter Fiona to the zoo. Will's brother is Ethan. Zoe took her daughter Fiona to the park. Sam is Will's brother. Wendy's brother is Frank. Wendy wrote a letter to her father Sam.",
+     "gold": {
+      "0|2": "son",
+      "0|3": "nephew",
+      "0|4": "nephew",
+      "0|5": "cousin",
+      "0|6": "nephew",
+      "1|3": "niece",
+      "1|4": "niece",
+      "1|5": "cousin",
+      "1|6": "niece",
+      "2|4": "brother",
+      "2|5": "uncle",
+      "2|6": "brother-in-law",
+      "3|5": "uncle",
+      "3|6": "brother-in-law",
+      "4|6": "husband"
+     }
+    },
+    {
+     "k": 6,
+     "path": [
+      "Kevin",
+      "Ben",
+      "Grace",
+      "Penny",
+      "Victor",
+      "Oscar",
+      "Emma"
+     ],
+     "story": "Grace called her brother Ben. Ben's father is Kevin. Oscar wrote a letter to his mother Emma. Penny's daughter is Grace. Penny's father is Victor. Victor's son is Oscar.",
+     "gold": {
+      "0|2": "father",
+      "0|3": "husband",
+      "0|4": "son-in-law",
+      "0|5": "brother-in-law",
+      "0|6": "son-in-law",
+      "1|3": "son",
+      "1|4": "grandson",
+      "1|5": "nephew",
+      "1|6": "grandson",
+      "2|4": "granddaughter",
+      "2|5": "niece",
+      "2|6": "granddaughter",
+      "3|5": "sister",
+      "3|6": "daughter",
+      "4|6": "husband"
+     }
+    },
+    {
+     "k": 6,
+     "path": [
+      "Julia",
+      "Henry",
+      "David",
+      "Diana",
+      "George",
+      "Sara",
+      "Fiona"
+     ],
+     "story": "David's wife is Diana. Henry had lunch with his sister Julia. Sara took her mother Fiona to the zoo. George took his daughter Sara to the market. George's mother is Diana. David took his son Henry to the cinema.",
+     "gold": {
+      "0|2": "daughter",
+      "0|3": "daughter",
+      "0|4": "sister",
+      "0|5": "aunt",
+      "0|6": "sister-in-law",
+      "1|3": "son",
+      "1|4": "brother",
+      "1|5": "uncle",
+      "1|6": "brother-in-law",
+      "2|4": "father",
+      "2|5": "grandfather",
+      "2|6": "father-in-law",
+      "3|5": "grandmother",
+      "3|6": "mother-in-law",
+      "4|6": "husband"
+     }
+    },
+    {
+     "k": 6,
+     "path": [
+      "Ivan",
+      "Hannah",
+      "Alice",
+      "Sam",
+      "Yusuf",
+      "Nora",
+      "Henry"
+     ],
+     "story": "Yusuf is Sam's son. Sam's daughter is Alice. Alice wrote a letter to her daughter Hannah. Hannah's brother is Ivan. Henry is Nora's son. Nora is Yusuf's mother.",
+     "gold": {
+      "0|2": "son",
+      "0|3": "grandson",
+      "0|4": "nephew",
+      "0|5": "grandson",
+      "0|6": "nephew",
+      "1|3": "granddaughter",
+      "1|4": "niece",
+      "1|5": "granddaughter",
+      "1|6": "niece",
+      "2|4": "sister",
+      "2|5": "daughter",
+      "2|6": "sister",
+      "3|5": "husband",
+      "3|6": "father",
+      "4|6": "brother"
+     }
+    },
+    {
+     "k": 6,
+     "path": [
+      "Yusuf",
+      "David",
+      "Xavier",
+      "Alice",
+      "Peter",
+      "Beth",
+      "Fiona"
+     ],
+     "story": "Xavier's mother is Alice. Alice's son is Peter. David's son is Yusuf. David's brother is Xavier. Peter is Beth's father. Fiona went hiking with her daughter Beth.",
+     "gold": {
+      "0|2": "nephew",
+      "0|3": "grandson",
+      "0|4": "nephew",
+      "0|5": "cousin",
+      "0|6": "nephew",
+      "1|3": "son",
+      "1|4": "brother",
+      "1|5": "uncle",
+      "1|6": "brother-in-law",
+      "2|4": "brother",
+      "2|5": "uncle",
+      "2|6": "brother-in-law",
+      "3|5": "grandmother",
+      "3|6": "mother-in-law",
+      "4|6": "husband"
+     }
+    },
+    {
+     "k": 6,
+     "path": [
+      "George",
+      "Ben",
+      "Iris",
+      "Vera",
+      "Xavier",
+      "Kate",
+      "Henry"
+     ],
+     "story": "Xavier is Vera's husband. Henry's wife is Kate. Iris's brother is Ben. George is Ben's son. Xavier took his daughter Kate to the beach. Iris took her mother Vera to the museum.",
+     "gold": {
+      "0|2": "nephew",
+      "0|3": "grandson",
+      "0|4": "grandson",
+      "0|5": "nephew",
+      "0|6": "nephew",
+      "1|3": "son",
+      "1|4": "son",
+      "1|5": "brother",
+      "1|6": "brother-in-law",
+      "2|4": "daughter",
+      "2|5": "sister",
+      "2|6": "sister-in-law",
+      "3|5": "mother",
+      "3|6": "mother-in-law",
+      "4|6": "father-in-law"
+     }
+    },
+    {
+     "k": 6,
+     "path": [
+      "Hannah",
+      "Victor",
+      "Julia",
+      "Vera",
+      "Penny",
+      "Peter",
+      "Xavier"
+     ],
+     "story": "Vera took her daughter Julia to the museum. Victor wrote a letter to his daughter Julia. Penny visited her daughter Vera. Hannah wrote a letter to her father Victor. Penny is Peter's wife. Xavier's father is Peter.",
+     "gold": {
+      "0|2": "sister",
+      "0|3": "daughter",
+      "0|4": "granddaughter",
+      "0|5": "granddaughter",
+      "0|6": "niece",
+      "1|3": "husband",
+      "1|4": "son-in-law",
+      "1|5": "son-in-law",
+      "1|6": "brother-in-law",
+      "2|4": "granddaughter",
+      "2|5": "granddaughter",
+      "2|6": "niece",
+      "3|5": "daughter",
+      "3|6": "sister",
+      "4|6": "mother"
+     }
+    },
+    {
+     "k": 6,
+     "path": [
+      "Ethan",
+      "Oscar",
+      "Sara",
+      "Kate",
+      "Hannah",
+      "Olivia",
+      "Yusuf"
+     ],
+     "story": "Ethan had lunch with his son Oscar. Oscar's mother is Sara. Sara took her mother Kate to the market. Hannah had lunch with her daughter Olivia. Kate's daughter is Hannah. Olivia took her brother Yusuf to the cinema.",
+     "gold": {
+      "0|2": "husband",
+      "0|3": "son-in-law",
+      "0|4": "brother-in-law",
+      "0|5": "uncle",
+      "0|6": "uncle",
+      "1|3": "grandson",
+      "1|4": "nephew",
+      "1|5": "cousin",
+      "1|6": "cousin",
+      "2|4": "sister",
+      "2|5": "aunt",
+      "2|6": "aunt",
+      "3|5": "grandmother",
+      "3|6": "grandmother",
+      "4|6": "mother"
+     }
+    },
+    {
+     "k": 6,
+     "path": [
+      "Jack",
+      "Clara",
+      "George",
+      "Carl",
+      "Wendy",
+      "Henry",
+      "Iris"
+     ],
+     "story": "George wrote a letter to his son Carl. Henry's mother is Iris. Jack wrote a letter to his mother Clara. Wendy is Carl's daughter. Wendy took her brother Henry to the museum. Clara had lunch with her husband George.",
+     "gold": {
+      "0|2": "son",
+      "0|3": "brother",
+      "0|4": "uncle",
+      "0|5": "uncle",
+      "0|6": "brother-in-law",
+      "1|3": "mother",
+      "1|4": "grandmother",
+      "1|5": "grandmother",
+      "1|6": "mother-in-law",
+      "2|4": "grandfather",
+      "2|5": "grandfather",
+      "2|6": "father-in-law",
+      "3|5": "father",
+      "3|6": "husband",
+      "4|6": "daughter"
+     }
+    },
+    {
+     "k": 6,
+     "path": [
+      "Hannah",
+      "Kevin",
+      "Alice",
+      "Tom",
+      "Carl",
+      "Sara",
+      "Iris"
+     ],
+     "story": "Carl wrote a letter to his daughter Sara. Tom's brother is Carl. Alice took her son Tom to the park. Kevin is Hannah's father. Sara's mother is Iris. Kevin had lunch with his wife Alice.",
+     "gold": {
+      "0|2": "daughter",
+      "0|3": "sister",
+      "0|4": "sister",
+      "0|5": "aunt",
+      "0|6": "sister-in-law",
+      "1|3": "father",
+      "1|4": "father",
+      "1|5": "grandfather",
+      "1|6": "father-in-law",
+      "2|4": "mother",
+      "2|5": "grandmother",
+      "2|6": "mother-in-law",
+      "3|5": "uncle",
+      "3|6": "brother-in-law",
+      "4|6": "husband"
+     }
+    },
+    {
+     "k": 6,
+     "path": [
+      "Oscar",
+      "Leo",
+      "Wendy",
+      "Iris",
+      "Jack",
+      "Penny",
+      "Carl"
+     ],
+     "story": "Iris called her daughter Wendy. Leo's father is Oscar. Penny is Carl's mother. Wendy's son is Leo. Jack went hiking with his daughter Penny. Jack is Iris's husband.",
+     "gold": {
+      "0|2": "husband",
+      "0|3": "son-in-law",
+      "0|4": "son-in-law",
+      "0|5": "brother-in-law",
+      "0|6": "uncle",
+      "1|3": "grandson",
+      "1|4": "grandson",
+      "1|5": "nephew",
+      "1|6": "cousin",
+      "2|4": "daughter",
+      "2|5": "sister",
+      "2|6": "aunt",
+      "3|5": "mother",
+      "3|6": "grandmother",
+      "4|6": "grandfather"
+     }
+    },
+    {
+     "k": 6,
+     "path": [
+      "Henry",
+      "Olivia",
+      "Hannah",
+      "Kate",
+      "Ivan",
+      "Frank",
+      "Rosa"
+     ],
+     "story": "Hannah called her daughter Olivia. Henry's sister is Olivia. Kate went hiking with her son Ivan. Frank's wife is Rosa. Hannah took her mother Kate to the cinema. Ivan's brother is Frank.",
+     "gold": {
+      "0|2": "son",
+      "0|3": "grandson",
+      "0|4": "nephew",
+      "0|5": "nephew",
+      "0|6": "nephew",
+      "1|3": "granddaughter",
+      "1|4": "niece",
+      "1|5": "niece",
+      "1|6": "niece",
+      "2|4": "sister",
+      "2|5": "sister",
+      "2|6": "sister-in-law",
+      "3|5": "mother",
+      "3|6": "mother-in-law",
+      "4|6": "brother-in-law"
+     }
+    },
+    {
+     "k": 6,
+     "path": [
+      "Sam",
+      "Wendy",
+      "Will",
+      "Tina",
+      "Jack",
+      "Sara",
+      "Olivia"
+     ],
+     "story": "Tina is Will's sister. Jack called his daughter Sara. Will had lunch with his daughter Wendy. Wendy took her brother Sam to the park. Jack took his daughter Tina to the market. Olivia took her daughter Sara to the cinema.",
+     "gold": {
+      "0|2": "son",
+      "0|3": "nephew",
+      "0|4": "grandson",
+      "0|5": "nephew",
+      "0|6": "grandson",
+      "1|3": "niece",
+      "1|4": "granddaughter",
+      "1|5": "niece",
+      "1|6": "granddaughter",
+      "2|4": "son",
+      "2|5": "brother",
+      "2|6": "son",
+      "3|5": "sister",
+      "3|6": "daughter",
+      "4|6": "husband"
+     }
+    },
+    {
+     "k": 6,
+     "path": [
+      "Olivia",
+      "Diana",
+      "Emma",
+      "Peter",
+      "Penny",
+      "Xavier",
+      "Frank"
+     ],
+     "story": "Xavier took his son Frank to the zoo. Penny is Peter's mother. Peter is Emma's father. Emma's sister is Diana. Penny visited her husband Xavier. Diana's mother is Olivia.",
+     "gold": {
+      "0|2": "mother",
+      "0|3": "wife",
+      "0|4": "daughter-in-law",
+      "0|5": "daughter-in-law",
+      "0|6": "sister-in-law",
+      "1|3": "daughter",
+      "1|4": "granddaughter",
+      "1|5": "granddaughter",
+      "1|6": "niece",
+      "2|4": "granddaughter",
+      "2|5": "granddaughter",
+      "2|6": "niece",
+      "3|5": "son",
+      "3|6": "brother",
+      "4|6": "mother"
+     }
+    },
+    {
+     "k": 6,
+     "path": [
+      "Ivan",
+      "Oscar",
+      "Paula",
+      "Henry",
+      "Emma",
+      "Hannah",
+      "George"
+     ],
+     "story": "Henry wrote a letter to his sister Paula. Hannah is George's mother. Hannah's daughter is Emma. Oscar called his wife Paula. Oscar wrote a letter to his son Ivan. Emma called her father Henry.",
+     "gold": {
+      "0|2": "son",
+      "0|3": "nephew",
+      "0|4": "cousin",
+      "0|5": "nephew",
+      "0|6": "cousin",
+      "1|3": "brother-in-law",
+      "1|4": "uncle",
+      "1|6": "uncle",
+      "2|4": "aunt",
+      "2|5": "sister-in-law",
+      "2|6": "aunt",
+      "3|5": "husband",
+      "3|6": "father",
+      "4|6": "sister"
+     }
+    },
+    {
+     "k": 6,
+     "path": [
+      "David",
+      "Will",
+      "Henry",
+      "Clara",
+      "Yusuf",
+      "Sara",
+      "Wendy"
+     ],
+     "story": "Sara had lunch with her daughter Wendy. Yusuf visited his wife Sara. Henry went hiking with his mother Clara. Henry visited his brother Will. Will's father is David. Clara's brother is Yusuf.",
+     "gold": {
+      "0|2": "father",
+      "0|3": "husband",
+      "0|4": "brother-in-law",
+      "0|6": "uncle",
+      "1|3": "son",
+      "1|4": "nephew",
+      "1|5": "nephew",
+      "1|6": "cousin",
+      "2|4": "nephew",
+      "2|5": "nephew",
+      "2|6": "cousin",
+      "3|5": "sister-in-law",
+      "3|6": "aunt",
+      "4|6": "father"
+     }
+    },
+    {
+     "k": 6,
+     "path": [
+      "Oscar",
+      "Noah",
+      "Fiona",
+      "Carl",
+      "Adam",
+      "Frank",
+      "Xavier"
+     ],
+     "story": "Noah is Fiona's husband. Adam's father is Carl. Xavier is Frank's son. Carl took his daughter Fiona to the zoo. Noah took his son Oscar to the zoo. Frank had lunch with his brother Adam.",
+     "gold": {
+      "0|2": "son",
+      "0|3": "grandson",
+      "0|4": "nephew",
+      "0|5": "nephew",
+      "0|6": "cousin",
+      "1|3": "son-in-law",
+      "1|4": "brother-in-law",
+      "1|5": "brother-in-law",
+      "1|6": "uncle",
+      "2|4": "sister",
+      "2|5": "sister",
+      "2|6": "aunt",
+      "3|5": "father",
+      "3|6": "grandfather",
+      "4|6": "uncle"
+     }
+    },
+    {
+     "k": 6,
+     "path": [
+      "Noah",
+      "David",
+      "Julia",
+      "Zach",
+      "Wendy",
+      "Beth",
+      "Victor"
+     ],
+     "story": "David is Julia's husband. David's son is Noah. Wendy's husband is Zach. Julia is Zach's daughter. Beth took her mother Wendy to the museum. Beth took her son Victor to the zoo.",
+     "gold": {
+      "0|2": "son",
+      "0|3": "grandson",
+      "0|4": "grandson",
+      "0|5": "nephew",
+      "0|6": "cousin",
+      "1|3": "son-in-law",
+      "1|4": "son-in-law",
+      "1|5": "brother-in-law",
+      "1|6": "uncle",
+      "2|4": "daughter",
+      "2|5": "sister",
+      "2|6": "aunt",
+      "3|5": "father",
+      "3|6": "grandfather",
+      "4|6": "grandmother"
+     }
+    },
+    {
+     "k": 6,
+     "path": [
+      "Xavier",
+      "Iris",
+      "Wendy",
+      "Rosa",
+      "Henry",
+      "Carl",
+      "David"
+     ],
+     "story": "David called his father Carl. Xavier called his mother Iris. Wendy took her daughter Iris to the museum. Carl's father is Henry. Rosa is Wendy's daughter. Rosa took her father Henry to the market.",
+     "gold": {
+      "0|2": "grandson",
+      "0|3": "nephew",
+      "0|4": "grandson",
+      "0|5": "nephew",
+      "0|6": "cousin",
+      "1|3": "sister",
+      "1|4": "daughter",
+      "1|5": "sister",
+      "1|6": "aunt",
+      "2|4": "wife",
+      "2|5": "mother",
+      "2|6": "grandmother",
+      "3|5": "sister",
+      "3|6": "aunt",
+      "4|6": "grandfather"
+     }
+    },
+    {
+     "k": 6,
+     "path": [
+      "Adam",
+      "Kevin",
+      "Diana",
+      "Nora",
+      "Olivia",
+      "Yusuf",
+      "Tina"
+     ],
+     "story": "Olivia is Nora's mother. Adam's son is Kevin. Diana went hiking with her mother Nora. Kevin is Diana's brother. Olivia is Yusuf's wife. Tina called her father Yusuf.",
+     "gold": {
+      "0|2": "father",
+      "0|3": "husband",
+      "0|4": "son-in-law",
+      "0|5": "son-in-law",
+      "0|6": "brother-in-law",
+      "1|3": "son",
+      "1|4": "grandson",
+      "1|5": "grandson",
+      "1|6": "nephew",
+      "2|4": "granddaughter",
+      "2|5": "granddaughter",
+      "2|6": "niece",
+      "3|5": "daughter",
+      "3|6": "sister",
+      "4|6": "mother"
+     }
+    },
+    {
+     "k": 6,
+     "path": [
+      "Tina",
+      "Yusuf",
+      "Rosa",
+      "Ben",
+      "Nora",
+      "Uma",
+      "Zoe"
+     ],
+     "story": "Yusuf's daughter is Tina. Zoe had lunch with her sister Uma. Nora took her husband Ben to the museum. Rosa went hiking with her husband Yusuf. Nora took her daughter Uma to the market. Rosa took her father Ben to the cinema.",
+     "gold": {
+      "0|2": "daughter",
+      "0|3": "granddaughter",
+      "0|4": "granddaughter",
+      "0|5": "niece",
+      "0|6": "niece",
+      "1|3": "son-in-law",
+      "1|4": "son-in-law",
+      "1|5": "brother-in-law",
+      "1|6": "brother-in-law",
+      "2|4": "daughter",
+      "2|5": "sister",
+      "2|6": "sister",
+      "3|5": "father",
+      "3|6": "father",
+      "4|6": "mother"
+     }
+    }
+   ],
+   "complete_stories": 100,
+   "errors": [],
+   "summary": {
+    "one_pass": {
+     "acc": 0.4742129939718687,
+     "end_to_end": 0.23,
+     "stories_solved": 0.0,
+     "mean_p_gold": 0.3766510381781648,
+     "calls_per_story": 1,
+     "vs_refine1": {
+      "end_to_end": [
+       5,
+       16,
+       0.0266
+      ],
+      "per_variable": [
+       152,
+       153,
+       1.0
+      ]
+     }
+    },
+    "refine1": {
+     "acc": 0.47488278633623576,
+     "end_to_end": 0.34,
+     "stories_solved": 0.01,
+     "mean_p_gold": 0.4061219022103148,
+     "calls_per_story": 14.93,
+     "vs_one_pass": {
+      "end_to_end": [
+       16,
+       5,
+       0.0266
+      ],
+      "per_variable": [
+       153,
+       152,
+       1.0
+      ]
+     }
+    },
+    "gibbs_T1[rb]": {
+     "acc": 0.44608171466845276,
+     "end_to_end": 0.39,
+     "stories_solved": 0.02,
+     "mean_p_gold": 0.3627176825184193,
+     "calls_per_story": 373.25,
+     "at_truth": 0.003,
+     "vs_one_pass": {
+      "end_to_end": [
+       22,
+       6,
+       0.0037
+      ],
+      "per_variable": [
+       159,
+       201,
+       0.0306
+      ]
+     },
+     "vs_refine1": {
+      "end_to_end": [
+       11,
+       6,
+       0.3323
+      ],
+      "per_variable": [
+       101,
+       144,
+       0.0072
+      ]
+     }
+    },
+    "gibbs_T1[vote]": {
+     "acc": 0.4313462826523778,
+     "end_to_end": 0.35,
+     "stories_solved": 0.01,
+     "mean_p_gold": 0.3622906898861353,
+     "calls_per_story": 373.25,
+     "at_truth": 0.003,
+     "vs_one_pass": {
+      "end_to_end": [
+       19,
+       7,
+       0.029
+      ],
+      "per_variable": [
+       148,
+       212,
+       0.0009
+      ]
+     },
+     "vs_refine1": {
+      "end_to_end": [
+       8,
+       7,
+       1.0
+      ],
+      "per_variable": [
+       97,
+       162,
+       0.0001
+      ]
+     }
+    },
+    "gibbs_T0.3[rb]": {
+     "acc": 0.4681848626925653,
+     "end_to_end": 0.36,
+     "stories_solved": 0.04,
+     "mean_p_gold": 0.41425117213663765,
+     "calls_per_story": 373.25,
+     "at_truth": 0.035,
+     "vs_one_pass": {
+      "end_to_end": [
+       19,
+       6,
+       0.0146
+      ],
+      "per_variable": [
+       186,
+       195,
+       0.682
+      ]
+     },
+     "vs_refine1": {
+      "end_to_end": [
+       7,
+       5,
+       0.7744
+      ],
+      "per_variable": [
+       124,
+       134,
+       0.5753
+      ]
+     }
+    },
+    "gibbs_T0.3[vote]": {
+     "acc": 0.4715338245144005,
+     "end_to_end": 0.4,
+     "stories_solved": 0.04,
+     "mean_p_gold": 0.4637642330877428,
+     "calls_per_story": 373.25,
+     "at_truth": 0.035,
+     "vs_one_pass": {
+      "end_to_end": [
+       23,
+       6,
+       0.0023
+      ],
+      "per_variable": [
+       189,
+       193,
+       0.878
+      ]
+     },
+     "vs_refine1": {
+      "end_to_end": [
+       10,
+       4,
+       0.1796
+      ],
+      "per_variable": [
+       129,
+       134,
+       0.8052
+      ]
+     }
+    },
+    "gibbs_T0.1[rb]": {
+     "acc": 0.4722036168787676,
+     "end_to_end": 0.37,
+     "stories_solved": 0.05,
+     "mean_p_gold": 0.4166872069658406,
+     "calls_per_story": 373.25,
+     "at_truth": 0.043,
+     "vs_one_pass": {
+      "end_to_end": [
+       21,
+       7,
+       0.0125
+      ],
+      "per_variable": [
+       186,
+       189,
+       0.9178
+      ]
+     },
+     "vs_refine1": {
+      "end_to_end": [
+       7,
+       4,
+       0.5488
+      ],
+      "per_variable": [
+       119,
+       123,
+       0.8471
+      ]
+     }
+    },
+    "gibbs_T0.1[vote]": {
+     "acc": 0.4768921634293369,
+     "end_to_end": 0.37,
+     "stories_solved": 0.05,
+     "mean_p_gold": 0.47076356329537844,
+     "calls_per_story": 373.25,
+     "at_truth": 0.043,
+     "vs_one_pass": {
+      "end_to_end": [
+       21,
+       7,
+       0.0125
+      ],
+      "per_variable": [
+       192,
+       188,
+       0.8777
+      ]
+     },
+     "vs_refine1": {
+      "end_to_end": [
+       7,
+       4,
+       0.5488
+      ],
+      "per_variable": [
+       125,
+       122,
+       0.8988
+      ]
+     }
+    }
+   }
+  }
+ },
+ "usage": {
+  "calls": 159192,
+  "questions": 161084,
+  "input_tokens": 143031840,
+  "usd": 6.0073,
+  "retries": 210,
+  "mean_call_seconds": 0.309,
+  "model_versions": [
+   "jev-1.13.0"
+  ]
+ }
+}

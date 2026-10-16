@@ -1,0 +1,12 @@
+[07:20:44] resuming pod qy843qwlskzghg
+[07:20:45] ssh ok: root@64.247.201.46 -p 18526
+[07:22:47] pod: == Fri Oct 16 12:15:17 UTC 2026 start on NVIDIA H100 80GB HBM3
+[07:22:47] pod: == runpodctl or RUNPOD_POD_ID missing; no on-pod time cap
+[07:22:47] pod: == weights: unsloth/Meta-Llama-3.1-8B (served as meta-llama/Llama-3.1-8B)
+[07:22:47] pod: == Fri Oct 16 12:15:17 UTC 2026 installing uv
+[07:22:47] pod: == Fri Oct 16 12:15:18 UTC 2026 repo + paper environment
+[07:22:47] pod: == Fri Oct 16 12:16:00 UTC 2026 vLLM environment
+[07:22:47] pod: == Fri Oct 16 12:21:34 UTC 2026 starting vLLM
+[07:56:57] pod: == Fri Oct 16 12:56:43 UTC 2026 vLLM up
+[07:56:57] pod: == failed (exit 1)
+[07:56:57] run_pod.sh stopped without finishing; copying logs and stopping the pod (volume kept)

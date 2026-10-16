@@ -1,0 +1,28 @@
+[06:13:17] created pod 2enoy1w94uwpq7 (NVIDIA H100 80GB HBM3, secure cloud, $3.99/h)
+[06:13:18] waiting: status=RUNNING ip= ssh_port=None
+[06:13:38] waiting: status=RUNNING ip= ssh_port=None
+[06:13:59] waiting: status=RUNNING ip= ssh_port=None
+[06:14:19] waiting: status=RUNNING ip= ssh_port=None
+[06:14:40] waiting: status=RUNNING ip= ssh_port=None
+[06:15:02] waiting: status=RUNNING ip= ssh_port=None
+[06:15:23] waiting: status=RUNNING ip= ssh_port=None
+[06:15:44] ssh ok: root@64.247.201.51 -p 11188
+Traceback (most recent call last):
+  File "/Users/tom/tmp/jev-gibbs/pod/orchestrate.py", line 182, in <module>
+    main()
+  File "/Users/tom/tmp/jev-gibbs/pod/orchestrate.py", line 138, in main
+    pod.ssh(f"cd /workspace && MODEL_SOURCE={args.model_source} nohup bash /workspace/pod/run_pod.sh "
+  File "/Users/tom/tmp/jev-gibbs/pod/orchestrate.py", line 66, in ssh
+    return subprocess.run(self._ssh_base("ssh") + [f"root@{self.host}", cmd], capture_output=True, text=True,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.12/3.12.13_2/Frameworks/Python.framework/Versions/3.12/lib/python3.12/subprocess.py", line 550, in run
+    stdout, stderr = process.communicate(input, timeout=timeout)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.12/3.12.13_2/Frameworks/Python.framework/Versions/3.12/lib/python3.12/subprocess.py", line 1209, in communicate
+    stdout, stderr = self._communicate(input, endtime, timeout)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.12/3.12.13_2/Frameworks/Python.framework/Versions/3.12/lib/python3.12/subprocess.py", line 2116, in _communicate
+    self._check_timeout(endtime, orig_timeout, stdout, stderr)
+  File "/opt/homebrew/Cellar/python@3.12/3.12.13_2/Frameworks/Python.framework/Versions/3.12/lib/python3.12/subprocess.py", line 1253, in _check_timeout
+    raise TimeoutExpired(
+subprocess.TimeoutExpired: Command '['ssh', '-i', '/Users/tom/tmp/jev-gibbs/.secrets/pod_key', '-o', 'StrictHostKeyChecking=accept-new', '-o', 'UserKnownHostsFile=/Users/tom/tmp/jev-gibbs/.secrets/known_hosts', '-o', 'ConnectTimeout=20', '-o', 'ServerAliveInterval=30', '-o', 'BatchMode=yes', '-p', '11188', 'root@64.247.201.51', 'cd /workspace && MODEL_SOURCE=unsloth/Meta-Llama-3.1-8B nohup bash /workspace/pod/run_pod.sh > /workspace/run_pod.nohup 2>&1 &']' timed out after 300 seconds

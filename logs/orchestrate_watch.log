@@ -1,0 +1,31 @@
+[06:21:26] resuming pod 2enoy1w94uwpq7
+[06:21:29] ssh ok: root@64.247.201.51 -p 11188
+[06:23:30] ssh check failed (); retrying
+[06:25:30] ssh check failed (); retrying
+[06:27:31] ssh check failed (); retrying
+[06:29:31] ssh check failed (); retrying
+[06:31:32] ssh check failed (); retrying
+[06:33:33] ssh check failed (); retrying
+[06:35:33] ssh check failed (); retrying
+[06:37:34] ssh check failed (); retrying
+[06:39:34] ssh check failed (); retrying
+[06:41:35] ssh check failed (); retrying
+[06:43:35] ssh check failed (); retrying
+[06:45:36] ssh check failed (); retrying
+[06:47:37] ssh check failed (); retrying
+[06:49:37] ssh check failed (); retrying
+[06:51:38] ssh check failed (); retrying
+[06:53:39] ssh check failed (); retrying
+[06:55:39] ssh check failed (); retrying
+[06:57:40] ssh check failed (); retrying
+[06:59:40] ssh check failed (); retrying
+[07:01:41] ssh check failed (); retrying
+[07:03:42] ssh check failed (); retrying
+[07:05:42] ssh check failed (); retrying
+[07:07:43] ssh check failed (); retrying
+[07:09:43] ssh check failed (); retrying
+[07:11:44] pod: == Fri Oct 16 11:15:46 UTC 2026 start on NVIDIA H100 80GB HBM3
+[07:11:44] pod: == runpodctl or RUNPOD_POD_ID missing; no on-pod time cap
+[07:11:44] pod: == weights: unsloth/Meta-Llama-3.1-8B (served as meta-llama/Llama-3.1-8B)
+[07:11:44] pod: == failed (exit 1)
+[07:11:44] run_pod.sh stopped without finishing; copying logs and stopping the pod (volume kept)

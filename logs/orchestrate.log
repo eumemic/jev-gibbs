@@ -1,0 +1,29 @@
+[05:43:02] no machine available yet; retrying in 2 minutes
+[05:45:03] no machine available yet; retrying in 2 minutes
+[05:47:03] no machine available yet; retrying in 2 minutes
+[05:49:04] no machine available yet; retrying in 2 minutes
+[05:51:04] no machine available yet; retrying in 2 minutes
+[05:53:05] no machine available yet; retrying in 2 minutes
+[05:55:05] no machine available yet; retrying in 2 minutes
+[05:57:06] no machine available yet; retrying in 2 minutes
+[05:59:06] no machine available yet; retrying in 2 minutes
+[06:01:07] no machine available yet; retrying in 2 minutes
+[06:03:07] no machine available yet; retrying in 2 minutes
+[06:05:08] no machine available yet; retrying in 2 minutes
+[06:07:08] no machine available yet; retrying in 2 minutes
+[06:09:09] no machine available yet; retrying in 2 minutes
+[06:11:09] no machine available yet; retrying in 2 minutes
+Traceback (most recent call last):
+  File "/Users/tom/tmp/jev-gibbs/pod/orchestrate.py", line 181, in <module>
+    if __name__ == "__main__":
+        ^^^^^^
+  File "/Users/tom/tmp/jev-gibbs/pod/orchestrate.py", line 116, in main
+    else:
+          
+  File "/Users/tom/tmp/jev-gibbs/pod/orchestrate.py", line 88, in create
+    info = api("POST", "/pods", body)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tom/tmp/jev-gibbs/pod/orchestrate.py", line 46, in api
+    raise RuntimeError(f"RunPod {method} {path}: HTTP {e.code} {e.read().decode(errors='replace')[:400]}") from None
+RuntimeError: RunPod POST /pods: HTTP 500 {"error":"create pod: There are no instances currently available","status":500}
+

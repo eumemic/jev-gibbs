@@ -1,0 +1,329 @@
+{
+ "args": {
+  "mode": "compare",
+  "k": [
+   4
+  ],
+  "stories": 3,
+  "seed": 99,
+  "burn_in": 1,
+  "keep": 2,
+  "labels": null,
+  "relevant_only": false,
+  "temperature": 1.0,
+  "temperatures": [
+   1.0,
+   0.3,
+   0.1
+  ],
+  "tag": "smoke",
+  "workers": 40,
+  "concurrency": 40
+ },
+ "results": {
+  "4": {
+   "stories": [
+    {
+     "k": 4,
+     "path": [
+      "Henry",
+      "Vera",
+      "Penny",
+      "Rosa",
+      "George"
+     ],
+     "story": "Vera's father is Henry. George's wife is Rosa. Rosa took her sister Penny to the cinema. Penny visited her sister Vera.",
+     "gold": {
+      "0|2": "father",
+      "0|3": "father",
+      "0|4": "father-in-law",
+      "1|3": "sister",
+      "1|4": "sister-in-law",
+      "2|4": "sister-in-law"
+     }
+    },
+    {
+     "k": 4,
+     "path": [
+      "David",
+      "Adam",
+      "Yusuf",
+      "Ivan",
+      "Hannah"
+     ],
+     "story": "Adam's son is David. Ivan is Hannah's brother. Adam took his father Yusuf to the cinema. Ivan is Yusuf's son.",
+     "gold": {
+      "0|2": "grandson",
+      "0|3": "nephew",
+      "0|4": "nephew",
+      "1|3": "brother",
+      "1|4": "brother",
+      "2|4": "father"
+     }
+    },
+    {
+     "k": 4,
+     "path": [
+      "Iris",
+      "Will",
+      "Noah",
+      "Kevin",
+      "Beth"
+     ],
+     "story": "Will went hiking with his father Noah. Beth took her son Kevin to the museum. Kevin took his brother Noah to the cinema. Will visited his mother Iris.",
+     "gold": {
+      "0|2": "wife",
+      "0|3": "sister-in-law",
+      "0|4": "daughter-in-law",
+      "1|3": "nephew",
+      "1|4": "grandson",
+      "2|4": "son"
+     }
+    }
+   ],
+   "complete_stories": 3,
+   "errors": [],
+   "summary": {
+    "one_pass": {
+     "acc": 0.3333333333333333,
+     "end_to_end": 0.3333333333333333,
+     "stories_solved": 0.0,
+     "mean_p_gold": 0.3411111111111111,
+     "calls_per_story": 1,
+     "vs_refine1": {
+      "end_to_end": [
+       0,
+       0,
+       1.0
+      ],
+      "per_variable": [
+       1,
+       2,
+       1.0
+      ]
+     }
+    },
+    "refine1": {
+     "acc": 0.3888888888888889,
+     "end_to_end": 0.3333333333333333,
+     "stories_solved": 0.0,
+     "mean_p_gold": 0.3277777777777778,
+     "calls_per_story": 6.0,
+     "vs_one_pass": {
+      "end_to_end": [
+       0,
+       0,
+       1.0
+      ],
+      "per_variable": [
+       2,
+       1,
+       1.0
+      ]
+     }
+    },
+    "gibbs_T1[rb]": {
+     "acc": 0.3888888888888889,
+     "end_to_end": 0.3333333333333333,
+     "stories_solved": 0.0,
+     "mean_p_gold": 0.36944444444444446,
+     "calls_per_story": 18.0,
+     "at_truth": 0.0,
+     "vs_one_pass": {
+      "end_to_end": [
+       0,
+       0,
+       1.0
+      ],
+      "per_variable": [
+       2,
+       1,
+       1.0
+      ]
+     },
+     "vs_refine1": {
+      "end_to_end": [
+       0,
+       0,
+       1.0
+      ],
+      "per_variable": [
+       1,
+       1,
+       1.0
+      ]
+     }
+    },
+    "gibbs_T1[vote]": {
+     "acc": 0.4444444444444444,
+     "end_to_end": 0.6666666666666666,
+     "stories_solved": 0.0,
+     "mean_p_gold": 0.4444444444444444,
+     "calls_per_story": 18.0,
+     "at_truth": 0.0,
+     "vs_one_pass": {
+      "end_to_end": [
+       1,
+       0,
+       1.0
+      ],
+      "per_variable": [
+       3,
+       1,
+       0.625
+      ]
+     },
+     "vs_refine1": {
+      "end_to_end": [
+       1,
+       0,
+       1.0
+      ],
+      "per_variable": [
+       2,
+       1,
+       1.0
+      ]
+     }
+    },
+    "gibbs_T0.3[rb]": {
+     "acc": 0.4444444444444444,
+     "end_to_end": 0.3333333333333333,
+     "stories_solved": 0.0,
+     "mean_p_gold": 0.41583333333333333,
+     "calls_per_story": 18.0,
+     "at_truth": 0.0,
+     "vs_one_pass": {
+      "end_to_end": [
+       0,
+       0,
+       1.0
+      ],
+      "per_variable": [
+       3,
+       1,
+       0.625
+      ]
+     },
+     "vs_refine1": {
+      "end_to_end": [
+       0,
+       0,
+       1.0
+      ],
+      "per_variable": [
+       2,
+       1,
+       1.0
+      ]
+     }
+    },
+    "gibbs_T0.3[vote]": {
+     "acc": 0.4444444444444444,
+     "end_to_end": 0.3333333333333333,
+     "stories_solved": 0.0,
+     "mean_p_gold": 0.4444444444444444,
+     "calls_per_story": 18.0,
+     "at_truth": 0.0,
+     "vs_one_pass": {
+      "end_to_end": [
+       0,
+       0,
+       1.0
+      ],
+      "per_variable": [
+       3,
+       1,
+       0.625
+      ]
+     },
+     "vs_refine1": {
+      "end_to_end": [
+       0,
+       0,
+       1.0
+      ],
+      "per_variable": [
+       2,
+       1,
+       1.0
+      ]
+     }
+    },
+    "gibbs_T0.1[rb]": {
+     "acc": 0.3333333333333333,
+     "end_to_end": 0.3333333333333333,
+     "stories_solved": 0.0,
+     "mean_p_gold": 0.3447222222222222,
+     "calls_per_story": 18.0,
+     "at_truth": 0.0,
+     "vs_one_pass": {
+      "end_to_end": [
+       0,
+       0,
+       1.0
+      ],
+      "per_variable": [
+       1,
+       1,
+       1.0
+      ]
+     },
+     "vs_refine1": {
+      "end_to_end": [
+       0,
+       0,
+       1.0
+      ],
+      "per_variable": [
+       0,
+       1,
+       1.0
+      ]
+     }
+    },
+    "gibbs_T0.1[vote]": {
+     "acc": 0.3333333333333333,
+     "end_to_end": 0.3333333333333333,
+     "stories_solved": 0.0,
+     "mean_p_gold": 0.3611111111111111,
+     "calls_per_story": 18.0,
+     "at_truth": 0.0,
+     "vs_one_pass": {
+      "end_to_end": [
+       0,
+       0,
+       1.0
+      ],
+      "per_variable": [
+       1,
+       1,
+       1.0
+      ]
+     },
+     "vs_refine1": {
+      "end_to_end": [
+       0,
+       0,
+       1.0
+      ],
+      "per_variable": [
+       0,
+       1,
+       1.0
+      ]
+     }
+    }
+   }
+  }
+ },
+ "usage": {
+  "calls": 0,
+  "questions": 0,
+  "input_tokens": 0,
+  "usd": 0.0,
+  "retries": 0,
+  "mean_call_seconds": 0.0,
+  "model_versions": []
+ }
+}

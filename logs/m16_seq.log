@@ -1,0 +1,21 @@
+16 chains (m=16, seq); ~35,840 Jev calls
+  1/16 chains done, 31,307 calls, $3.55
+  2/16 chains done, 31,687 calls, $3.59
+  3/16 chains done, 32,039 calls, $3.63
+  4/16 chains done, 32,081 calls, $3.64
+  5/16 chains done, 32,211 calls, $3.65
+  6/16 chains done, 32,234 calls, $3.66
+  7/16 chains done, 32,411 calls, $3.68
+  8/16 chains done, 33,116 calls, $3.76
+  9/16 chains done, 33,177 calls, $3.76
+  10/16 chains done, 33,564 calls, $3.81
+  11/16 chains done, 34,642 calls, $3.93
+  12/16 chains done, 34,683 calls, $3.93
+  13/16 chains done, 35,056 calls, $3.97
+  14/16 chains done, 35,328 calls, $4.01
+  15/16 chains done, 35,796 calls, $4.06
+  16/16 chains done, 35,840 calls, $4.06
+  vote: acc 0.924 ± 0.000 over 1 seed(s); mean {"brier": 0.0632, "ece": 0.0495, "auroc": 0.9623, "acc@50%": 0.9727}
+  rb  : acc 0.933 ± 0.000 over 1 seed(s); mean {"brier": 0.0575, "ece": 0.0543, "auroc": 0.9694, "acc@50%": 0.9746}
+usage: {"calls": 35840, "questions": 35840, "input_tokens": 96727260, "usd": 4.0625, "retries": 71, "mean_call_seconds": 0.433, "model_versions": ["jev-1.13.0"], "wall_seconds": 1493.3}
+saved results/gibbs_m16_seq.json

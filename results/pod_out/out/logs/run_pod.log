@@ -1,0 +1,688 @@
+== Fri Oct 16 12:15:17 UTC 2026 start on NVIDIA H100 80GB HBM3
+== runpodctl or RUNPOD_POD_ID missing; no on-pod time cap
+== weights: unsloth/Meta-Llama-3.1-8B (served as meta-llama/Llama-3.1-8B)
+== Fri Oct 16 12:15:17 UTC 2026 installing uv
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.
+
+[notice] A new release of pip is available: 25.0.1 -> 26.2.1
+[notice] To update, run: python -m pip install --upgrade pip
+== Fri Oct 16 12:15:18 UTC 2026 repo + paper environment
+== Fri Oct 16 12:16:00 UTC 2026 vLLM environment
+== Fri Oct 16 12:21:34 UTC 2026 starting vLLM
+0.31.0
+== Fri Oct 16 12:56:43 UTC 2026 vLLM up
+smoke: {"id":"cmpl-ad8b0683a9f1d1bd","object":"text_completion","created":1792155403,"model":"meta-llama/Llama-3.1-8B","choices":[{"index":0,"text":" Ke","logprobs":null,"finish_reason":"length","stop_reason":null,"token_ids":null,"prompt_logprobs":null,"prompt_token_ids":null,"routed_experts":null}],"service_tier":null,"system_fingerprint":"vllm-0.31.0-b9ec9d2b","usage":{"prompt_tokens":22,"total_tokens":24,"completion_tokens":2,"prompt_tokens_details":null,"completion_tokens_details":null},"kv_transfer_params":null,"ec_transfer_params":null,"metrics":null}
+
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+AssertionError:  Ke
+structured_outputs not honoured by this vLLM version
+== failed (exit 1)
+== Fri Oct 16 12:59:06 UTC 2026 start on NVIDIA H100 80GB HBM3
+== runpodctl or RUNPOD_POD_ID missing; no on-pod time cap
+== weights: unsloth/Meta-Llama-3.1-8B (served as meta-llama/Llama-3.1-8B)
+== Fri Oct 16 12:59:06 UTC 2026 installing uv
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.
+
+[notice] A new release of pip is available: 25.0.1 -> 26.2.1
+[notice] To update, run: python -m pip install --upgrade pip
+== Fri Oct 16 12:59:07 UTC 2026 repo + paper environment
+== Fri Oct 16 12:59:12 UTC 2026 vLLM environment
+== Fri Oct 16 12:59:23 UTC 2026 starting vLLM
+0.31.0
+== Fri Oct 16 13:02:01 UTC 2026 vLLM up
+smoke: {"id":"cmpl-a48af2c2a3ceba0b","object":"text_completion","created":1792155721,"model":"meta-llama/Llama-3.1-8B","choices":[{"index":0,"text":" ca","logprobs":null,"finish_reason":"length","stop_reason":null,"token_ids":null,"prompt_logprobs":null,"prompt_token_ids":null,"routed_experts":null}],"service_tier":null,"system_fingerprint":"vllm-0.31.0-b9ec9d2b","usage":{"prompt_tokens":22,"total
+== Fri Oct 16 13:02:01 UTC 2026 constrained decoding ok
+== Fri Oct 16 13:02:01 UTC 2026 consistent_reasoning/run_eval.py --testbed truthfulQA --algorithm zeroshot --model meta-llama/Llama-3.1-8B --port 8000 --temperature 0.0 --n_partitions 1 --num_workers 128
+[run_eval] zeroshot ignores chunk_size_cis; forcing chunk_size_cis=1.
+=== run plan ===
+  algorithm           : zeroshot
+  testbed             : truthfulQA
+  CIs in eval set     : 256 (group_size=4, items=1024)
+  n_partitions        : 1
+  partition_base_seed : 42
+  chunk_size_cis      : 1 (4 items)
+  chunks per partition: 256
+  total chunk runs    : 256
+  total item-preds    : 1024
+  missing CIs in src  : 0 (sample: [])
+  output_dir          : /root/llg/consistent_reasoning/results/truthfulQA/zeroshot/zeroshot_Llama-3.1-8B_T0.0_baseseed42
+  run_name            : zeroshot_Llama-3.1-8B_T0.0_baseseed42
+  num_workers         : 128
+  cache_key_args      : {'temperature': 0.0, 'model': 'meta-llama/Llama-3.1-8B', 'instruction_tuned': False, 'system_prompt': None, 'algorithm': 'zeroshot'}
+  partition 00 (seed=42): first chunks (first 5 CIs) = [[779], [174], [422]]
+[parallel] running 256 chunks with 128 workers
+[p00 c19] done in 1.1s, acc=0.75
+[p00 c12] done in 1.1s, acc=0.5
+[p00 c41] done in 1.2s, acc=1.0
+[p00 c35] done in 1.2s, acc=0.5
+[p00 c09] done in 1.3s, acc=0.25
+[p00 c26] done in 1.3s, acc=0.0
+[p00 c66] done in 1.2s, acc=0.75
+[p00 c34] done in 1.3s, acc=0.0
+[p00 c20] done in 1.3s, acc=1.0
+[p00 c39] done in 1.3s, acc=0.5
+[p00 c21] done in 1.2s, acc=1.0
+[p00 c04] done in 1.3s, acc=0.75
+[p00 c27] done in 1.2s, acc=0.5
+[p00 c57] done in 1.3s, acc=0.5
+[p00 c60] done in 1.3s, acc=0.5
+[p00 c38] done in 1.3s, acc=0.5
+[p00 c100] done in 1.3s, acc=0.25
+[p00 c43] done in 1.4s, acc=1.0
+[p00 c30] done in 1.4s, acc=0.25
+[p00 c86] done in 1.3s, acc=0.75
+[p00 c92] done in 1.3s, acc=0.25
+[p00 c72] done in 1.4s, acc=0.5
+[p00 c104] done in 1.3s, acc=0.75
+[p00 c32] done in 1.4s, acc=1.0
+[p00 c78] done in 1.3s, acc=1.0
+[p00 c25] done in 1.4s, acc=0.25
+[p00 c10] done in 1.4s, acc=0.75
+[p00 c77] done in 1.4s, acc=0.5
+[p00 c110] done in 1.3s, acc=0.75
+[p00 c01] done in 1.4s, acc=0.75
+[p00 c97] done in 1.3s, acc=0.5
+[p00 c65] done in 1.3s, acc=0.75
+[p00 c14] done in 1.5s, acc=0.0
+[p00 c42] done in 1.5s, acc=1.0
+[p00 c124] done in 1.2s, acc=1.0
+[p00 c02] done in 1.5s, acc=0.75
+[p00 c87] done in 1.4s, acc=0.75
+[p00 c61] done in 1.4s, acc=0.75
+[p00 c90] done in 1.3s, acc=0.0
+[p00 c24] done in 1.4s, acc=0.5
+[p00 c00] done in 1.4s, acc=1.0
+[p00 c123] done in 1.3s, acc=0.5
+[p00 c08] done in 1.3s, acc=0.25
+[p00 c75] done in 1.4s, acc=0.25
+[p00 c17] done in 1.4s, acc=0.25
+[p00 c127] done in 1.3s, acc=0.75
+[p00 c91] done in 1.4s, acc=0.0
+[p00 c106] done in 1.4s, acc=1.0
+[p00 c23] done in 1.5s, acc=0.0
+[p00 c07] done in 1.5s, acc=0.75
+[p00 c36] done in 1.5s, acc=0.5
+[p00 c98] done in 1.4s, acc=0.75
+[p00 c69] done in 1.4s, acc=0.5
+[p00 c54] done in 1.4s, acc=0.5
+[p00 c05] done in 1.5s, acc=0.75
+[p00 c03] done in 1.4s, acc=0.75
+[p00 c06] done in 1.5s, acc=0.75
+[p00 c70] done in 1.5s, acc=1.0
+[p00 c62] done in 1.4s, acc=1.0
+[p00 c63] done in 1.4s, acc=1.0
+[p00 c29] done in 1.6s, acc=0.75
+[p00 c115] done in 1.4s, acc=0.5
+[p00 c108] done in 1.4s, acc=0.75
+[p00 c111] done in 1.4s, acc=0.75
+[p00 c15] done in 1.5s, acc=0.75
+[p00 c50] done in 1.5s, acc=0.75
+[p00 c113] done in 1.3s, acc=0.5
+[p00 c120] done in 1.3s, acc=0.5
+[p00 c122] done in 1.4s, acc=0.0
+[p00 c11] done in 1.5s, acc=0.75
+[p00 c125] done in 1.4s, acc=1.0
+[p00 c121] done in 1.4s, acc=0.25
+[p00 c16] done in 1.5s, acc=1.0
+[p00 c74] done in 1.4s, acc=0.25
+[p00 c46] done in 1.5s, acc=0.5
+[p00 c53] done in 1.6s, acc=0.0
+[p00 c76] done in 1.5s, acc=0.5
+[p00 c37] done in 1.6s, acc=0.25
+[p00 c103] done in 1.5s, acc=0.75
+[p00 c48] done in 1.5s, acc=1.0
+[p00 c18] done in 1.5s, acc=0.25
+[p00 c13] done in 1.6s, acc=1.0
+[p00 c51] done in 1.5s, acc=1.0
+[p00 c114] done in 1.4s, acc=0.5
+[p00 c119] done in 1.4s, acc=0.5
+[p00 c102] done in 1.5s, acc=0.75
+[p00 c116] done in 1.4s, acc=0.75
+[p00 c117] done in 1.5s, acc=1.0
+[p00 c31] done in 1.6s, acc=0.5
+[p00 c71] done in 1.5s, acc=0.75
+[p00 c89] done in 1.5s, acc=0.25
+[p00 c112] done in 1.4s, acc=0.75
+[p00 c55] done in 1.5s, acc=1.0
+[p00 c96] done in 1.5s, acc=0.25
+[p00 c59] done in 1.6s, acc=0.75
+[p00 c49] done in 1.6s, acc=0.5
+[p00 c67] done in 1.6s, acc=0.5
+[p00 c95] done in 1.5s, acc=1.0
+[p00 c81] done in 1.5s, acc=0.5
+[p00 c28] done in 1.4s, acc=0.5
+[p00 c58] done in 1.5s, acc=1.0
+[p00 c109] done in 1.5s, acc=0.5
+[p00 c33] done in 1.6s, acc=0.5
+[p00 c93] done in 1.5s, acc=0.5
+[p00 c105] done in 1.5s, acc=0.25
+[p00 c80] done in 1.6s, acc=0.5
+[p00 c47] done in 1.6s, acc=0.25
+[p00 c82] done in 1.6s, acc=0.5
+[p00 c44] done in 1.5s, acc=0.75
+[p00 c64] done in 1.6s, acc=0.5
+[p00 c126] done in 1.4s, acc=0.0
+[p00 c68] done in 1.6s, acc=0.25
+[p00 c45] done in 1.6s, acc=1.0
+[p00 c85] done in 1.6s, acc=0.0
+[p00 c52] done in 1.7s, acc=1.0
+[p00 c56] done in 1.6s, acc=0.75
+[p00 c88] done in 1.6s, acc=0.5
+[p00 c101] done in 1.6s, acc=1.0
+[p00 c84] done in 1.6s, acc=0.0
+[p00 c73] done in 1.6s, acc=1.0
+[p00 c79] done in 1.6s, acc=0.0
+[p00 c22] done in 1.7s, acc=0.5
+[p00 c99] done in 1.6s, acc=0.75
+[p00 c83] done in 1.6s, acc=0.75
+[p00 c40] done in 1.7s, acc=1.0
+[p00 c118] done in 1.6s, acc=0.5
+[p00 c94] done in 1.7s, acc=0.25
+[p00 c107] done in 1.6s, acc=0.75
+[p00 c141] done in 0.5s, acc=0.25
+[p00 c132] done in 0.7s, acc=0.5
+[p00 c136] done in 0.5s, acc=0.75
+[p00 c135] done in 0.6s, acc=0.25
+[p00 c133] done in 0.6s, acc=0.25
+[p00 c140] done in 0.5s, acc=0.75
+[p00 c131] done in 0.5s, acc=1.0
+[p00 c130] done in 0.7s, acc=1.0
+[p00 c138] done in 0.6s, acc=0.0
+[p00 c137] done in 0.6s, acc=0.5
+[p00 c148] done in 0.5s, acc=1.0
+[p00 c128] done in 0.9s, acc=0.25
+[p00 c149] done in 0.5s, acc=0.75
+[p00 c134] done in 0.5s, acc=0.75
+[p00 c139] done in 0.7s, acc=0.75
+[p00 c143] done in 0.7s, acc=0.75
+[p00 c144] done in 0.7s, acc=0.75
+[p00 c129] done in 1.1s, acc=1.0
+[p00 c153] done in 0.5s, acc=0.75
+[p00 c158] done in 0.5s, acc=0.0
+[p00 c150] done in 0.6s, acc=0.5
+[p00 c170] done in 0.5s, acc=0.25
+[p00 c163] done in 0.6s, acc=0.5
+[p00 c168] done in 0.5s, acc=1.0
+[p00 c147] done in 0.8s, acc=0.75
+[p00 c142] done in 0.8s, acc=0.5
+[p00 c151] done in 0.7s, acc=0.25
+[p00 c169] done in 0.5s, acc=0.75
+[p00 c154] done in 0.7s, acc=0.5
+[p00 c156] done in 0.6s, acc=0.5
+[p00 c171] done in 0.6s, acc=0.5
+[p00 c152] done in 0.7s, acc=0.25
+[p00 c146] done in 0.8s, acc=0.25
+[p00 c155] done in 0.6s, acc=0.5
+[p00 c166] done in 0.7s, acc=0.25
+[p00 c157] done in 0.7s, acc=0.25
+[p00 c178] done in 0.6s, acc=1.0
+[p00 c165] done in 0.7s, acc=0.75
+[p00 c177] done in 0.6s, acc=0.5
+[p00 c174] done in 0.7s, acc=0.5
+[p00 c181] done in 0.6s, acc=0.75
+[p00 c145] done in 0.9s, acc=0.5
+[p00 c167] done in 0.7s, acc=0.75
+[p00 c172] done in 0.7s, acc=0.0
+[p00 c192] done in 0.5s, acc=1.0
+[p00 c176] done in 0.7s, acc=0.75
+[p00 c162] done in 0.8s, acc=0.75
+[p00 c182] done in 0.6s, acc=0.75
+[p00 c198] done in 0.5s, acc=0.5
+[p00 c175] done in 0.7s, acc=0.75
+[p00 c173] done in 0.7s, acc=0.75
+[p00 c197] done in 0.5s, acc=0.75
+[p00 c187] done in 0.5s, acc=0.5
+[p00 c159] done in 0.9s, acc=0.75
+[p00 c164] done in 0.9s, acc=0.0
+[p00 c161] done in 0.8s, acc=0.5
+[p00 c186] done in 0.5s, acc=0.25
+[p00 c183] done in 0.5s, acc=0.75
+[p00 c180] done in 0.7s, acc=0.25
+[p00 c196] done in 0.5s, acc=0.5
+[p00 c179] done in 0.8s, acc=0.5
+[p00 c189] done in 0.6s, acc=0.5
+[p00 c160] done in 0.9s, acc=0.25
+[p00 c184] done in 0.6s, acc=0.75
+[p00 c191] done in 0.6s, acc=0.0
+[p00 c188] done in 0.6s, acc=0.25
+[p00 c194] done in 0.6s, acc=1.0
+[p00 c207] done in 0.4s, acc=0.25
+[p00 c199] done in 0.6s, acc=0.75
+[p00 c203] done in 0.5s, acc=0.75
+[p00 c206] done in 0.5s, acc=1.0
+[p00 c222] done in 0.3s, acc=1.0
+[p00 c209] done in 0.4s, acc=1.0
+[p00 c185] done in 0.7s, acc=0.75
+[p00 c201] done in 0.6s, acc=1.0
+[p00 c190] done in 0.7s, acc=0.75
+[p00 c211] done in 0.5s, acc=0.25
+[p00 c202] done in 0.6s, acc=0.25
+[p00 c193] done in 0.6s, acc=0.5
+[p00 c195] done in 0.7s, acc=0.75
+[p00 c204] done in 0.6s, acc=0.5
+[p00 c217] done in 0.4s, acc=0.75
+[p00 c205] done in 0.5s, acc=0.5
+[p00 c212] done in 0.5s, acc=0.0
+[p00 c214] done in 0.5s, acc=0.25
+[p00 c210] done in 0.5s, acc=0.75
+[p00 c216] done in 0.4s, acc=1.0
+[p00 c208] done in 0.6s, acc=1.0
+[p00 c218] done in 0.4s, acc=0.75
+[p00 c220] done in 0.5s, acc=0.75
+[p00 c221] done in 0.5s, acc=0.25
+[p00 c200] done in 0.7s, acc=0.25
+[p00 c219] done in 0.4s, acc=1.0
+[p00 c226] done in 0.3s, acc=0.5
+[p00 c223] done in 0.4s, acc=0.25
+[p00 c227] done in 0.4s, acc=0.25
+[p00 c215] done in 0.5s, acc=0.0
+[p00 c224] done in 0.5s, acc=0.5
+[p00 c232] done in 0.3s, acc=0.75
+[p00 c225] done in 0.5s, acc=0.5
+[p00 c213] done in 0.7s, acc=0.5
+[p00 c229] done in 0.4s, acc=0.75
+[p00 c230] done in 0.3s, acc=0.75
+[p00 c233] done in 0.3s, acc=0.75
+[p00 c231] done in 0.4s, acc=1.0
+[p00 c237] done in 0.2s, acc=1.0
+[p00 c228] done in 0.5s, acc=0.5
+[p00 c234] done in 0.3s, acc=0.75
+[p00 c241] done in 0.2s, acc=0.25
+[p00 c240] done in 0.3s, acc=0.5
+[p00 c238] done in 0.3s, acc=0.75
+[p00 c236] done in 0.3s, acc=1.0
+[p00 c239] done in 0.3s, acc=0.75
+[p00 c245] done in 0.3s, acc=0.75
+[p00 c243] done in 0.3s, acc=0.25
+[p00 c249] done in 0.2s, acc=1.0
+[p00 c242] done in 0.3s, acc=0.75
+[p00 c235] done in 0.4s, acc=0.5
+[p00 c252] done in 0.2s, acc=0.5
+[p00 c244] done in 0.3s, acc=0.25
+[p00 c248] done in 0.3s, acc=0.5
+[p00 c251] done in 0.2s, acc=0.5
+[p00 c253] done in 0.2s, acc=0.25
+[p00 c250] done in 0.2s, acc=0.75
+[p00 c247] done in 0.3s, acc=0.75
+[p00 c255] done in 0.2s, acc=1.0
+[p00 c246] done in 0.3s, acc=1.0
+[p00 c254] done in 0.2s, acc=1.0
+
+Wrote /root/llg/consistent_reasoning/results/truthfulQA/zeroshot/zeroshot_Llama-3.1-8B_T0.0_baseseed42/summary.json
+headline: mean=0.5908 +/- n/a over 1 partitions, min=0.5908, max=0.5908
+runtime: mean=0.9841s per chunk
+per-item correct-count dist (out of 1): {'0': 419, '1': 605}
+== Fri Oct 16 13:02:06 UTC 2026 consistent_reasoning/run_eval.py --testbed gsm8k --algorithm zeroshot --model meta-llama/Llama-3.1-8B --port 8000 --temperature 0.0 --n_partitions 1 --num_workers 128
+[run_eval] zeroshot ignores chunk_size_cis; forcing chunk_size_cis=1.
+=== run plan ===
+  algorithm           : zeroshot
+  testbed             : gsm8k
+  CIs in eval set     : 256 (group_size=4, items=1024)
+  n_partitions        : 1
+  partition_base_seed : 42
+  chunk_size_cis      : 1 (4 items)
+  chunks per partition: 256
+  total chunk runs    : 256
+  total item-preds    : 1024
+  missing CIs in src  : 0 (sample: [])
+  output_dir          : /root/llg/consistent_reasoning/results/gsm8k/zeroshot/zeroshot_Llama-3.1-8B_T0.0_baseseed42
+  run_name            : zeroshot_Llama-3.1-8B_T0.0_baseseed42
+  num_workers         : 128
+  cache_key_args      : {'temperature': 0.0, 'model': 'meta-llama/Llama-3.1-8B', 'instruction_tuned': False, 'system_prompt': None, 'algorithm': 'zeroshot'}
+  partition 00 (seed=42): first chunks (first 5 CIs) = [[6717], [305], [2805]]
+[parallel] running 256 chunks with 128 workers
+[p00 c01] done in 1.8s, acc=0.5
+[p00 c02] done in 1.9s, acc=0.5
+[p00 c00] done in 1.9s, acc=0.5
+[p00 c03] done in 1.9s, acc=0.5
+[p00 c16] done in 2.1s, acc=0.5
+[p00 c10] done in 2.2s, acc=0.5
+[p00 c23] done in 2.2s, acc=0.75
+[p00 c30] done in 2.2s, acc=1.0
+[p00 c42] done in 2.1s, acc=0.5
+[p00 c07] done in 2.2s, acc=0.75
+[p00 c19] done in 2.2s, acc=0.5
+[p00 c47] done in 2.2s, acc=0.75
+[p00 c32] done in 2.2s, acc=0.75
+[p00 c41] done in 2.2s, acc=0.25
+[p00 c24] done in 2.2s, acc=0.5
+[p00 c04] done in 2.3s, acc=0.5
+[p00 c35] done in 2.2s, acc=0.75
+[p00 c73] done in 2.2s, acc=1.0
+[p00 c61] done in 2.2s, acc=0.25
+[p00 c118] done in 2.1s, acc=0.5
+[p00 c99] done in 2.2s, acc=0.5
+[p00 c39] done in 2.2s, acc=0.75
+[p00 c58] done in 2.3s, acc=1.0
+[p00 c57] done in 2.3s, acc=0.25
+[p00 c13] done in 2.3s, acc=1.0
+[p00 c48] done in 2.3s, acc=0.5
+[p00 c09] done in 2.3s, acc=0.5
+[p00 c123] done in 2.1s, acc=0.5
+[p00 c18] done in 2.3s, acc=0.75
+[p00 c45] done in 2.2s, acc=0.5
+[p00 c115] done in 2.2s, acc=0.5
+[p00 c79] done in 2.2s, acc=0.5
+[p00 c69] done in 2.3s, acc=0.5
+[p00 c05] done in 2.3s, acc=1.0
+[p00 c86] done in 2.2s, acc=0.25
+[p00 c54] done in 2.3s, acc=0.5
+[p00 c33] done in 2.3s, acc=0.5
+[p00 c15] done in 2.4s, acc=0.5
+[p00 c26] done in 2.2s, acc=0.25
+[p00 c56] done in 2.3s, acc=0.0
+[p00 c67] done in 2.2s, acc=0.5
+[p00 c102] done in 2.2s, acc=0.75
+[p00 c65] done in 2.3s, acc=0.5
+[p00 c20] done in 2.3s, acc=0.5
+[p00 c21] done in 2.4s, acc=0.5
+[p00 c105] done in 2.3s, acc=0.5
+[p00 c112] done in 2.2s, acc=0.5
+[p00 c08] done in 2.4s, acc=0.5
+[p00 c59] done in 2.4s, acc=0.5
+[p00 c06] done in 2.3s, acc=0.75
+[p00 c66] done in 2.3s, acc=0.75
+[p00 c53] done in 2.4s, acc=0.25
+[p00 c97] done in 2.4s, acc=0.5
+[p00 c94] done in 2.4s, acc=0.5
+[p00 c101] done in 2.4s, acc=0.5
+[p00 c75] done in 2.4s, acc=0.5
+[p00 c34] done in 2.5s, acc=0.5
+[p00 c93] done in 2.4s, acc=0.5
+[p00 c103] done in 2.4s, acc=0.5
+[p00 c108] done in 2.4s, acc=1.0
+[p00 c62] done in 2.4s, acc=0.5
+[p00 c37] done in 2.5s, acc=0.5
+[p00 c50] done in 2.4s, acc=0.5
+[p00 c12] done in 2.5s, acc=0.5
+[p00 c60] done in 2.4s, acc=0.5
+[p00 c106] done in 2.4s, acc=0.5
+[p00 c89] done in 2.4s, acc=0.25
+[p00 c88] done in 2.4s, acc=0.5
+[p00 c96] done in 2.4s, acc=0.75
+[p00 c95] done in 2.4s, acc=0.75
+[p00 c107] done in 2.4s, acc=0.25
+[p00 c122] done in 2.4s, acc=0.5
+[p00 c91] done in 2.4s, acc=0.5
+[p00 c98] done in 2.4s, acc=0.5
+[p00 c81] done in 2.4s, acc=0.5
+[p00 c80] done in 2.4s, acc=0.75
+[p00 c68] done in 2.5s, acc=0.5
+[p00 c114] done in 2.4s, acc=0.25
+[p00 c74] done in 2.5s, acc=0.5
+[p00 c124] done in 2.4s, acc=0.5
+[p00 c85] done in 2.4s, acc=0.5
+[p00 c76] done in 2.5s, acc=0.75
+[p00 c70] done in 2.4s, acc=1.0
+[p00 c78] done in 2.5s, acc=0.5
+[p00 c83] done in 2.5s, acc=0.5
+[p00 c36] done in 2.5s, acc=0.5
+[p00 c51] done in 2.5s, acc=0.75
+[p00 c113] done in 2.4s, acc=0.5
+[p00 c29] done in 2.5s, acc=0.75
+[p00 c110] done in 2.5s, acc=0.5
+[p00 c117] done in 2.4s, acc=0.75
+[p00 c25] done in 2.6s, acc=1.0
+[p00 c121] done in 2.5s, acc=0.25
+[p00 c90] done in 2.5s, acc=0.75
+[p00 c44] done in 2.5s, acc=0.5
+[p00 c64] done in 2.5s, acc=0.5
+[p00 c77] done in 2.5s, acc=0.25
+[p00 c27] done in 2.6s, acc=0.5
+[p00 c63] done in 2.5s, acc=0.5
+[p00 c92] done in 2.5s, acc=0.5
+[p00 c82] done in 2.5s, acc=0.75
+[p00 c116] done in 2.4s, acc=0.75
+[p00 c31] done in 2.6s, acc=1.0
+[p00 c28] done in 2.6s, acc=0.75
+[p00 c43] done in 2.5s, acc=0.75
+[p00 c127] done in 2.4s, acc=0.75
+[p00 c22] done in 2.7s, acc=0.75
+[p00 c120] done in 2.4s, acc=0.75
+[p00 c87] done in 2.5s, acc=0.5
+[p00 c38] done in 2.6s, acc=0.5
+[p00 c111] done in 2.5s, acc=0.5
+[p00 c11] done in 2.7s, acc=0.5
+[p00 c46] done in 2.6s, acc=0.5
+[p00 c72] done in 2.6s, acc=0.5
+[p00 c14] done in 2.7s, acc=0.5
+[p00 c109] done in 2.6s, acc=0.5
+[p00 c100] done in 2.6s, acc=0.25
+[p00 c119] done in 2.5s, acc=0.75
+[p00 c71] done in 2.6s, acc=0.25
+[p00 c55] done in 2.7s, acc=0.25
+[p00 c52] done in 2.7s, acc=0.5
+[p00 c49] done in 2.5s, acc=0.75
+[p00 c40] done in 2.5s, acc=0.25
+[p00 c126] done in 2.6s, acc=0.5
+[p00 c104] done in 2.6s, acc=0.25
+[p00 c17] done in 2.8s, acc=1.0
+[p00 c125] done in 2.5s, acc=0.5
+[p00 c84] done in 2.7s, acc=0.5
+[p00 c128] done in 1.4s, acc=0.5
+[p00 c130] done in 1.6s, acc=0.5
+[p00 c129] done in 1.6s, acc=0.5
+[p00 c137] done in 1.2s, acc=0.25
+[p00 c152] done in 1.2s, acc=0.75
+[p00 c146] done in 1.2s, acc=0.25
+[p00 c148] done in 1.2s, acc=0.25
+[p00 c136] done in 1.4s, acc=0.5
+[p00 c162] done in 1.2s, acc=0.25
+[p00 c155] done in 1.2s, acc=0.5
+[p00 c142] done in 1.3s, acc=1.0
+[p00 c145] done in 1.2s, acc=0.5
+[p00 c138] done in 1.3s, acc=0.5
+[p00 c154] done in 1.1s, acc=0.25
+[p00 c144] done in 1.3s, acc=0.5
+[p00 c170] done in 1.2s, acc=0.75
+[p00 c140] done in 1.3s, acc=0.0
+[p00 c169] done in 1.3s, acc=0.5
+[p00 c159] done in 1.3s, acc=0.25
+[p00 c151] done in 1.3s, acc=0.75
+[p00 c168] done in 1.2s, acc=0.75
+[p00 c131] done in 1.8s, acc=0.75
+[p00 c156] done in 1.3s, acc=0.75
+[p00 c149] done in 1.3s, acc=0.25
+[p00 c139] done in 1.5s, acc=0.5
+[p00 c163] done in 1.3s, acc=0.25
+[p00 c147] done in 1.4s, acc=0.5
+[p00 c141] done in 1.4s, acc=0.5
+[p00 c134] done in 1.5s, acc=0.75
+[p00 c135] done in 1.5s, acc=0.75
+[p00 c132] done in 1.6s, acc=0.25
+[p00 c172] done in 1.3s, acc=0.5
+[p00 c157] done in 1.4s, acc=0.5
+[p00 c158] done in 1.5s, acc=0.75
+[p00 c174] done in 1.4s, acc=0.5
+[p00 c153] done in 1.5s, acc=0.5
+[p00 c167] done in 1.5s, acc=0.5
+[p00 c161] done in 1.5s, acc=0.5
+[p00 c165] done in 1.5s, acc=1.0
+[p00 c171] done in 1.5s, acc=0.5
+[p00 c133] done in 1.7s, acc=0.25
+[p00 c160] done in 1.5s, acc=0.5
+[p00 c150] done in 1.5s, acc=0.75
+[p00 c143] done in 1.6s, acc=0.5
+[p00 c175] done in 1.4s, acc=0.5
+[p00 c173] done in 1.5s, acc=0.5
+[p00 c166] done in 1.5s, acc=0.5
+[p00 c197] done in 1.2s, acc=0.75
+[p00 c195] done in 1.2s, acc=0.5
+[p00 c179] done in 1.4s, acc=0.5
+[p00 c230] done in 1.1s, acc=0.5
+[p00 c178] done in 1.4s, acc=0.5
+[p00 c225] done in 1.2s, acc=0.5
+[p00 c216] done in 1.2s, acc=0.5
+[p00 c190] done in 1.3s, acc=0.25
+[p00 c200] done in 1.2s, acc=0.5
+[p00 c240] done in 1.2s, acc=0.25
+[p00 c204] done in 1.2s, acc=0.25
+[p00 c164] done in 1.6s, acc=0.75
+[p00 c196] done in 1.3s, acc=0.75
+[p00 c236] done in 1.2s, acc=0.75
+[p00 c183] done in 1.4s, acc=0.5
+[p00 c186] done in 1.4s, acc=0.5
+[p00 c211] done in 1.2s, acc=1.0
+[p00 c228] done in 1.2s, acc=0.5
+[p00 c209] done in 1.3s, acc=0.5
+[p00 c198] done in 1.3s, acc=0.25
+[p00 c181] done in 1.4s, acc=0.5
+[p00 c180] done in 1.4s, acc=0.75
+[p00 c188] done in 1.4s, acc=0.25
+[p00 c194] done in 1.3s, acc=0.5
+[p00 c182] done in 1.4s, acc=0.75
+[p00 c206] done in 1.3s, acc=0.5
+[p00 c185] done in 1.3s, acc=0.25
+[p00 c184] done in 1.4s, acc=0.5
+[p00 c215] done in 1.3s, acc=0.75
+[p00 c187] done in 1.4s, acc=0.25
+[p00 c193] done in 1.4s, acc=0.5
+[p00 c226] done in 1.3s, acc=0.75
+[p00 c192] done in 1.4s, acc=0.25
+[p00 c247] done in 1.3s, acc=0.75
+[p00 c223] done in 1.3s, acc=0.25
+[p00 c235] done in 1.3s, acc=0.25
+[p00 c242] done in 1.3s, acc=0.25
+[p00 c249] done in 1.3s, acc=0.5
+[p00 c220] done in 1.4s, acc=0.25
+[p00 c252] done in 1.3s, acc=0.25
+[p00 c244] done in 1.3s, acc=0.0
+[p00 c208] done in 1.4s, acc=0.5
+[p00 c177] done in 1.6s, acc=0.5
+[p00 c234] done in 1.4s, acc=0.5
+[p00 c222] done in 1.4s, acc=0.5
+[p00 c218] done in 1.4s, acc=0.75
+[p00 c199] done in 1.5s, acc=0.75
+[p00 c212] done in 1.4s, acc=0.25
+[p00 c233] done in 1.4s, acc=0.5
+[p00 c217] done in 1.4s, acc=0.5
+[p00 c253] done in 1.3s, acc=0.5
+[p00 c238] done in 1.4s, acc=0.5
+[p00 c232] done in 1.4s, acc=0.25
+[p00 c205] done in 1.5s, acc=0.5
+[p00 c237] done in 1.4s, acc=0.5
+[p00 c224] done in 1.4s, acc=0.5
+[p00 c246] done in 1.4s, acc=0.5
+[p00 c201] done in 1.5s, acc=0.5
+[p00 c213] done in 1.4s, acc=0.5
+[p00 c245] done in 1.3s, acc=0.5
+[p00 c239] done in 1.4s, acc=0.0
+[p00 c243] done in 1.4s, acc=0.5
+[p00 c229] done in 1.4s, acc=0.5
+[p00 c231] done in 1.4s, acc=0.5
+[p00 c254] done in 1.3s, acc=0.75
+[p00 c250] done in 1.4s, acc=0.5
+[p00 c248] done in 1.4s, acc=0.75
+[p00 c255] done in 1.3s, acc=1.0
+[p00 c227] done in 1.4s, acc=0.25
+[p00 c251] done in 1.3s, acc=0.75
+[p00 c207] done in 1.5s, acc=0.25
+[p00 c219] done in 1.4s, acc=0.75
+[p00 c241] done in 1.4s, acc=0.75
+[p00 c221] done in 1.4s, acc=0.75
+[p00 c176] done in 1.6s, acc=0.75
+[p00 c191] done in 1.5s, acc=0.75
+[p00 c202] done in 1.5s, acc=0.75
+[p00 c210] done in 1.5s, acc=0.25
+[p00 c214] done in 1.5s, acc=0.5
+[p00 c189] done in 1.6s, acc=0.5
+[p00 c203] done in 1.5s, acc=0.75
+
+Wrote /root/llg/consistent_reasoning/results/gsm8k/zeroshot/zeroshot_Llama-3.1-8B_T0.0_baseseed42/summary.json
+headline: mean=0.5332 +/- n/a over 1 partitions, min=0.5332, max=0.5332
+runtime: mean=1.8772s per chunk
+per-item correct-count dist (out of 1): {'0': 478, '1': 546}
+== zero-shot truthfulQA: 0.591 (paper 0.588)
+== zero-shot gsm8k: 0.533 (paper 0.533)
+== Fri Oct 16 13:02:34 UTC 2026 controls.py --testbed truthfulQA --model meta-llama/Llama-3.1-8B --out /workspace/out/controls
+[truthfulQA] zero-shot accuracy 0.588 on 1024 claims (paper: 0.588 TQA / 0.533 GSM8K)
+[truthfulQA] partition 42: nolabel 0.560  random 0.669  pseudo 0.658  gold 0.912
+[truthfulQA] partition 43: nolabel 0.575  random 0.629  pseudo 0.626  gold 0.915
+[truthfulQA] partition 44: nolabel 0.573  random 0.652  pseudo 0.652  gold 0.896
+[truthfulQA] partition 45: nolabel 0.572  random 0.615  pseudo 0.649  gold 0.922
+[truthfulQA] partition 46: nolabel 0.571  random 0.655  pseudo 0.654  gold 0.899
+[truthfulQA] mean over 5 partitions: nolabel 0.570±0.006  random 0.644±0.022  pseudo 0.648±0.013  gold 0.909±0.011
+== Fri Oct 16 13:07:44 UTC 2026 controls.py --testbed gsm8k --model meta-llama/Llama-3.1-8B --out /workspace/out/controls
+[gsm8k] zero-shot accuracy 0.531 on 1024 claims (paper: 0.588 TQA / 0.533 GSM8K)
+[gsm8k] partition 42: nolabel 0.664  random 0.689  pseudo 0.665  gold 0.947
+[gsm8k] partition 43: nolabel 0.672  random 0.694  pseudo 0.678  gold 0.938
+[gsm8k] partition 44: nolabel 0.648  random 0.631  pseudo 0.677  gold 0.938
+[gsm8k] partition 45: nolabel 0.674  random 0.661  pseudo 0.678  gold 0.934
+[gsm8k] partition 46: nolabel 0.657  random 0.690  pseudo 0.668  gold 0.930
+[gsm8k] mean over 5 partitions: nolabel 0.663±0.011  random 0.673±0.027  pseudo 0.673±0.006  gold 0.938±0.007
+== Fri Oct 16 13:36:05 UTC 2026 consistent_reasoning/run_eval.py --testbed truthfulQA --algorithm gibbs --model meta-llama/Llama-3.1-8B --port 8000 --temperature 1.0 --chunk_size_cis 16 --fast_demo_order --n_partitions 5 --only_partition 0 --partition_base_seed 42 --num_workers 16
+=== run plan ===
+  algorithm           : gibbs
+  testbed             : truthfulQA
+  CIs in eval set     : 256 (group_size=4, items=1024)
+  n_partitions        : 5
+  partition_base_seed : 42
+  chunk_size_cis      : 16 (64 items)
+  chunks per partition: 16
+  total chunk runs    : 80
+  total item-preds    : 5120
+  missing CIs in src  : 0 (sample: [])
+  output_dir          : /root/llg/consistent_reasoning/results/truthfulQA/gibbs/gibbs_Llama-3.1-8B_T1.0_burn640_thin64_K25_sweep_fastorder_cs16_baseseed42
+  run_name            : gibbs_Llama-3.1-8B_T1.0_burn640_thin64_K25_sweep_fastorder_cs16_baseseed42
+  num_workers         : 16
+  cache_key_args      : {'temperature': 1.0, 'burn_in': 640, 'thinning': 64, 'num_samples': 25, 'sweep': True, 'fast_demo_order': True, 'model': 'meta-llama/Llama-3.1-8B', 'instruction_tuned': False, 'system_prompt': None, 'chunk_size_cis': 16, 'algorithm': 'gibbs'}
+  partition 00 (seed=42): first chunks (first 5 CIs) = [[779, 174, 422, 307, 161], [405, 587, 436, 710, 736], [196, 308, 627, 181, 750]]
+  partition 01 (seed=43): first chunks (first 5 CIs) = [[584, 312, 516, 382, 307], [370, 732, 580, 726, 595], [297, 369, 277, 266, 278]]
+[parallel] running 16 chunks with 16 workers
+[p00 c06] done in 598.3s, acc=0.90625
+[p00 c15] done in 598.7s, acc=0.890625
+[p00 c05] done in 598.9s, acc=0.546875
+[p00 c04] done in 599.9s, acc=0.640625
+[p00 c01] done in 600.3s, acc=0.65625
+[p00 c11] done in 600.4s, acc=0.953125
+[p00 c00] done in 600.5s, acc=0.625
+[p00 c02] done in 600.5s, acc=0.71875
+[p00 c08] done in 601.3s, acc=0.75
+[p00 c03] done in 601.6s, acc=0.734375
+[p00 c13] done in 601.5s, acc=0.765625
+[p00 c09] done in 601.8s, acc=0.734375
+[p00 c07] done in 601.9s, acc=0.90625
+[p00 c14] done in 602.3s, acc=0.71875
+[p00 c10] done in 602.6s, acc=0.75
+[p00 c12] done in 602.6s, acc=0.78125
+
+[aggregate] skipping: 64 chunks have no cache file. First few: [(1, 0), (1, 1), (1, 2), (1, 3), (1, 4)]
+== Fri Oct 16 13:47:36 UTC 2026 consistent_reasoning/run_eval.py --testbed gsm8k --algorithm gibbs --model meta-llama/Llama-3.1-8B --port 8000 --temperature 1.0 --chunk_size_cis 16 --fast_demo_order --n_partitions 5 --only_partition 0 --partition_base_seed 42 --num_workers 16
+=== run plan ===
+  algorithm           : gibbs
+  testbed             : gsm8k
+  CIs in eval set     : 256 (group_size=4, items=1024)
+  n_partitions        : 5
+  partition_base_seed : 42
+  chunk_size_cis      : 16 (64 items)
+  chunks per partition: 16
+  total chunk runs    : 80
+  total item-preds    : 5120
+  missing CIs in src  : 0 (sample: [])
+  output_dir          : /root/llg/consistent_reasoning/results/gsm8k/gibbs/gibbs_Llama-3.1-8B_T1.0_burn640_thin64_K25_sweep_fastorder_cs16_baseseed42
+  run_name            : gibbs_Llama-3.1-8B_T1.0_burn640_thin64_K25_sweep_fastorder_cs16_baseseed42
+  num_workers         : 16
+  cache_key_args      : {'temperature': 1.0, 'burn_in': 640, 'thinning': 64, 'num_samples': 25, 'sweep': True, 'fast_demo_order': True, 'model': 'meta-llama/Llama-3.1-8B', 'instruction_tuned': False, 'system_prompt': None, 'chunk_size_cis': 16, 'algorithm': 'gibbs'}
+  partition 00 (seed=42): first chunks (first 5 CIs) = [[6717, 305, 2805, 1703, 206], [2654, 4592, 2938, 5946, 6327], [708, 1718, 5111, 487, 6450]]
+  partition 01 (seed=43): first chunks (first 5 CIs) = [[4562, 1736, 3813, 2440, 1703], [2342, 6232, 4496, 6154, 4723], [1700, 2309, 1503, 1316, 1533]]
+[parallel] running 16 chunks with 16 workers
+[p00 c11] done in 2360.2s, acc=0.8125
+[p00 c00] done in 2361.1s, acc=0.9375
+[p00 c08] done in 2363.6s, acc=0.84375
+[p00 c14] done in 2366.2s, acc=0.875
+[p00 c01] done in 2373.2s, acc=0.921875
+[p00 c02] done in 2374.2s, acc=0.84375
+[p00 c05] done in 2374.7s, acc=0.84375
+[p00 c13] done in 2374.7s, acc=0.9375
+[p00 c06] done in 2375.0s, acc=0.921875
+[p00 c09] done in 2375.0s, acc=0.984375
+[p00 c07] done in 2375.6s, acc=0.890625
+[p00 c03] done in 2376.1s, acc=0.828125
+[p00 c12] done in 2376.1s, acc=0.890625
+[p00 c10] done in 2376.1s, acc=0.8125
+[p00 c04] done in 2376.4s, acc=0.96875
+[p00 c15] done in 2376.7s, acc=0.96875
+
+[aggregate] skipping: 64 chunks have no cache file. First few: [(1, 0), (1, 1), (1, 2), (1, 3), (1, 4)]
+== Fri Oct 16 14:28:41 UTC 2026 done

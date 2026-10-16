@@ -1,0 +1,50 @@
+{
+ "testbed": "truthfulQA",
+ "model": "meta-llama/Llama-3.1-8B",
+ "zeroshot": 0.587890625,
+ "partitions": [
+  {
+   "partition_seed": 42,
+   "nolabel": 0.5595703125,
+   "random": 0.6689453125,
+   "pseudo": 0.658203125,
+   "gold": 0.912109375
+  },
+  {
+   "partition_seed": 43,
+   "nolabel": 0.5751953125,
+   "random": 0.62890625,
+   "pseudo": 0.6259765625,
+   "gold": 0.9150390625
+  },
+  {
+   "partition_seed": 44,
+   "nolabel": 0.5732421875,
+   "random": 0.65234375,
+   "pseudo": 0.65234375,
+   "gold": 0.8955078125
+  },
+  {
+   "partition_seed": 45,
+   "nolabel": 0.572265625,
+   "random": 0.615234375,
+   "pseudo": 0.6494140625,
+   "gold": 0.921875
+  },
+  {
+   "partition_seed": 46,
+   "nolabel": 0.5712890625,
+   "random": 0.6552734375,
+   "pseudo": 0.654296875,
+   "gold": 0.8994140625
+  }
+ ],
+ "nolabel_mean": 0.5703125,
+ "nolabel_std": 0.006176323555016366,
+ "random_mean": 0.644140625,
+ "random_std": 0.02164578923602442,
+ "pseudo_mean": 0.648046875,
+ "pseudo_std": 0.012744047084187362,
+ "gold_mean": 0.9087890625,
+ "gold_std": 0.011018291177787761
+}

@@ -1,0 +1,67 @@
+[07:58:41] resuming pod qy843qwlskzghg
+[07:58:43] waiting: status=RUNNING ip= ssh_port=None
+[07:59:04] ssh ok: root@64.247.201.46 -p 13249
+[07:59:06] run started
+[08:01:07] pod: == Fri Oct 16 12:15:17 UTC 2026 start on NVIDIA H100 80GB HBM3
+[08:01:07] pod: == runpodctl or RUNPOD_POD_ID missing; no on-pod time cap
+[08:01:07] pod: == weights: unsloth/Meta-Llama-3.1-8B (served as meta-llama/Llama-3.1-8B)
+[08:01:07] pod: == Fri Oct 16 12:15:17 UTC 2026 installing uv
+[08:01:07] pod: == Fri Oct 16 12:15:18 UTC 2026 repo + paper environment
+[08:01:07] pod: == Fri Oct 16 12:16:00 UTC 2026 vLLM environment
+[08:01:07] pod: == Fri Oct 16 12:21:34 UTC 2026 starting vLLM
+[08:01:07] pod: == Fri Oct 16 12:56:43 UTC 2026 vLLM up
+[08:01:07] pod: == failed (exit 1)
+[08:01:07] pod: == Fri Oct 16 12:59:06 UTC 2026 start on NVIDIA H100 80GB HBM3
+[08:01:07] pod: == runpodctl or RUNPOD_POD_ID missing; no on-pod time cap
+[08:01:07] pod: == weights: unsloth/Meta-Llama-3.1-8B (served as meta-llama/Llama-3.1-8B)
+[08:01:07] pod: == Fri Oct 16 12:59:06 UTC 2026 installing uv
+[08:01:07] pod: == Fri Oct 16 12:59:07 UTC 2026 repo + paper environment
+[08:01:07] pod: == Fri Oct 16 12:59:12 UTC 2026 vLLM environment
+[08:01:07] pod: == Fri Oct 16 12:59:23 UTC 2026 starting vLLM
+[08:03:07] pod: == Fri Oct 16 13:02:01 UTC 2026 vLLM up
+[08:03:07] pod: == Fri Oct 16 13:02:01 UTC 2026 constrained decoding ok
+[08:03:07] pod: == Fri Oct 16 13:02:01 UTC 2026 consistent_reasoning/run_eval.py --testbed truthfulQA --algorithm zeroshot --model meta-llama/Llama-3.1-8B --port 8000 --temperature 0.0 --n_partitions 1 --num_workers 128
+[08:03:07] pod:   n_partitions        : 1
+[08:03:07] pod:   partition_base_seed : 42
+[08:03:07] pod:   chunks per partition: 256
+[08:03:07] pod:   partition 00 (seed=42): first chunks (first 5 CIs) = [[779], [174], [422]]
+[08:03:07] pod: headline: mean=0.5908 +/- n/a over 1 partitions, min=0.5908, max=0.5908
+[08:03:07] pod: == Fri Oct 16 13:02:06 UTC 2026 consistent_reasoning/run_eval.py --testbed gsm8k --algorithm zeroshot --model meta-llama/Llama-3.1-8B --port 8000 --temperature 0.0 --n_partitions 1 --num_workers 128
+[08:03:07] pod:   n_partitions        : 1
+[08:03:07] pod:   partition_base_seed : 42
+[08:03:07] pod:   chunks per partition: 256
+[08:03:07] pod:   partition 00 (seed=42): first chunks (first 5 CIs) = [[6717], [305], [2805]]
+[08:03:07] pod: headline: mean=0.5332 +/- n/a over 1 partitions, min=0.5332, max=0.5332
+[08:03:07] pod: == zero-shot truthfulQA: 0.591 (paper 0.588)
+[08:03:07] pod: == zero-shot gsm8k: 0.533 (paper 0.533)
+[08:03:07] pod: == Fri Oct 16 13:02:34 UTC 2026 controls.py --testbed truthfulQA --model meta-llama/Llama-3.1-8B --out /workspace/out/controls
+[08:03:07] pod: [truthfulQA] zero-shot accuracy 0.588 on 1024 claims (paper: 0.588 TQA / 0.533 GSM8K)
+[08:05:08] pod: [truthfulQA] partition 42: nolabel 0.560  random 0.669  pseudo 0.658  gold 0.912
+[08:05:08] pod: [truthfulQA] partition 43: nolabel 0.575  random 0.629  pseudo 0.626  gold 0.915
+[08:07:09] pod: [truthfulQA] partition 44: nolabel 0.573  random 0.652  pseudo 0.652  gold 0.896
+[08:07:09] pod: [truthfulQA] partition 45: nolabel 0.572  random 0.615  pseudo 0.649  gold 0.922
+[08:09:10] pod: [truthfulQA] partition 46: nolabel 0.571  random 0.655  pseudo 0.654  gold 0.899
+[08:09:10] pod: [truthfulQA] mean over 5 partitions: nolabel 0.570±0.006  random 0.644±0.022  pseudo 0.648±0.013  gold 0.909±0.011
+[08:09:10] pod: == Fri Oct 16 13:07:44 UTC 2026 controls.py --testbed gsm8k --model meta-llama/Llama-3.1-8B --out /workspace/out/controls
+[08:09:10] pod: [gsm8k] zero-shot accuracy 0.531 on 1024 claims (paper: 0.588 TQA / 0.533 GSM8K)
+[08:15:11] pod: [gsm8k] partition 42: nolabel 0.664  random 0.689  pseudo 0.665  gold 0.947
+[08:21:14] pod: [gsm8k] partition 43: nolabel 0.672  random 0.694  pseudo 0.678  gold 0.938
+[08:25:15] pod: [gsm8k] partition 44: nolabel 0.648  random 0.631  pseudo 0.677  gold 0.938
+[08:31:17] pod: [gsm8k] partition 45: nolabel 0.674  random 0.661  pseudo 0.678  gold 0.934
+[08:37:18] pod: [gsm8k] partition 46: nolabel 0.657  random 0.690  pseudo 0.668  gold 0.930
+[08:37:18] pod: [gsm8k] mean over 5 partitions: nolabel 0.663±0.011  random 0.673±0.027  pseudo 0.673±0.006  gold 0.938±0.007
+[08:37:18] pod: == Fri Oct 16 13:36:05 UTC 2026 consistent_reasoning/run_eval.py --testbed truthfulQA --algorithm gibbs --model meta-llama/Llama-3.1-8B --port 8000 --temperature 1.0 --chunk_size_cis 16 --fast_demo_order --n_partitions 5 --only_partition 0 --partition_base_seed 42 --num_workers 16
+[08:37:18] pod:   n_partitions        : 5
+[08:37:18] pod:   partition_base_seed : 42
+[08:37:18] pod:   chunks per partition: 16
+[08:37:18] pod:   partition 00 (seed=42): first chunks (first 5 CIs) = [[779, 174, 422, 307, 161], [405, 587, 436, 710, 736], [196, 308, 627, 181, 750]]
+[08:37:18] pod:   partition 01 (seed=43): first chunks (first 5 CIs) = [[584, 312, 516, 382, 307], [370, 732, 580, 726, 595], [297, 369, 277, 266, 278]]
+[08:49:22] pod: == Fri Oct 16 13:47:36 UTC 2026 consistent_reasoning/run_eval.py --testbed gsm8k --algorithm gibbs --model meta-llama/Llama-3.1-8B --port 8000 --temperature 1.0 --chunk_size_cis 16 --fast_demo_order --n_partitions 5 --only_partition 0 --partition_base_seed 42 --num_workers 16
+[08:49:22] pod:   n_partitions        : 5
+[08:49:22] pod:   partition_base_seed : 42
+[08:49:22] pod:   chunks per partition: 16
+[08:49:22] pod:   partition 00 (seed=42): first chunks (first 5 CIs) = [[6717, 305, 2805, 1703, 206], [2654, 4592, 2938, 5946, 6327], [708, 1718, 5111, 487, 6450]]
+[08:49:22] pod:   partition 01 (seed=43): first chunks (first 5 CIs) = [[4562, 1736, 3813, 2440, 1703], [2342, 6232, 4496, 6154, 4723], [1700, 2309, 1503, 1316, 1533]]
+[09:29:36] pod: == Fri Oct 16 14:28:41 UTC 2026 done
+[09:29:36] run finished; copying results
+[09:33:21] results in results/pod_out; pod deleted

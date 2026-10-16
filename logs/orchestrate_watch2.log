@@ -1,0 +1,10 @@
+[07:13:57] resuming pod 2enoy1w94uwpq7
+Traceback (most recent call last):
+  File "/Users/tom/tmp/jev-gibbs/pod/orchestrate.py", line 188, in <module>
+    main()
+  File "/Users/tom/tmp/jev-gibbs/pod/orchestrate.py", line 123, in main
+    api("POST", f"/pods/{pod.id}/start")
+  File "/Users/tom/tmp/jev-gibbs/pod/orchestrate.py", line 46, in api
+    raise RuntimeError(f"RunPod {method} {path}: HTTP {e.code} {e.read().decode(errors='replace')[:400]}") from None
+RuntimeError: RunPod POST /pods/2enoy1w94uwpq7/start: HTTP 500 {"error":"start pod: There are not enough free GPUs on the host machine to start this pod.","status":500}
+

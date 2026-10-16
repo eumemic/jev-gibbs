@@ -1,0 +1,15 @@
+1280 chains (m=1, block); ~179,200 Jev calls
+  128/1280 chains done, 23,383 calls, $0.54
+  256/1280 chains done, 40,650 calls, $0.93
+  384/1280 chains done, 62,016 calls, $1.42
+  512/1280 chains done, 79,284 calls, $1.82
+  640/1280 chains done, 98,997 calls, $2.27
+  768/1280 chains done, 117,174 calls, $2.69
+  896/1280 chains done, 135,485 calls, $3.11
+  1024/1280 chains done, 154,494 calls, $3.55
+  1152/1280 chains done, 168,559 calls, $3.87
+  1280/1280 chains done, 179,200 calls, $4.11
+  vote: acc 0.918 ± 0.007 over 5 seed(s); mean {"brier": 0.0676, "ece": 0.0439, "auroc": 0.9585, "acc@50%": 0.968}
+  rb  : acc 0.919 ± 0.001 over 5 seed(s); mean {"brier": 0.0644, "ece": 0.0511, "auroc": 0.9614, "acc@50%": 0.9711}
+usage: {"calls": 179200, "questions": 179200, "input_tokens": 97939800, "usd": 4.1135, "retries": 187, "mean_call_seconds": 1.714, "model_versions": ["jev-1.13.0"], "wall_seconds": 1389.9}
+saved results/gibbs_m1_block.json

@@ -1,0 +1,12 @@
+# credentials: API keys, Hugging Face token, the pod's SSH key
+.secrets/
+
+# third-party dataset download (see README for the curl command)
+data/
+
+# bulky, reproducible outputs: the paper runner's zero-shot chunk caches (summary.json kept) and vLLM's server log
+results/pod_out/out/paper_runs/*/zeroshot/*/partition_*/
+results/pod_out/out/logs/vllm.log
+
+__pycache__/
+.DS_Store

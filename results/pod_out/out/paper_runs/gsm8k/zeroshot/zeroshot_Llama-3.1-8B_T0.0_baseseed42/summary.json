@@ -1,0 +1,52 @@
+{
+  "algorithm": "zeroshot",
+  "testbed": "gsm8k",
+  "run_name": "zeroshot_Llama-3.1-8B_T0.0_baseseed42",
+  "n_partitions": 1,
+  "partition_base_seed": 42,
+  "chunk_size_cis": 1,
+  "n_chunks_per_partition": 256,
+  "eval_set_meta": {
+    "testbed": "gsm8k",
+    "source_file": "data/train_gsm8k.json",
+    "n_consistency_ids": 256,
+    "n_items": 1024,
+    "seed": 42
+  },
+  "headline": {
+    "n_partitions": 1,
+    "n_predicted_total": 1024,
+    "n_missing_total": 0,
+    "mean_accuracy": 0.533203125,
+    "std_accuracy": null,
+    "min_accuracy": 0.533203125,
+    "max_accuracy": 0.533203125,
+    "mean_duration_seconds": 1.877198121510446
+  },
+  "per_partition_accuracy": [
+    0.533203125
+  ],
+  "per_partition_duration_seconds": [
+    1.877198121510446
+  ],
+  "per_partition_summary": [
+    {
+      "n_predicted": 1024,
+      "n_missing": 0,
+      "accuracy": 0.533203125,
+      "mean_duration_seconds": 1.877198121510446
+    }
+  ],
+  "per_item_correct_count_distribution": {
+    "0": 478,
+    "1": 546
+  },
+  "n_items_total": 1024,
+  "cache_key_args": {
+    "temperature": 0.0,
+    "model": "meta-llama/Llama-3.1-8B",
+    "instruction_tuned": false,
+    "system_prompt": null,
+    "algorithm": "zeroshot"
+  }
+}
