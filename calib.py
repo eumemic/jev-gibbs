@@ -13,7 +13,7 @@ Reported per method:
   NLL        negative log probability of the gold term (floored at 1e-3)
   AUROC      how well the confidence separates right from wrong labels
   keep@95    share of labels kept when keeping the most confident ones while their accuracy stays >= 95%
-  mass_ok    share of total confidence that sits on correct labels (what a confidence-weighted loss trains on)
+  mass_ok    share of total confidence that sits on correct labels
 Uncertainty: 90% intervals from 1,000 bootstrap resamples of stories, for each method's difference from one pass.
 
   python3 calib.py           the table above, per method

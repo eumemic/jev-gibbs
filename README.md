@@ -256,13 +256,13 @@ So this is the regime where Jev + Gibbs earns its cost. With 4-step chains, the 
 significantly more accurate and more consistent across the whole family than one pass or one refinement
 step. At 6 steps, per-step errors (73% accuracy on one-step compositions, from the screen) still limit it.
 
-#### Are the chain's confidences usable as training weights? (`calib.py`)
+#### How well calibrated are the chain's confidences? (`calib.py`)
 
 Confidence is the probability of the chosen label. ECE is the mean gap between confidence and accuracy, and
 AUROC measures how well confidence separates right labels from wrong ones. keep@95 is the share of labels
 kept when keeping the most confident while their accuracy stays at or above 95%. mass_ok is the share of
-total confidence that sits on correct labels, which is what a confidence-weighted loss trains on. Same
-100-story runs; differences from one pass have 90% story-bootstrap intervals in `python3 calib.py`.
+total confidence that sits on correct labels. Same 100-story runs; differences from one pass have 90%
+story-bootstrap intervals in `python3 calib.py`.
 
 | Labels and confidence | k=4 acc | ECE | AUROC | keep@95 | mass_ok | k=6 acc | ECE | AUROC | mass_ok |
 |---|---|---|---|---|---|---|---|---|---|
@@ -277,10 +277,10 @@ total confidence that sits on correct labels, which is what a confidence-weighte
 - **Conditioning on its own labels makes Jev overconfident.** One refinement step adds about +0.07–0.10
   of overconfidence, and sharpened chains more. Their vote fractions put 82–90% of labels at ≥0.9
   confidence (72% accurate at k=4, 51% at k=6), so they can't separate right from wrong (AUROC 0.57–0.58).
-- **Use the chain for the labels and an independent source for the weights.** Taking the confidence from
-  one pass's probability of the chain's label gives the highest share of weight on correct labels at both
-  lengths (0.82 and 0.61), and the best discrimination at k=6. Taking it from a T=1 chain is best
-  calibrated at k=4 and keeps the most labels at ≥95% accuracy.
+- **Use the chain for the labels and an independent source for their confidence.** Taking the confidence
+  from one pass's probability of the chain's label puts the largest share of confidence on correct labels
+  at both lengths (0.82 and 0.61), and gives the best discrimination at k=6. Taking it from a T=1 chain is
+  best calibrated at k=4 and keeps the most labels at ≥95% accuracy.
 - **Rescaling on labelled stories fixes the level but not the ranking.** AUROC is unchanged, so rescaling
   can't rescue vote fractions.
 
